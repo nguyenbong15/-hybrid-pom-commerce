@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="23190" started-at="2021-05-14T07:59:35Z" finished-at="2021-05-14T07:59:58Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="23190" started-at="2021-05-14T07:59:35Z" finished-at="2021-05-14T07:59:58Z">
+      <class name="facebook.web.users.Level_01_Register_Login_AbstractPage_01">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:facebook.web.users.Level_01_Register_Login_AbstractPage_01@6d78f375]" name="beforeClass" is-config="true" duration-ms="11569" started-at="2021-05-14T07:59:35Z" finished-at="2021-05-14T07:59:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="TC_01_Register()[pri:0, instance:facebook.web.users.Level_01_Register_Login_AbstractPage_01@6d78f375]" name="TC_01_Register" duration-ms="5144" started-at="2021-05-14T07:59:46Z" finished-at="2021-05-14T07:59:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_01_Register -->
+        <test-method status="PASS" signature="TC_02_Login()[pri:0, instance:facebook.web.users.Level_01_Register_Login_AbstractPage_01@6d78f375]" name="TC_02_Login" duration-ms="3476" started-at="2021-05-14T07:59:51Z" finished-at="2021-05-14T07:59:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_02_Login -->
+        <test-method status="PASS" signature="TC_03_MyAcount()[pri:0, instance:facebook.web.users.Level_01_Register_Login_AbstractPage_01@6d78f375]" name="TC_03_MyAcount" duration-ms="1603" started-at="2021-05-14T07:59:55Z" finished-at="2021-05-14T07:59:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_03_MyAcount -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:facebook.web.users.Level_01_Register_Login_AbstractPage_01@6d78f375]" name="afterClass" is-config="true" duration-ms="1363" started-at="2021-05-14T07:59:56Z" finished-at="2021-05-14T07:59:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- facebook.web.users.Level_01_Register_Login_AbstractPage_01 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
