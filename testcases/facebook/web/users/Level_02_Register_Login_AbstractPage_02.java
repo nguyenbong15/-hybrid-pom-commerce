@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 
 import commons.AbstractPage;
 
-public class Level_02_Register_Login_Extend_AbstractPage extends AbstractPage {
+public class Level_02_Register_Login_AbstractPage_02 extends AbstractPage {
 	WebDriver driver;
 	
 	String firstName,lastName,email,companyName,passWord;

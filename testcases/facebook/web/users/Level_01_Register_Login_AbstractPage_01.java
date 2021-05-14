@@ -34,10 +34,7 @@ public class Level_01_Register_Login_AbstractPage_01 {
 	    
 	}
 
-	public int getRandomNumber() {
-		Random rd=new Random();
-		return rd.nextInt(99999);
-	}
+	
 
 	@Test
 	public void TC_01_Register() {
@@ -84,6 +81,10 @@ public class Level_01_Register_Login_AbstractPage_01 {
 			 
 		
 		}
+	public int getRandomNumber() {
+		Random rd=new Random();
+		return rd.nextInt(99999);
+	}
 	@AfterClass
 	public void afterClass() {
 		driver.quit();
