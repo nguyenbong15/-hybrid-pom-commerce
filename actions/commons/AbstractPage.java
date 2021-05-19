@@ -120,13 +120,22 @@ public class AbstractPage {
 	}
 
 	public void clickToElement(WebDriver driver, String locator) {
+		if(driver.toString().toLowerCase().contains("edge"))
+		{
+			sleepMiliSecond(500);
+		}
 		element = getElement(driver, locator);
 		element.click();
 	}
 
 	public void senkeyToElement(WebDriver driver,String locator, String value) {
+		
 		element = getElement(driver, locator);
 		element.clear();
+		if(driver.toString().toLowerCase().contains("edge")||driver.toString().toLowerCase().contains("chrome"))
+		{
+			sleepMiliSecond(500);
+		}
 		element.sendKeys(value);
 	}
 	public String getTextElement(WebDriver driver,String locator) {
@@ -174,6 +183,13 @@ public class AbstractPage {
 	public void sleepSecond(long time) {
 		try {
 			Thread.sleep(time * 1000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+	public void sleepMiliSecond(long time) {
+		try {
+			Thread.sleep(time);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}

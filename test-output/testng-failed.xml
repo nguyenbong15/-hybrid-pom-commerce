@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]">
+  <test thread-count="5" name="RUN ON EDGE_CHROMIUM(failed)">
+    <parameter name="browser" value="edge_chromium"/>
     <classes>
-      <class name="facebook.web.users.Level_01_Register_Login_AbstractPage_01">
+      <class name="com.nopcommerce.users.Level_04_Register_Login_Multiple_Browser">
         <methods>
+          <include name="TC_02_Login"/>
+          <include name="TC_01_Register"/>
           <include name="afterClass"/>
           <include name="TC_03_MyAcount"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- facebook.web.users.Level_01_Register_Login_AbstractPage_01 -->
+      </class> <!-- com.nopcommerce.users.Level_04_Register_Login_Multiple_Browser -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- RUN ON EDGE_CHROMIUM(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test thread-count="5" name="RUN ON EDGE_CHROMIUM(failed)">
+    <parameter name="browser" value="edge_chromium"/>
+    <classes>
+      <class name="com.nopcommerce.users.Level_04_Register_Login_Multiple_Browser">
+        <methods>
+          <include name="TC_02_Login"/>
+          <include name="TC_01_Register"/>
+          <include name="afterClass"/>
+          <include name="TC_03_MyAcount"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.nopcommerce.users.Level_04_Register_Login_Multiple_Browser -->
+    </classes>
+  </test> <!-- RUN ON EDGE_CHROMIUM(failed) -->
+</suite> <!-- Failed suite [Suite] -->

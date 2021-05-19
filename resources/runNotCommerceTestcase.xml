@@ -1,8 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Suite" parallel="false">
-  <test name="Test">
+  <test name="RUN ON FIREFOX_UI">
+   <parameter name="browser" value="firefox_ui"/>
     <classes>
-      <class name="facebook.web.users.Test_login"/>
+      <class name="com.nopcommerce.users.Level_04_Register_Login_Multiple_Browser"/>
     </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+  </test> 
+  
+  <test name="RUN ON CHROME_UI">
+  <parameter name="browser" value="chrome_ui"/>
+    <classes>
+      <class name="com.nopcommerce.users.Level_04_Register_Login_Multiple_Browser"/>
+    </classes>
+  </test> 
+  
+  <test name="RUN ON FIREFOX_HEADLESS">
+   <parameter name="browser" value="firefox_headless"/>
+    <classes>
+      <class name="com.nopcommerce.users.Level_04_Register_Login_Multiple_Browser"/>
+    </classes>
+  </test> 
+  
+  <test name="RUN ON CHROME_HEADLESS">
+   <parameter name="browser" value="chrome_headless"/>
+    <classes>
+      <class name="com.nopcommerce.users.Level_04_Register_Login_Multiple_Browser"/>
+    </classes>
+  </test> 
+  
+  <test name="RUN ON EDGE_CHROMIUM">
+   <parameter name="browser" value="edge_chromium"/>
+    <classes>
+      <class name="com.nopcommerce.users.Level_04_Register_Login_Multiple_Browser"/>
+    </classes>
+  </test> 
+</suite> 
