@@ -4,15 +4,15 @@
   <test thread-count="5" name="RUN ON EDGE_CHROMIUM(failed)">
     <parameter name="browser" value="edge_chromium"/>
     <classes>
-      <class name="com.nopcommerce.users.Level_04_Register_Login_Multiple_Browser">
+      <class name="com.nopcommerce.users.Level_06_Register_Login_Page_Generator">
         <methods>
           <include name="TC_02_Login"/>
-          <include name="TC_01_Register"/>
+          <include name="beforeClass"/>
           <include name="afterClass"/>
           <include name="TC_03_MyAcount"/>
-          <include name="beforeClass"/>
+          <include name="TC_01_Register"/>
         </methods>
-      </class> <!-- com.nopcommerce.users.Level_04_Register_Login_Multiple_Browser -->
+      </class> <!-- com.nopcommerce.users.Level_06_Register_Login_Page_Generator -->
     </classes>
   </test> <!-- RUN ON EDGE_CHROMIUM(failed) -->
 </suite> <!-- Failed suite [Suite] -->
