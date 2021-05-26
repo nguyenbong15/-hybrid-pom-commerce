@@ -31,7 +31,7 @@
   <test name="RUN ON EDGE_CHROMIUM">
    <parameter name="browser" value="edge_chromium"/>
     <classes>
-      <class name="com.nopcommerce.users.Level_07_Register_Login_Switch_Page"/>
+      <class name="com.nopcommerce.users.Level_08_Register_Login_Dynamic_Locator_Rest_Parameter"/>
     </classes>
   </test> 
 </suite> 

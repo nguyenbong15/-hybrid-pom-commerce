@@ -69,7 +69,7 @@ public class AbstractPage {
 	}
 
 	public void waitAlertPresence(WebDriver driver) {
-		explicitWait = new WebDriverWait(driver, 30);
+		explicitWait = new WebDriverWait(driver, GlobalConsarts.LONG_TIMEOUT);
 		explicitWait.until(ExpectedConditions.alertIsPresent());
 	}
 
@@ -171,7 +171,7 @@ public class AbstractPage {
 
 	public void selectItemsInCustomDropdown(WebDriver driver, String parentLocator, String childItemsLocator,
 			String expectedItem) {
-		explicitWait = new WebDriverWait(driver, 30);
+		explicitWait = new WebDriverWait(driver, GlobalConsarts.LONG_TIMEOUT);
 		getElement(driver, parentLocator).click();
 		explicitWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(getByXpath(childItemsLocator)));
 		elements = getElements(driver, childItemsLocator);
@@ -361,22 +361,52 @@ public class AbstractPage {
 	}
 
 	public void waitToElementVisible(WebDriver driver, String locator) {
-		explicitWait = new WebDriverWait(driver, 30);
+		explicitWait = new WebDriverWait(driver, GlobalConsarts.LONG_TIMEOUT);
 		explicitWait.until(ExpectedConditions.visibilityOfElementLocated(getByXpath(locator)));
 
 	}
 
 	public void waitToElementInvisible(WebDriver driver, String locator) {
-		explicitWait = new WebDriverWait(driver, 30);
+		explicitWait = new WebDriverWait(driver, GlobalConsarts.LONG_TIMEOUT);
 		explicitWait.until(ExpectedConditions.invisibilityOfElementLocated(getByXpath(locator)));
 
 	}
 
 	public void waitToElementclickable(WebDriver driver, String locator) {
-		explicitWait = new WebDriverWait(driver, 30);
+		explicitWait = new WebDriverWait(driver, GlobalConsarts.LONG_TIMEOUT);
 		explicitWait.until(ExpectedConditions.elementToBeClickable(getByXpath(locator)));
+		
+	}
+	public void waitToElementclickable(WebDriver driver, String locator,String... values) {
+		explicitWait = new WebDriverWait(driver, GlobalConsarts.LONG_TIMEOUT);
+		explicitWait.until(ExpectedConditions.elementToBeClickable(getByXpath(getDynammicLocator(locator, values))));
 
 	}
+	public void clickToElement(WebDriver driver, String locator,String... values) {
+		if(driver.toString().toLowerCase().contains("edge"))
+		{
+			sleepMiliSecond(500);
+		}
+		element = getElement(driver, getDynammicLocator(locator, values));
+		element.click();
+	}
+
+	public void senkeyToElement(WebDriver driver,String locator, String value,String... values) {
+		
+		element = getElement(driver, getDynammicLocator(locator, values));
+		element.clear();
+		if(driver.toString().toLowerCase().contains("edge")||driver.toString().toLowerCase().contains("chrome"))
+		{
+			sleepMiliSecond(500);
+		}
+		element.sendKeys(value);
+	}
+	
+	public String getDynammicLocator(String locator,String... values) {
+	    locator=String.format(locator,(Object[])values);
+	    return locator;
+	}
+	
 	public AddressesPageObject openAddressesPage(WebDriver driver) {
 		waitToElementclickable(driver, AbstracPageUI.ADDRESSES_LINK);
 		clickToElement(driver, AbstracPageUI.ADDRESSES_LINK);
@@ -397,6 +427,28 @@ public class AbstractPage {
 		waitToElementclickable(driver, AbstracPageUI.MY_PRODUCT_REVIEW_LINK);
 		clickToElement(driver, AbstracPageUI.MY_PRODUCT_REVIEW_LINK);
 		return PageGenerator.getMyProductReviewPage(driver);
+	}
+	public AbstractPage openLinkByPageName(WebDriver driver,String pageName) {
+		waitToElementclickable(driver, AbstracPageUI.DYNAMIC_LOCATOR, pageName);
+		clickToElement(driver, AbstracPageUI.DYNAMIC_LOCATOR, pageName);
+		switch (pageName) {
+		case "Addresses":
+			return PageGenerator.getAddressesPage(driver);
+		case "Customer info":
+			return PageGenerator.getCustomerInfoPage(driver);
+		case "My product reviews":
+			return PageGenerator.getMyProductReviewPage(driver);
+		
+		default:
+			return PageGenerator.getOrderPage(driver);
+		}
+		
+	}
+	public void openLinkWithPageName(WebDriver driver,String pageName) {
+		waitToElementclickable(driver, AbstracPageUI.DYNAMIC_LOCATOR, pageName);
+		clickToElement(driver, AbstracPageUI.DYNAMIC_LOCATOR, pageName);
+		
+		
 	}
 	private WebDriverWait explicitWait;
 	private JavascriptExecutor js;
