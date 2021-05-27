@@ -3,14 +3,14 @@ package com.nopcommerce.users;
 import org.testng.annotations.Test;
 
 import commons.AbstractTest;
-import pageObjects.AddressesPageObject;
-import pageObjects.CustomerInfoPageObject;
-import pageObjects.HomePageObject;
-import pageObjects.LoginPageObject;
-import pageObjects.MyProductReviewPageObject;
-import pageObjects.OrderPageObject;
+import pageObjects.UserAddressesPO;
+import pageObjects.UserCustomerInfoPO;
+import pageObjects.UserHomePO;
+import pageObjects.UserLoginPO;
+import pageObjects.UserMyProductReviewPO;
+import pageObjects.UserOrderPO;
 import pageObjects.PageGenerator;
-import pageObjects.RegisterPageObject;
+import pageObjects.UserRegisterPO;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -24,13 +24,13 @@ import org.testng.annotations.AfterClass;
 public class Level_07_Register_Login_Switch_Page extends AbstractTest {
 
 	WebDriver driver;
-	HomePageObject homePageObject;
-	CustomerInfoPageObject customerInfoPageObject;
-	LoginPageObject loginPageObject;
-	RegisterPageObject registerPageObject;
-	AddressesPageObject addressesPage;
-	MyProductReviewPageObject myProductReview;
-	OrderPageObject orderPageObject;
+	UserHomePO homePageObject;
+	UserCustomerInfoPO customerInfoPageObject;
+	UserLoginPO loginPageObject;
+	UserRegisterPO registerPageObject;
+	UserAddressesPO addressesPage;
+	UserMyProductReviewPO myProductReview;
+	UserOrderPO orderPageObject;
 
 	String firstName, lastName, email, companyName, passWord, day, month, year;
 
@@ -40,8 +40,7 @@ public class Level_07_Register_Login_Switch_Page extends AbstractTest {
 
 		driver = getBrowserName(browser);
 
-		driver.manage().timeouts().implicitlyWait(30L, TimeUnit.SECONDS);
-		driver.manage().window().maximize();
+		
 		driver.get("https://demo.nopcommerce.com/");
 		firstName = "Tony";
 		lastName = "Buoi Sang";
@@ -56,7 +55,7 @@ public class Level_07_Register_Login_Switch_Page extends AbstractTest {
 
 	@Test
 	public void TC_01_Register() {
-		homePageObject = PageGenerator.getHomePage(driver);
+		homePageObject = PageGenerator.getUserHomePage(driver);
 
 		registerPageObject = homePageObject.clickToRegisterLink();
 		registerPageObject.clickToGenderMaleRadio();

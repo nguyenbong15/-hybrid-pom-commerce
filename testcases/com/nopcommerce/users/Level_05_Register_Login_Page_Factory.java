@@ -35,8 +35,7 @@ public class Level_05_Register_Login_Page_Factory extends AbstractTest {
 
 		driver = getBrowserName(browser);
 
-		driver.manage().timeouts().implicitlyWait(30L, TimeUnit.SECONDS);
-		driver.manage().window().maximize();
+		
 		driver.get("https://demo.nopcommerce.com/");
 		firstName = "Tony";
 		lastName = "Buoi Sang";

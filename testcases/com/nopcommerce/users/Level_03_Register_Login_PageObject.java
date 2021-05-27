@@ -2,11 +2,11 @@ package com.nopcommerce.users;
 
 import org.testng.annotations.Test;
 
-import pageObjects.CustomerInfoPageObject;
-import pageObjects.HomePageObject;
-import pageObjects.LoginPageObject;
+import pageObjects.UserCustomerInfoPO;
+import pageObjects.UserHomePO;
+import pageObjects.UserLoginPO;
 
-import pageObjects.RegisterPageObject;
+import pageObjects.UserRegisterPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -22,10 +22,10 @@ public class Level_03_Register_Login_PageObject {
  
 
 	WebDriver driver;
-	HomePageObject homePageObject;
-	CustomerInfoPageObject customerInfoPageObject;
-	LoginPageObject loginPageObject;
-	RegisterPageObject registerPageObject;
+	UserHomePO homePageObject;
+	UserCustomerInfoPO customerInfoPageObject;
+	UserLoginPO loginPageObject;
+	UserRegisterPO registerPageObject;
 	
 	String firstName,lastName,email,companyName,passWord;
 	@BeforeClass
@@ -42,7 +42,7 @@ public class Level_03_Register_Login_PageObject {
 	    email="tonybuoisang"+ getRandomNumber()+"@hotmail.com";
 	    companyName="Tony Buoi Sang";
 	    passWord="tony123";
-	    homePageObject=new HomePageObject(driver);
+	    homePageObject=new UserHomePO(driver);
 	}
 
 	public int getRandomNumber() {
@@ -54,7 +54,7 @@ public class Level_03_Register_Login_PageObject {
 	public void TC_01_Register() {
 		
 		homePageObject.clickToRegisterLink();
-		registerPageObject=new RegisterPageObject(driver);
+		registerPageObject=new UserRegisterPO(driver);
 		registerPageObject.clickToGenderMaleRadio();
 		registerPageObject.inputToFirstNameTextbox(firstName);
 		registerPageObject.inputToLastNameTextbox(lastName);
@@ -70,12 +70,12 @@ public class Level_03_Register_Login_PageObject {
 	    Assert.assertEquals(registerPageObject.getTextRegisterSuccessMessage(),"Your registration completed");
 	   
 	    registerPageObject.clickToLogoutLink();
-	    homePageObject=new HomePageObject(driver);  
+	    homePageObject=new UserHomePO(driver);  
 	}
 	@Test
 	public void TC_02_Login() {
 		homePageObject.clickToLoginLink();
-		loginPageObject=new LoginPageObject(driver);
+		loginPageObject=new UserLoginPO(driver);
 		loginPageObject.senkeyToEmailTexbox(email);
 		loginPageObject.senkeyToPassWordTexbox(passWord);
 		loginPageObject.clickToLoginButton();
@@ -86,7 +86,7 @@ public class Level_03_Register_Login_PageObject {
 	@Test
 		public void TC_03_MyAcount() {
 		homePageObject.clickToMyAccountLink();
-		customerInfoPageObject=new CustomerInfoPageObject(driver);
+		customerInfoPageObject=new UserCustomerInfoPO(driver);
 			Assert.assertTrue( customerInfoPageObject.isGenderMaleRadioSelected());
 			 Assert.assertEquals( customerInfoPageObject.getFirstNameTextboxValue(),firstName);
 			 Assert.assertEquals( customerInfoPageObject.getLastNameTextboxValue(),lastName);

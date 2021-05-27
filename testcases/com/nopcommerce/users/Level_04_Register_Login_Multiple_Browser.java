@@ -3,11 +3,11 @@ package com.nopcommerce.users;
 import org.testng.annotations.Test;
 
 import commons.AbstractTest;
-import pageObjects.CustomerInfoPageObject;
-import pageObjects.HomePageObject;
-import pageObjects.LoginPageObject;
+import pageObjects.UserCustomerInfoPO;
+import pageObjects.UserHomePO;
+import pageObjects.UserLoginPO;
 
-import pageObjects.RegisterPageObject;
+import pageObjects.UserRegisterPO;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -28,10 +28,10 @@ import org.testng.annotations.AfterClass;
 public class Level_04_Register_Login_Multiple_Browser extends AbstractTest {
 
 	WebDriver driver;
-	HomePageObject homePageObject;
-	CustomerInfoPageObject customerInfoPageObject;
-	LoginPageObject loginPageObject;
-	RegisterPageObject registerPageObject;
+	UserHomePO homePageObject;
+	UserCustomerInfoPO customerInfoPageObject;
+	UserLoginPO loginPageObject;
+	UserRegisterPO registerPageObject;
 	
 	String firstName, lastName, email, companyName, passWord, day, month, year;
 
@@ -41,8 +41,7 @@ public class Level_04_Register_Login_Multiple_Browser extends AbstractTest {
 
 		driver = getBrowserName(browser);
 
-		driver.manage().timeouts().implicitlyWait(30L, TimeUnit.SECONDS);
-		driver.manage().window().maximize();
+		
 		driver.get("https://demo.nopcommerce.com/");
 		firstName = "Tony";
 		lastName = "Buoi Sang";
@@ -53,7 +52,7 @@ public class Level_04_Register_Login_Multiple_Browser extends AbstractTest {
 		month = "May";
 		year = "2000";
 
-		homePageObject = new HomePageObject(driver);
+		homePageObject = new UserHomePO(driver);
 	}
 
 	
@@ -62,7 +61,7 @@ public class Level_04_Register_Login_Multiple_Browser extends AbstractTest {
 	public void TC_01_Register() {
 
 		homePageObject.clickToRegisterLink();
-		registerPageObject = new RegisterPageObject(driver);
+		registerPageObject = new UserRegisterPO(driver);
 		registerPageObject.clickToGenderMaleRadio();
 		registerPageObject.inputToFirstNameTextbox(firstName);
 		registerPageObject.inputToLastNameTextbox(lastName);
@@ -78,13 +77,13 @@ public class Level_04_Register_Login_Multiple_Browser extends AbstractTest {
 		Assert.assertEquals(registerPageObject.getTextRegisterSuccessMessage(), "Your registration completed");
 
 		registerPageObject.clickToLogoutLink();
-		homePageObject = new HomePageObject(driver);
+		homePageObject = new UserHomePO(driver);
 	}
 
 	@Test
 	public void TC_02_Login() {
 		homePageObject.clickToLoginLink();
-		loginPageObject = new LoginPageObject(driver);
+		loginPageObject = new UserLoginPO(driver);
 		loginPageObject.senkeyToEmailTexbox(email);
 		loginPageObject.senkeyToPassWordTexbox(passWord);
 		loginPageObject.clickToLoginButton();
@@ -96,7 +95,7 @@ public class Level_04_Register_Login_Multiple_Browser extends AbstractTest {
 	@Test
 	public void TC_03_MyAcount() {
 		homePageObject.clickToMyAccountLink();
-		customerInfoPageObject = new CustomerInfoPageObject(driver);
+		customerInfoPageObject = new UserCustomerInfoPO(driver);
 		Assert.assertTrue(customerInfoPageObject.isGenderMaleRadioSelected());
 		Assert.assertEquals(customerInfoPageObject.getFirstNameTextboxValue(), firstName);
 		Assert.assertEquals(customerInfoPageObject.getLastNameTextboxValue(), lastName);

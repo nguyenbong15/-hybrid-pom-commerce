@@ -3,11 +3,11 @@ package com.nopcommerce.users;
 import org.testng.annotations.Test;
 
 import commons.AbstractTest;
-import pageObjects.CustomerInfoPageObject;
-import pageObjects.HomePageObject;
-import pageObjects.LoginPageObject;
+import pageObjects.UserCustomerInfoPO;
+import pageObjects.UserHomePO;
+import pageObjects.UserLoginPO;
 import pageObjects.PageGenerator;
-import pageObjects.RegisterPageObject;
+import pageObjects.UserRegisterPO;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -21,10 +21,10 @@ import org.testng.annotations.AfterClass;
 public class Level_06_Register_Login_Page_Generator extends AbstractTest {
 
 	WebDriver driver;
-	HomePageObject homePageObject;
-	CustomerInfoPageObject customerInfoPageObject;
-	LoginPageObject loginPageObject;
-	RegisterPageObject registerPageObject;
+	UserHomePO homePageObject;
+	UserCustomerInfoPO customerInfoPageObject;
+	UserLoginPO loginPageObject;
+	UserRegisterPO registerPageObject;
 	
 	String firstName, lastName, email, companyName, passWord, day, month, year;
 
@@ -34,8 +34,7 @@ public class Level_06_Register_Login_Page_Generator extends AbstractTest {
 
 		driver = getBrowserName(browser);
 
-		driver.manage().timeouts().implicitlyWait(30L, TimeUnit.SECONDS);
-		driver.manage().window().maximize();
+		
 		driver.get("https://demo.nopcommerce.com/");
 		firstName = "Tony";
 		lastName = "Buoi Sang";
@@ -53,7 +52,7 @@ public class Level_06_Register_Login_Page_Generator extends AbstractTest {
 
 	@Test
 	public void TC_01_Register() {
-         homePageObject = PageGenerator.getHomePage(driver);
+         homePageObject = PageGenerator.getUserHomePage(driver);
 		
 		registerPageObject = homePageObject.clickToRegisterLink();
 		registerPageObject.clickToGenderMaleRadio();

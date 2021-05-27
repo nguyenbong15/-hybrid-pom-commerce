@@ -1,44 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="42168" started-at="2021-05-23T15:25:03Z" finished-at="2021-05-23T15:25:45Z">
+  <suite name="Suite" duration-ms="25106" started-at="2021-05-27T04:49:19Z" finished-at="2021-05-27T04:49:44Z">
     <groups>
     </groups>
-    <test name="RUN ON EDGE_CHROMIUM" duration-ms="42168" started-at="2021-05-23T15:25:03Z" finished-at="2021-05-23T15:25:45Z">
-      <class name="com.nopcommerce.users.Level_07_Register_Login_Switch_Page">
-        <test-method status="PASS" signature="beforeClass(java.lang.String)[pri:0, instance:com.nopcommerce.users.Level_07_Register_Login_Switch_Page@5dfcfece]" name="beforeClass" is-config="true" duration-ms="9539" started-at="2021-05-23T15:25:03Z" finished-at="2021-05-23T15:25:12Z">
+    <test name="RUN ON EDGE_CHROMIUM" duration-ms="25106" started-at="2021-05-27T04:49:19Z" finished-at="2021-05-27T04:49:44Z">
+      <class name="com.nopcommerce.admin.Level_09_Web_Data_Table">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.admin.Level_09_Web_Data_Table@5dfcfece]" name="beforeClass" is-config="true" duration-ms="19372" started-at="2021-05-27T04:49:19Z" finished-at="2021-05-27T04:49:38Z">
           <params>
             <param index="0">
               <value>
                 <![CDATA[edge_chromium]]>
               </value>
             </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://admin-demo.nopcommerce.com]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="TC_01_Register()[pri:0, instance:com.nopcommerce.users.Level_07_Register_Login_Switch_Page@5dfcfece]" name="TC_01_Register" duration-ms="14981" started-at="2021-05-23T15:25:12Z" finished-at="2021-05-23T15:25:27Z">
+        <test-method status="PASS" signature="TC_02_Selected_All()[pri:0, instance:com.nopcommerce.admin.Level_09_Web_Data_Table@5dfcfece]" name="TC_02_Selected_All" duration-ms="4848" started-at="2021-05-27T04:49:38Z" finished-at="2021-05-27T04:49:43Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_01_Register -->
-        <test-method status="PASS" signature="TC_02_Login()[pri:0, instance:com.nopcommerce.users.Level_07_Register_Login_Switch_Page@5dfcfece]" name="TC_02_Login" duration-ms="6098" started-at="2021-05-23T15:25:27Z" finished-at="2021-05-23T15:25:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_02_Login -->
-        <test-method status="PASS" signature="TC_03_MyAcount()[pri:0, instance:com.nopcommerce.users.Level_07_Register_Login_Switch_Page@5dfcfece]" name="TC_03_MyAcount" duration-ms="3299" started-at="2021-05-23T15:25:33Z" finished-at="2021-05-23T15:25:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_03_MyAcount -->
-        <test-method status="PASS" signature="TC_04_Switch_Page()[pri:0, instance:com.nopcommerce.users.Level_07_Register_Login_Switch_Page@5dfcfece]" name="TC_04_Switch_Page" duration-ms="7206" started-at="2021-05-23T15:25:37Z" finished-at="2021-05-23T15:25:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_04_Switch_Page -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.nopcommerce.users.Level_07_Register_Login_Switch_Page@5dfcfece]" name="afterClass" is-config="true" duration-ms="993" started-at="2021-05-23T15:25:44Z" finished-at="2021-05-23T15:25:45Z">
+        </test-method> <!-- TC_02_Selected_All -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.nopcommerce.admin.Level_09_Web_Data_Table@5dfcfece]" name="afterClass" is-config="true" duration-ms="855" started-at="2021-05-27T04:49:43Z" finished-at="2021-05-27T04:49:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.nopcommerce.users.Level_07_Register_Login_Switch_Page -->
+      </class> <!-- com.nopcommerce.admin.Level_09_Web_Data_Table -->
     </test> <!-- RUN ON EDGE_CHROMIUM -->
   </suite> <!-- Suite -->
 </testng-results>

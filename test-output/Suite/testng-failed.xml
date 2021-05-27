@@ -3,16 +3,15 @@
 <suite name="Failed suite [Suite]">
   <test thread-count="5" name="RUN ON EDGE_CHROMIUM(failed)">
     <parameter name="browser" value="edge_chromium"/>
+    <parameter name="url" value="https://admin-demo.nopcommerce.com"/>
     <classes>
-      <class name="com.nopcommerce.users.Level_06_Register_Login_Page_Generator">
+      <class name="com.nopcommerce.admin.Level_09_Web_Data_Table">
         <methods>
-          <include name="TC_02_Login"/>
-          <include name="beforeClass"/>
           <include name="afterClass"/>
-          <include name="TC_03_MyAcount"/>
-          <include name="TC_01_Register"/>
+          <include name="TC_02_Selected_All"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.nopcommerce.users.Level_06_Register_Login_Page_Generator -->
+      </class> <!-- com.nopcommerce.admin.Level_09_Web_Data_Table -->
     </classes>
   </test> <!-- RUN ON EDGE_CHROMIUM(failed) -->
 </suite> <!-- Failed suite [Suite] -->
