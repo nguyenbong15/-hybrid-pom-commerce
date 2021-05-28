@@ -50,7 +50,7 @@ public class Level_09_Web_Data_Table extends AbstractTest {
 		productsPage.sleepSecond(2);
 		
 	}
-	@Test
+	//@Test
 	public void TC_02_Selected_All() {
 		productsPage.clickSelectAll();
 		productsPage.areAllProductSelected();
@@ -60,7 +60,18 @@ public class Level_09_Web_Data_Table extends AbstractTest {
 		productsPage.sleepSecond(2);
 		
 	}
-
+	@Test
+	public void TC_03_Edit_Products() {
+		
+		Assert.assertTrue(productsPage.isProductInfoInRowTableDisplayed("Samsung Series 9 NP900X4C Premium Ultrabook","SM_900_PU","1590","10000"));
+		Assert.assertTrue(productsPage.isProductInfoDisplayed("Product name","13","Nikon D5500 DSLR"));
+		Assert.assertTrue(productsPage.isProductInfoDisplayed("SKU","13","N5500DS_0"));
+		Assert.assertTrue(productsPage.isProductInfoDisplayed("Stock quantity","13",""));
+		productsPage.sleepSecond(3);
+		
+		Assert.assertTrue(productsPage.isPublishedStatusDisplayed("Published","2","true"));
+		Assert.assertTrue(productsPage.isPublishedStatusDisplayed("Published","3","true"));
+	}
 	
 
 	@AfterClass

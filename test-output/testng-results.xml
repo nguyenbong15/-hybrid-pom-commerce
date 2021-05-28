@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="25106" started-at="2021-05-27T04:49:19Z" finished-at="2021-05-27T04:49:44Z">
+  <suite name="Suite" duration-ms="23226" started-at="2021-05-28T02:54:24Z" finished-at="2021-05-28T02:54:47Z">
     <groups>
     </groups>
-    <test name="RUN ON EDGE_CHROMIUM" duration-ms="25106" started-at="2021-05-27T04:49:19Z" finished-at="2021-05-27T04:49:44Z">
+    <test name="RUN ON FIREFOX_UI" duration-ms="23226" started-at="2021-05-28T02:54:24Z" finished-at="2021-05-28T02:54:47Z">
       <class name="com.nopcommerce.admin.Level_09_Web_Data_Table">
-        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.admin.Level_09_Web_Data_Table@5dfcfece]" name="beforeClass" is-config="true" duration-ms="19372" started-at="2021-05-27T04:49:19Z" finished-at="2021-05-27T04:49:38Z">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.admin.Level_09_Web_Data_Table@5dfcfece]" name="beforeClass" is-config="true" duration-ms="18737" started-at="2021-05-28T02:54:24Z" finished-at="2021-05-28T02:54:43Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[edge_chromium]]>
+                <![CDATA[firefox_ui]]>
               </value>
             </param>
             <param index="1">
@@ -23,15 +23,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="TC_02_Selected_All()[pri:0, instance:com.nopcommerce.admin.Level_09_Web_Data_Table@5dfcfece]" name="TC_02_Selected_All" duration-ms="4848" started-at="2021-05-27T04:49:38Z" finished-at="2021-05-27T04:49:43Z">
+        <test-method status="PASS" signature="TC_03_Edit_Products()[pri:0, instance:com.nopcommerce.admin.Level_09_Web_Data_Table@5dfcfece]" name="TC_03_Edit_Products" duration-ms="3416" started-at="2021-05-28T02:54:43Z" finished-at="2021-05-28T02:54:46Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_02_Selected_All -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.nopcommerce.admin.Level_09_Web_Data_Table@5dfcfece]" name="afterClass" is-config="true" duration-ms="855" started-at="2021-05-27T04:49:43Z" finished-at="2021-05-27T04:49:44Z">
+        </test-method> <!-- TC_03_Edit_Products -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.nopcommerce.admin.Level_09_Web_Data_Table@5dfcfece]" name="afterClass" is-config="true" duration-ms="1047" started-at="2021-05-28T02:54:46Z" finished-at="2021-05-28T02:54:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.nopcommerce.admin.Level_09_Web_Data_Table -->
-    </test> <!-- RUN ON EDGE_CHROMIUM -->
+    </test> <!-- RUN ON FIREFOX_UI -->
   </suite> <!-- Suite -->
 </testng-results>

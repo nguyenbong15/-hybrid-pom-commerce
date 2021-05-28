@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Suite" parallel="false">
-<!-- <test name="RUN ON FIREFOX_UI">
+ <test name="RUN ON FIREFOX_UI">
    <parameter name="browser" value="firefox_ui"/>
+    <parameter name="url" value="https://admin-demo.nopcommerce.com"/>
     <classes>
-      <class name="com.nopcommerce.users.Level_04_Register_Login_Multiple_Browser"/>
+      <class name="com.nopcommerce.admin.Level_09_Web_Data_Table"/>
     </classes>
   </test> 
-  
+  <!--
   <test name="RUN ON CHROME_UI">
   <parameter name="browser" value="chrome_ui"/>
     <classes>
@@ -28,11 +29,11 @@
     </classes>
   </test>  -->
   
-  <test name="RUN ON EDGE_CHROMIUM">
+  <!-- <test name="RUN ON EDGE_CHROMIUM">
    <parameter name="browser" value="edge_chromium"/>
    <parameter name="url" value="https://admin-demo.nopcommerce.com"/>
     <classes>
       <class name="com.nopcommerce.admin.Level_09_Web_Data_Table"/>
     </classes>
-  </test> 
+  </test>  -->
 </suite> 

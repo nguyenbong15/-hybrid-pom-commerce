@@ -120,6 +120,10 @@ public class AbstractPage {
 
 		return driver.findElements(getByXpath(locator));
 	}
+	public List<WebElement> getElements(WebDriver driver, String locator,String... values ) {
+
+		return driver.findElements(getByXpath(getDynammicLocator(locator, values)));
+	}
 
 	public By getByXpath(String locator) {
 		return By.xpath(locator);
@@ -145,6 +149,11 @@ public class AbstractPage {
 
 	public String getTextElement(WebDriver driver, String locator) {
 		element = getElement(driver, locator);
+		return element.getText();
+		
+	}
+	public String getTextElement(WebDriver driver, String locator,String... values) {
+		element = getElement(driver, getDynammicLocator(locator, values));
 		return element.getText();
 
 	}
@@ -208,6 +217,9 @@ public class AbstractPage {
 
 	public int countElementSize(WebDriver driver, String locator) {
 		return getElements(driver, locator).size();
+	}
+	public int countElementSize(WebDriver driver, String locator,String... values) {
+		return getElements(driver, getDynammicLocator(locator, values)).size();
 	}
 
 	public void checkToCheckbox(WebDriver driver, String locator) {

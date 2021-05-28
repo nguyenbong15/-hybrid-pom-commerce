@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]">
-  <test thread-count="5" name="RUN ON EDGE_CHROMIUM(failed)">
-    <parameter name="browser" value="edge_chromium"/>
+  <test thread-count="5" name="RUN ON FIREFOX_UI(failed)">
+    <parameter name="browser" value="firefox_ui"/>
     <parameter name="url" value="https://admin-demo.nopcommerce.com"/>
     <classes>
       <class name="com.nopcommerce.admin.Level_09_Web_Data_Table">
         <methods>
           <include name="afterClass"/>
-          <include name="TC_02_Selected_All"/>
+          <include name="TC_03_Edit_Products"/>
           <include name="beforeClass"/>
         </methods>
       </class> <!-- com.nopcommerce.admin.Level_09_Web_Data_Table -->
     </classes>
-  </test> <!-- RUN ON EDGE_CHROMIUM(failed) -->
+  </test> <!-- RUN ON FIREFOX_UI(failed) -->
 </suite> <!-- Failed suite [Suite] -->

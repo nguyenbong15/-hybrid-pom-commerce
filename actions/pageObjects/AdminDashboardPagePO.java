@@ -15,6 +15,7 @@ public class AdminDashboardPagePO extends AbstractPage{
 	public AdminProductsPagePO openProductPage() {
 		waitToElementclickable(driver, AdminDashboardPageUI.CATALOG_LINK);
 		clickToElement(driver, AdminDashboardPageUI.CATALOG_LINK);
+		waitToElementVisible(driver, AdminDashboardPageUI.PRODUCTS_LINK);
 		waitToElementclickable(driver, AdminDashboardPageUI.PRODUCTS_LINK);
 		clickToElement(driver, AdminDashboardPageUI.PRODUCTS_LINK);
 		//waitToElementInvisible(driver, AdminProductPageUI.ICON_LOADING);

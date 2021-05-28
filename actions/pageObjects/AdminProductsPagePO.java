@@ -58,4 +58,20 @@ public class AdminProductsPagePO extends AbstractPage {
 		
 	}
 
+	public boolean isProductInfoDisplayed(String columName, String rowIndex, String expectedValue) {
+		int columIndex=  countElementSize(driver, AdminProductPageUI.COLUMN_NAME,columName)+1;
+		String actualValues= getTextElement(driver, AdminProductPageUI.CELL_BY_COLUMN_NAME_AND_ROW_INDEX,rowIndex,String.valueOf(columIndex));
+		return actualValues.equals(expectedValue);
+	}
+
+	public boolean isPublishedStatusDisplayed(String columName, String rowIndex, String expectedValue) {
+		int columIndex=countElementSize(driver, AdminProductPageUI.COLUMN_NAME,columName)+1;
+		return isElementDisplayed(driver, AdminProductPageUI.PUBLIC_STATUS_BY_COLUMN_NAME_AND_ROW_INDEX,rowIndex,String.valueOf(columIndex),expectedValue);
+	}
+
+	public boolean isProductInfoInRowTableDisplayed(String productName, String sku, String price, String stockQuantity) {
+		
+		return isElementDisplayed(driver, AdminProductPageUI.PRODUCT_IN_ROW_TABLE,productName,sku, price,stockQuantity);
+	}
+
 }
