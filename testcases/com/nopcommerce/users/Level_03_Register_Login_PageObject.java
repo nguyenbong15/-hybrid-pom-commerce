@@ -31,7 +31,7 @@ public class Level_03_Register_Login_PageObject {
 	@BeforeClass
 	public void beforeClass() {
 
-		System.setProperty("webdriver.gecko.driver", "browerdriver\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", "browerDriver\\geckodriver.exe");
 		driver = new FirefoxDriver();
       
 		driver.manage().timeouts().implicitlyWait(30L, TimeUnit.SECONDS);
@@ -55,6 +55,7 @@ public class Level_03_Register_Login_PageObject {
 		
 		homePageObject.clickToRegisterLink();
 		registerPageObject=new UserRegisterPO(driver);
+		
 		registerPageObject.clickToGenderMaleRadio();
 		registerPageObject.inputToFirstNameTextbox(firstName);
 		registerPageObject.inputToLastNameTextbox(lastName);
@@ -82,8 +83,10 @@ public class Level_03_Register_Login_PageObject {
 		
 		Assert.assertTrue( loginPageObject.isMyAccountLinkDisplayed());
 		Assert.assertTrue( loginPageObject.isLogoutLinkDisplayed());
+		Assert.assertTrue( loginPageObject.isRegesterLinkUnDisplayed());
+		Assert.assertTrue( loginPageObject.isLoginLinkUnDisplayed());
 	}
-	@Test
+	//@Test
 		public void TC_03_MyAcount() {
 		homePageObject.clickToMyAccountLink();
 		customerInfoPageObject=new UserCustomerInfoPO(driver);

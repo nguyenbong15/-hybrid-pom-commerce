@@ -18,8 +18,8 @@ public class AdminDashboardPagePO extends AbstractPage{
 		waitToElementVisible(driver, AdminDashboardPageUI.PRODUCTS_LINK);
 		waitToElementclickable(driver, AdminDashboardPageUI.PRODUCTS_LINK);
 		clickToElement(driver, AdminDashboardPageUI.PRODUCTS_LINK);
-		//waitToElementInvisible(driver, AdminProductPageUI.ICON_LOADING);
-		waitToElementPresent(driver, AdminProductPageUI.ALL_PRODUCTS,Integer.parseInt(getFirstSelectedTextInDropdown(driver, AdminProductPageUI.NUMBER_PRODUCT_DROPDOWN)));
+		waitToElementInvisible(driver, AdminProductPageUI.ICON_LOADING);
+		//waitToElementPresent(driver, AdminProductPageUI.ALL_PRODUCTS,Integer.parseInt(getFirstSelectedTextInDropdown(driver, AdminProductPageUI.NUMBER_PRODUCT_DROPDOWN)));
 		return PageGenerator.getAdminProductsPage(driver);
 	}
 }

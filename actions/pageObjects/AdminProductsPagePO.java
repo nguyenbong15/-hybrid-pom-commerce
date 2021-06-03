@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
 import commons.AbstractPage;
+import commons.GlobalConsarts;
 import pageUIs.AdminDashboardPageUI;
 import pageUIs.AdminProductPageUI;
 
@@ -73,5 +74,74 @@ public class AdminProductsPagePO extends AbstractPage {
 		
 		return isElementDisplayed(driver, AdminProductPageUI.PRODUCT_IN_ROW_TABLE,productName,sku, price,stockQuantity);
 	}
+
+	public void inputProductName(String productName) {
+		waitToElementVisible(driver, AdminProductPageUI.PRODUCT_NAME_SEARCH);
+	    senkeyToElement(driver, AdminProductPageUI.PRODUCT_NAME_SEARCH, productName);
+		
+	}
+
+	public void clickToSearchButton() {
+		waitToElementclickable(driver, AdminProductPageUI.SEARCH_BUTTON);
+		clickToElement(driver,  AdminProductPageUI.SEARCH_BUTTON);
+		waitToElementInvisible(driver, AdminProductPageUI.ICON_LOADING);
+	}
+
+	public boolean isSearchProductInfoDisplayed() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public void clickToEditByProductName(String producName) {
+		waitToElementclickable(driver, AdminProductPageUI.EDIT_BUTTON,producName);
+		clickToElement(driver,  AdminProductPageUI.EDIT_BUTTON,producName);
+		waitToElementInvisible(driver, AdminProductPageUI.ICON_LOADING);	
+	}
+
+	public void scrollToPicturePanel() {
+		scrollToElement(driver, AdminProductPageUI.PICTURE_PANEL);
+		sleepSecond(1);
+		
+	}
+
+	public void clickToHideButton() {
+		String attributeValue=getElementAttribute(driver, AdminProductPageUI.PICTURE_PANEL, "class");
+		if(attributeValue.contains("collapsed-card")) {
+			waitToElementclickable(driver, AdminProductPageUI.ICON_HIDE_OR_SHOW);
+			clickToElement(driver, AdminProductPageUI.ICON_HIDE_OR_SHOW);
+			waitToElementInvisible(driver, AdminProductPageUI.ICON_LOADING);
+		}else {}
+		
+	}
+
+	
+
+	public void inputToAlt(String altName) {
+		waitToElementVisible(driver, AdminProductPageUI.ALT_TEXTBOX);
+		senkeyToElement(driver, AdminProductPageUI.ALT_TEXTBOX, altName);
+		
+	}
+
+	public void inputToTitle(String title) {
+		waitToElementVisible(driver, AdminProductPageUI.TITLE_TEXTBOX);
+		senkeyToElement(driver, AdminProductPageUI.TITLE_TEXTBOX, title);
+	}
+
+	public void inputToDisplayOrder(String displayOder) {
+		waitToElementVisible(driver, AdminProductPageUI.DISPLAY_ORDER);
+		senkeyToElement(driver, AdminProductPageUI.DISPLAY_ORDER, displayOder);
+		
+	}
+	public void clickToAddProductPicture() {
+		waitToElementclickable(driver, AdminProductPageUI.ADD_PRODUCT_PICTURE_BUTTON);
+		clickToElement(driver, AdminProductPageUI.ADD_PRODUCT_PICTURE_BUTTON);
+		waitToElementInvisible(driver, AdminProductPageUI.ICON_LOADING);
+	}
+
+	public void clictToSaveButton() {
+		
+		
+	}
+
 
 }

@@ -60,7 +60,7 @@ public class Level_09_Web_Data_Table extends AbstractTest {
 		productsPage.sleepSecond(2);
 		
 	}
-	@Test
+	//@Test
 	public void TC_03_Edit_Products() {
 		
 		Assert.assertTrue(productsPage.isProductInfoInRowTableDisplayed("Samsung Series 9 NP900X4C Premium Ultrabook","SM_900_PU","1590","10000"));
@@ -72,7 +72,22 @@ public class Level_09_Web_Data_Table extends AbstractTest {
 		Assert.assertTrue(productsPage.isPublishedStatusDisplayed("Published","2","true"));
 		Assert.assertTrue(productsPage.isPublishedStatusDisplayed("Published","3","true"));
 	}
-	
+	@Test
+	public void TC_04_Upload_File_Product() {
+		productsPage.inputProductName("Apple MacBook Pro 13-inch");
+		productsPage.clickToSearchButton();
+		//Assert.assertTrue(productsPage.isSearchProductInfoDisplayed());
+		productsPage.clickToEditByProductName("Apple MacBook Pro 13-inch");
+		productsPage.scrollToPicturePanel();
+		
+		productsPage.clickToHideButton();
+		productsPage.upLoadFilePicture(driver,"product-pictures", "image_01"); 
+		productsPage.inputToAlt("altPicture");
+		productsPage.inputToTitle("image");
+		productsPage.inputToDisplayOrder("1");
+		productsPage.clickToAddProductPicture();
+		//productsPage.clictToSaveButton();
+	}
 
 	@AfterClass
 	public void afterClass() {

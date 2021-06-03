@@ -2,6 +2,7 @@ package commons;
 
 import java.util.List;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -20,6 +21,7 @@ import pageObjects.UserMyProductReviewPO;
 import pageObjects.UserOrderPO;
 import pageObjects.PageGenerator;
 import pageUIs.AbstracPageUI;
+import pageUIs.AdminProductPageUI;
 
 public class AbstractPage {
 
@@ -318,7 +320,7 @@ public class AbstractPage {
 		return js.executeScript(javaScript);
 	}
 
-	public void scrollToElement(String locator, WebDriver driver) {
+	public void scrollToElement( WebDriver driver,String locator) {
 		js = (JavascriptExecutor) driver;
 		element = getElement(driver, locator);
 		js.executeScript("arguments[0].scrollIntoView(true);", element);
@@ -388,11 +390,12 @@ public class AbstractPage {
 	}
 
 	public void waitToElementInvisible(WebDriver driver, String locator) {
-		explicitWait = new WebDriverWait(driver, GlobalConsarts.LONG_TIMEOUT);
+		explicitWait = new WebDriverWait(driver, GlobalConsarts.SHORT_TIMEOUT);
+		overideImplicitWait(driver, GlobalConsarts.SHORT_TIMEOUT);
 		explicitWait.until(ExpectedConditions.invisibilityOfElementLocated(getByXpath(locator)));
-
+		overideImplicitWait(driver, GlobalConsarts.LONG_TIMEOUT);
 	}
-
+  
 	public void waitToElementclickable(WebDriver driver, String locator) {
 		explicitWait = new WebDriverWait(driver, GlobalConsarts.LONG_TIMEOUT);
 		explicitWait.until(ExpectedConditions.elementToBeClickable(getByXpath(locator)));
@@ -480,6 +483,39 @@ public class AbstractPage {
 		explicitWait.until(ExpectedConditions.numberOfElementsToBe(getByXpath(locator),number));
 
 	}
+	public void upLoadFilePicture( WebDriver driver,String panelID,String... fileName) {
+
+		String filePath=GlobalConsarts.UPLOAD_FOLDER;
+		String fullFileName="";
+		for (String file : fileName) {
+			fullFileName = fullFileName + filePath + file + "\n";
+			
+		}
+		fullFileName.trim();
+		System.out.println(fullFileName);
+		senkeyToElement(driver, AdminProductPageUI.UPLOAD_FILE_INPUT, fullFileName, panelID);
+		System.out.println(getDynammicLocator(AdminProductPageUI.UPLOAD_FILE_INPUT, panelID));
+		waitToElementInvisible(driver, AdminProductPageUI.ICON_LOADING_PICTURE);
+	}
+	public boolean isElementUnDisplayed(WebDriver driver,String locator) {
+		overideImplicitWait(driver,  GlobalConsarts.SHORT_TIMEOUT);
+		elements=getElements(driver, locator);
+		overideImplicitWait(driver,  GlobalConsarts.LONG_TIMEOUT);
+		
+		if(elements.size()==0) {//element k cos tren ui vaf dom
+			return true;
+		}else if(elements.size()>0 && !elements.get(0).isDisplayed())//k co tren ui vaf co trong dom( hamf isDisplayed van sdung cho element cos trong dom
+		{
+			return true;
+		}else {
+			return false;
+		}
+		
+	}
+	public void overideImplicitWait(WebDriver driver,long timeSecond) {
+		driver.manage().timeouts().implicitlyWait(timeSecond, TimeUnit.SECONDS);
+	}
+	
 
 	private WebDriverWait explicitWait;
 	private JavascriptExecutor js;

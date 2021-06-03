@@ -1,0 +1,7 @@
+2021-06-03 11:04:10,352 INFO  com.nopcommerce.admin.Level_11_Demo_Verify mo trang nopcommerce
+2021-06-03 11:04:10,375 INFO  com.nopcommerce.admin.Level_11_Demo_Verify click to register link
+2021-06-03 11:04:17,118 INFO  com.nopcommerce.admin.Level_11_Demo_Verify  -------------------------- FAILED -------------------------- 
+2021-06-03 11:04:22,590 INFO  com.nopcommerce.admin.Level_11_Demo_Verify  -------------------------- FAILED -------------------------- 
+2021-06-03 11:04:22,635 INFO  com.nopcommerce.admin.Level_11_Demo_Verify  -------------------------- FAILED -------------------------- 
+2021-06-03 11:04:32,794 INFO  com.nopcommerce.admin.Level_11_Demo_Verify  -------------------------- FAILED -------------------------- 
+2021-06-03 11:04:42,916 INFO  com.nopcommerce.admin.Level_11_Demo_Verify  -------------------------- PASSED -------------------------- 

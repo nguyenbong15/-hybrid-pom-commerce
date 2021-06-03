@@ -85,9 +85,11 @@ public class Level_08_Register_Login_Dynamic_Locator_Rest_Parameter extends Abst
 
 		Assert.assertTrue(loginPageObject.isMyAccountLinkDisplayed());
 		Assert.assertTrue(loginPageObject.isLogoutLinkDisplayed());
+		Assert.assertTrue( loginPageObject.isRegesterLinkUnDisplayed());
+		Assert.assertTrue( loginPageObject.isLoginLinkUnDisplayed());
 	}
 
-	@Test
+	//@Test
 	public void TC_03_MyAcount() {
 		customerInfoPageObject = homePageObject.clickToMyAccountLink();
 
@@ -103,7 +105,7 @@ public class Level_08_Register_Login_Dynamic_Locator_Rest_Parameter extends Abst
 
 	}
 //<10 page
-	@Test
+//	@Test
 	public void TC_04_Switch_Page_Solution_01() {
 		addressesPage=  (UserAddressesPO) customerInfoPageObject.openLinkByPageName(driver, "Addresses");
 		
@@ -115,7 +117,7 @@ public class Level_08_Register_Login_Dynamic_Locator_Rest_Parameter extends Abst
 		customerInfoPageObject=(UserCustomerInfoPO) orderPageObject.openLinkByPageName(driver,"Customer info");
 	}
 	//Trường hợp nhiều page >10
-	@Test
+//	@Test
 	public void TC_04_Switch_Page_Solution_02() {
       customerInfoPageObject.openLinkWithPageName(driver, "Addresses");
       addressesPage=PageGenerator.getUserAddressesPage(driver);

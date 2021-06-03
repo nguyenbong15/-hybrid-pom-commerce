@@ -39,4 +39,15 @@ public class UserLoginPO extends AbstractPage {
 		return isElementDisplayed(driver, UserLoginPageUI.LOGOUT_LINK);
 	}
 
+	public boolean isRegesterLinkUnDisplayed() {
+		waitToElementInvisible(driver, UserLoginPageUI.REGESTER_LINK);
+		return isElementUnDisplayed(driver, UserLoginPageUI.REGESTER_LINK);
+	}
+
+	
+	public boolean isLoginLinkUnDisplayed() {
+		waitToElementInvisible(driver, UserLoginPageUI.LOGIN_LINK);
+		return isElementUnDisplayed(driver, UserLoginPageUI.LOGIN_LINK);
+	}
+
 }

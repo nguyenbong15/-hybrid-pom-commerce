@@ -27,11 +27,25 @@
       <class name="com.nopcommerce.users.Level_04_Register_Login_Multiple_Browser"/>
     </classes>
   </test>  -->
-  
-  <test name="RUN ON EDGE_CHROMIUM">
-   <parameter name="browser" value="edge_chromium"/>
+  <listeners>
+	<listener class-name="commons.MethodListener" />
+	<listener class-name="org.uncommons.reportng.HTMLReporter" />
+	<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	<listener class-name="reportConfig.ExtentReportListener" />
+	
+	
+</listeners>
+  <test name="RUN ON FIREFOX_UI">
+  <parameter name="browser" value="firefox_ui"/>
+   <parameter name="url" value="https://demo.nopcommerce.com"/>
     <classes>
-      <class name="com.nopcommerce.users.Level_08_Register_Login_Dynamic_Locator_Rest_Parameter"/>
+      <class name="com.nopcommerce.admin.Level_11_Demo_Verify"/>
     </classes>
   </test> 
+<!--   <test name="RUN ON EDGE_CHROMIUM"> -->
+<!--    <parameter name="browser" value="edge_chromium"/> -->
+<!--     <classes> -->
+<!--       <class name="com.nopcommerce.users.Level_08_Register_Login_Dynamic_Locator_Rest_Parameter"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
 </suite> 
