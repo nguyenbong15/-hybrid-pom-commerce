@@ -83,7 +83,7 @@ public class Common_01_Register extends AbstractTest {
 
 		@AfterTest(alwaysRun = true)
 		public void afterClass() {
-			driver.quit();
+			closeBrowserAndDriver(driver);
 		}
 
 	}
