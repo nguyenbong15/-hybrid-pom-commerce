@@ -11,14 +11,13 @@
     <parameter name="browser" value="firefox_ui"/>
     <parameter name="url" value="https://demo.nopcommerce.com"/>
     <classes>
-      <class name="com.nopcommerce.admin.Level_11_Demo_Verify">
+      <class name="com.nopcommerce.users.Level_12_Demo_Share_State">
         <methods>
           <include name="beforeClass"/>
           <include name="afterClass"/>
           <include name="TC_02_Login"/>
-          <include name="TC_01_Register"/>
         </methods>
-      </class> <!-- com.nopcommerce.admin.Level_11_Demo_Verify -->
+      </class> <!-- com.nopcommerce.users.Level_12_Demo_Share_State -->
     </classes>
   </test> <!-- RUN ON FIREFOX_UI(failed) -->
 </suite> <!-- Failed suite [Suite] -->

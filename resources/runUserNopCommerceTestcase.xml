@@ -39,7 +39,8 @@
   <parameter name="browser" value="firefox_ui"/>
    <parameter name="url" value="https://demo.nopcommerce.com"/>
     <classes>
-      <class name="com.nopcommerce.admin.Level_11_Demo_Verify"/>
+    <class name="com.nopcommerce.commons.Common_01_Register"/>
+      <class name="com.nopcommerce.users.Level_12_Demo_Share_State"/>
     </classes>
   </test> 
 <!--   <test name="RUN ON EDGE_CHROMIUM"> -->

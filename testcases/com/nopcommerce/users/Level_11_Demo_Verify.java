@@ -3,10 +3,7 @@ package com.nopcommerce.users;
 import org.testng.annotations.Test;
 
 import commons.AbstractTest;
-import facebook.web.users.package_info;
-import pageObjects.AdminDashboardPagePO;
-import pageObjects.AdminLoginPagePO;
-import pageObjects.AdminProductsPagePO;
+
 import pageObjects.PageGenerator;
 import pageObjects.UserAddressesPO;
 import pageObjects.UserCustomerInfoPO;
@@ -54,7 +51,7 @@ public class Level_11_Demo_Verify extends AbstractTest {
 
 	}
 
-	@Test
+	//@Test
 	public void TC_01_Register() {
 		log.info("open link nopcommerce");
 		homePageObject = PageGenerator.getUserHomePage(driver);

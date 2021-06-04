@@ -1,7 +1,12 @@
-2021-06-03 11:04:10,352 INFO  com.nopcommerce.admin.Level_11_Demo_Verify mo trang nopcommerce
-2021-06-03 11:04:10,375 INFO  com.nopcommerce.admin.Level_11_Demo_Verify click to register link
-2021-06-03 11:04:17,118 INFO  com.nopcommerce.admin.Level_11_Demo_Verify  -------------------------- FAILED -------------------------- 
-2021-06-03 11:04:22,590 INFO  com.nopcommerce.admin.Level_11_Demo_Verify  -------------------------- FAILED -------------------------- 
-2021-06-03 11:04:22,635 INFO  com.nopcommerce.admin.Level_11_Demo_Verify  -------------------------- FAILED -------------------------- 
-2021-06-03 11:04:32,794 INFO  com.nopcommerce.admin.Level_11_Demo_Verify  -------------------------- FAILED -------------------------- 
-2021-06-03 11:04:42,916 INFO  com.nopcommerce.admin.Level_11_Demo_Verify  -------------------------- PASSED -------------------------- 
+2021-06-04 13:40:01,224 INFO  com.nopcommerce.users.Level_12_Demo_Share_State click to login link 
+2021-06-04 13:40:02,780 INFO  com.nopcommerce.users.Level_12_Demo_Share_State input email texbox tonybuoisang7289@hotmail.com
+2021-06-04 13:40:02,977 INFO  com.nopcommerce.users.Level_12_Demo_Share_State input passWord texbox tony123
+2021-06-04 13:40:03,128 INFO  com.nopcommerce.users.Level_12_Demo_Share_State click to login button 
+2021-06-04 13:40:05,932 INFO  com.nopcommerce.users.Level_12_Demo_Share_State verify my account link displayed 
+2021-06-04 13:40:06,016 INFO  com.nopcommerce.users.Level_12_Demo_Share_State  -------------------------- FAILED -------------------------- 
+2021-06-04 13:40:06,018 INFO  com.nopcommerce.users.Level_12_Demo_Share_State verify Logout link displayed 
+2021-06-04 13:40:06,074 INFO  com.nopcommerce.users.Level_12_Demo_Share_State  -------------------------- FAILED -------------------------- 
+2021-06-04 13:40:06,074 INFO  com.nopcommerce.users.Level_12_Demo_Share_State verify Regester Link UnDisplayed 
+2021-06-04 13:40:16,291 INFO  com.nopcommerce.users.Level_12_Demo_Share_State  -------------------------- FAILED -------------------------- 
+2021-06-04 13:40:16,292 INFO  com.nopcommerce.users.Level_12_Demo_Share_State verify Login link un 
+2021-06-04 13:40:26,418 INFO  com.nopcommerce.users.Level_12_Demo_Share_State  -------------------------- PASSED -------------------------- 
