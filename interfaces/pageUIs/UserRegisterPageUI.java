@@ -15,4 +15,13 @@ public class UserRegisterPageUI {
 		public static final String REGISTER_MESSAGE_SUCCESS="//div[@class='result']";
 		public static final String LOGOUT_LINK="//a[@class='ico-logout']";
 		
+		public static final String FRISTNAME_ERROR="//span[@id='FirstName-error']";
+		public static final String LASTNAME_ERROR="//span[@id='LastName-error']";
+		public static final String EMAIL_ERROR="//span[@id='Email-error']";
+		public static final String PASSWORD_ERROR="//span[@id='Password-error']";
+		public static final String CONFIRM_PASSWORD_ERROR="//span[@id='ConfirmPassword-error']";
+		public static final String EMAIL_EXIST_ERROR="//div[@class='message-error validation-summary-errors']//li";
+		public static final String PASSWORD_UNDER6_ERROR1="//span[@id='Password-error']//p";
+		public static final String PASSWORD_UNDER6_ERROR2="//span[@id='Password-error']//li";
+		
 }

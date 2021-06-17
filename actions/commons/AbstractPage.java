@@ -16,6 +16,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import pageObjects.UserAddressesPO;
+import pageObjects.UserChangePasswordPO;
 import pageObjects.UserCustomerInfoPO;
 import pageObjects.UserMyProductReviewPO;
 import pageObjects.UserOrderPO;
@@ -435,6 +436,11 @@ public class AbstractPage {
 		waitToElementclickable(driver, AbstracPageUI.ADDRESSES_LINK);
 		clickToElement(driver, AbstracPageUI.ADDRESSES_LINK);
 		return PageGenerator.getUserAddressesPage(driver);
+	}
+	public UserChangePasswordPO openChangePasswordPage(WebDriver driver) {
+		waitToElementclickable(driver, AbstracPageUI.CHANGE_PASSWORD_LINK);
+		clickToElement(driver, AbstracPageUI.CHANGE_PASSWORD_LINK);
+		return PageGenerator.getChangePasswordPage(driver);
 	}
 
 	public UserCustomerInfoPO openCustomerInfoPage(WebDriver driver) {

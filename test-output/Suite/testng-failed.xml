@@ -11,13 +11,16 @@
     <parameter name="browser" value="firefox_ui"/>
     <parameter name="url" value="https://demo.nopcommerce.com"/>
     <classes>
-      <class name="com.nopcommerce.users.Level_12_Demo_Share_State">
+      <class name="com.nopcommerce.users.User_03_MyAccount">
         <methods>
-          <include name="beforeClass"/>
+          <include name="TC_01_Update_Customer_Info"/>
+          <include name="TC_03_Chage_Password"/>
           <include name="afterClass"/>
-          <include name="TC_02_Login"/>
+          <include name="beforeClass"/>
+          <include name="TC_02_Add_Address"/>
+          <include name="TC_04_My_Products_Reviews"/>
         </methods>
-      </class> <!-- com.nopcommerce.users.Level_12_Demo_Share_State -->
+      </class> <!-- com.nopcommerce.users.User_03_MyAccount -->
     </classes>
   </test> <!-- RUN ON FIREFOX_UI(failed) -->
 </suite> <!-- Failed suite [Suite] -->

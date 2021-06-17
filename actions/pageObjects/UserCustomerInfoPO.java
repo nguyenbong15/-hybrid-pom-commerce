@@ -57,6 +57,64 @@ public class UserCustomerInfoPO extends AbstractPage {
 		return isElementSelected(driver, UserCustomerInfoPageUI.NEWSLETTER_CHECKBOX);
 	}
 
+	public void clickToMyaccountLink() {
+	waitToElementclickable(driver, UserCustomerInfoPageUI.MYACCOUNT_LINK);
+	clickToElement(driver,  UserCustomerInfoPageUI.MYACCOUNT_LINK);
+		
+	}
+
+	public void clickToFemaleRadio() {
+		waitToElementclickable(driver, UserCustomerInfoPageUI.GENDER_FEMALE_RADIO);
+		clickToElement(driver, UserCustomerInfoPageUI.GENDER_FEMALE_RADIO);
+		
+	}
+
+	public void editFristName(String value) {
+		waitToElementVisible(driver, UserCustomerInfoPageUI.FIRST_NAME);
+		senkeyToElement(driver, UserCustomerInfoPageUI.FIRST_NAME, value);
+		
+	}
+
+	public void editLastName(String value) {
+		waitToElementVisible(driver, UserCustomerInfoPageUI.LAST_NAME);
+		senkeyToElement(driver, UserCustomerInfoPageUI.LAST_NAME, value);
+		
+	}
+
+	public void editSelectDay(String itemValue) {
+	waitToElementclickable(driver, UserCustomerInfoPageUI.DAY_DROPDOWN);
+	selectItemInDropdown(driver, UserCustomerInfoPageUI.DAY_DROPDOWN, itemValue);
+		
+	}
+
+	public void editSelectMonth(String itemValue) {
+		waitToElementclickable(driver, UserCustomerInfoPageUI.MONTH_DROPDOWN);
+		selectItemInDropdown(driver, UserCustomerInfoPageUI.MONTH_DROPDOWN, itemValue);
+		
+	}
+
+	public void editSelectYear(String itemValue) {
+		waitToElementclickable(driver, UserCustomerInfoPageUI.YEAR_DROPDOWN);
+		selectItemInDropdown(driver, UserCustomerInfoPageUI.YEAR_DROPDOWN, itemValue);
+		
+	}
+
+	public void editCompany(String value) {
+		waitToElementVisible(driver, UserCustomerInfoPageUI.COMPANY_TEXTBOX);
+		senkeyToElement(driver, UserCustomerInfoPageUI.COMPANY_TEXTBOX, value);
+		
+	}
+
+	public boolean isGenderFemaleRadioSelected() {
+		return isElementSelected(driver, UserCustomerInfoPageUI.GENDER_FEMALE_RADIO);
+	}
+
+	public UserHomePO clickToLogoutLink() {
+		waitToElementclickable(driver, UserCustomerInfoPageUI.LOGOUT_LINK);
+		clickToElement(driver,  UserCustomerInfoPageUI.LOGOUT_LINK);
+		return PageGenerator.getUserHomePage(driver);
+	}
+
 
 	
 

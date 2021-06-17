@@ -42,5 +42,12 @@ public class PageGenerator{
 	public static AdminProductsPagePO getAdminProductsPage(WebDriver driver) {
 		return new AdminProductsPagePO(driver);
 	}
+
+	public static UserChangePasswordPO getChangePasswordPage(WebDriver driver) {
+		
+		return new UserChangePasswordPO(driver);
+	}
+
+	
 	
 }

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RUN ON FIREFOX_UI"
+           tests="5"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="10.794">
+  <properties />
+  
+  
+            <testcase name="TC_02_Register_With_Invalid_Email" time="2.778" classname="com.nopcommerce.users.User_01_Regester" />
+                <testcase name="TC_06_Register_Success" time="5.589" classname="com.nopcommerce.users.User_01_Regester" />
+                <testcase name="TC_04_Register_With_Password_Under6" time="0.973" classname="com.nopcommerce.users.User_01_Regester" />
+                <testcase name="TC_01_Register_With_Empty_Data" time="0.770" classname="com.nopcommerce.users.User_01_Regester" />
+                <testcase name="TC_05_Register_With_Password_Wrong" time="0.684" classname="com.nopcommerce.users.User_01_Regester" />
+      
+</testsuite>

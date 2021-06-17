@@ -88,6 +88,46 @@ public class UserRegisterPO extends AbstractPage {
 		return PageGenerator.getUserHomePage(driver);
 	}
 
+	public String getLastnameError() {
+	waitToElementVisible(driver, UserRegisterPageUI.LASTNAME_ERROR);
+		return getTextElement(driver, UserRegisterPageUI.LASTNAME_ERROR);
+	}
+
+	public String getFristnameError() {
+		waitToElementVisible(driver, UserRegisterPageUI.FRISTNAME_ERROR);
+		return getTextElement(driver, UserRegisterPageUI.FRISTNAME_ERROR);
+	}
+
+	public String getEmailError() {
+		waitToElementVisible(driver, UserRegisterPageUI.EMAIL_ERROR);
+		return getTextElement(driver, UserRegisterPageUI.EMAIL_ERROR);
+	}
+
+	public String getPasswordError() {
+		waitToElementVisible(driver, UserRegisterPageUI.PASSWORD_ERROR);
+		return getTextElement(driver, UserRegisterPageUI.PASSWORD_ERROR);
+	}
+
+	public Object getConfirmPasswordError() {
+		waitToElementVisible(driver, UserRegisterPageUI.CONFIRM_PASSWORD_ERROR);
+		return getTextElement(driver, UserRegisterPageUI.CONFIRM_PASSWORD_ERROR);
+	}
+
+	public Object getEmailExistError() {
+		waitToElementVisible(driver, UserRegisterPageUI.EMAIL_EXIST_ERROR);
+		return getTextElement(driver, UserRegisterPageUI.EMAIL_EXIST_ERROR);
+	}
+
+	public String getPasswordUnder6Error1() {
+		waitToElementVisible(driver, UserRegisterPageUI.PASSWORD_UNDER6_ERROR1);
+		return getTextElement(driver, UserRegisterPageUI.PASSWORD_UNDER6_ERROR1);
+	}
+
+	public String getPasswordUnder6Error2() {
+		waitToElementVisible(driver, UserRegisterPageUI.PASSWORD_UNDER6_ERROR2);
+		return getTextElement(driver, UserRegisterPageUI.PASSWORD_UNDER6_ERROR2);
+	}
+
 	
 
 }
