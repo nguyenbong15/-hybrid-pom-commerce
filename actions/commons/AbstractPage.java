@@ -460,6 +460,7 @@ public class AbstractPage {
 		clickToElement(driver, AbstracPageUI.MY_PRODUCT_REVIEW_LINK);
 		return PageGenerator.getUserMyProductReviewPage(driver);
 	}
+	
 
 	public AbstractPage openLinkByPageName(WebDriver driver, String pageName) {
 		waitToElementclickable(driver, AbstracPageUI.DYNAMIC_LOCATOR, pageName);

@@ -1,4 +1,4 @@
-package com.nopcommerce.users;
+package com.nopcommerce.learn;
 
 import org.testng.annotations.Test;
 

@@ -1,13 +1,13 @@
-package com.nopcommerce.users;
+package com.nopcommerce.learn;
 
 import org.testng.annotations.Test;
 
 import commons.AbstractTest;
-import pageObjects.UserCustomerInfoPO;
-import pageObjects.UserHomePO;
-import pageObjects.UserLoginPO;
-import pageObjects.PageGenerator;
-import pageObjects.UserRegisterPO;
+import pageFactory.CustomerInfoPageObject;
+import pageFactory.HomePageObject;
+import pageFactory.LoginPageObject;
+
+import pageFactory.RegisterPageObject;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -15,17 +15,18 @@ import org.testng.annotations.Parameters;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
-public class Level_06_Register_Login_Page_Generator extends AbstractTest {
+public class Level_05_Register_Login_Page_Factory extends AbstractTest {
 
 	WebDriver driver;
-	UserHomePO homePageObject;
-	UserCustomerInfoPO customerInfoPageObject;
-	UserLoginPO loginPageObject;
-	UserRegisterPO registerPageObject;
-	
+	HomePageObject homePageObject;
+	CustomerInfoPageObject customerInfoPageObject;
+	LoginPageObject loginPageObject;
+	RegisterPageObject registerPageObject;
+
 	String firstName, lastName, email, companyName, passWord, day, month, year;
 
 	@Parameters("browser")
@@ -45,16 +46,14 @@ public class Level_06_Register_Login_Page_Generator extends AbstractTest {
 		month = "May";
 		year = "2000";
 
-		
+		homePageObject = new HomePageObject(driver);
 	}
-
-	
 
 	@Test
 	public void TC_01_Register() {
-         homePageObject = PageGenerator.getUserHomePage(driver);
-		
-		registerPageObject = homePageObject.clickToRegisterLink();
+
+		homePageObject.clickToRegisterLink();
+		registerPageObject = new RegisterPageObject(driver);
 		registerPageObject.clickToGenderMaleRadio();
 		registerPageObject.inputToFirstNameTextbox(firstName);
 		registerPageObject.inputToLastNameTextbox(lastName);
@@ -69,14 +68,14 @@ public class Level_06_Register_Login_Page_Generator extends AbstractTest {
 		registerPageObject.clickToRegisterButton();
 		Assert.assertEquals(registerPageObject.getTextRegisterSuccessMessage(), "Your registration completed");
 
-	    homePageObject =registerPageObject.clickToLogoutLink();
-		
+		registerPageObject.clickToLogoutLink();
+		homePageObject = new HomePageObject(driver);
 	}
 
 	@Test
 	public void TC_02_Login() {
-		loginPageObject = homePageObject.clickToLoginLink();
-		
+		homePageObject.clickToLoginLink();
+		loginPageObject = new LoginPageObject(driver);
 		loginPageObject.senkeyToEmailTexbox(email);
 		loginPageObject.senkeyToPassWordTexbox(passWord);
 		loginPageObject.clickToLoginButton();
@@ -87,8 +86,8 @@ public class Level_06_Register_Login_Page_Generator extends AbstractTest {
 
 	@Test
 	public void TC_03_MyAcount() {
-		customerInfoPageObject = homePageObject.clickToMyAccountLink();
-		
+		homePageObject.clickToMyAccountLink();
+		customerInfoPageObject = new CustomerInfoPageObject(driver);
 		Assert.assertTrue(customerInfoPageObject.isGenderMaleRadioSelected());
 		Assert.assertEquals(customerInfoPageObject.getFirstNameTextboxValue(), firstName);
 		Assert.assertEquals(customerInfoPageObject.getLastNameTextboxValue(), lastName);

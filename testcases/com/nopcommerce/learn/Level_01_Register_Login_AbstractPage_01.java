@@ -1,4 +1,4 @@
-package com.nopcommerce.users;
+package com.nopcommerce.learn;
 
 import java.util.Random;
 import java.util.concurrent.TimeUnit;

@@ -26,6 +26,7 @@ public class PageGenerator{
 	public static UserMyProductReviewPO getUserMyProductReviewPage(WebDriver driver) {
 		return new UserMyProductReviewPO(driver);
 	}
+	
 	public static UserOrderPO getUserOrderPage(WebDriver driver) {
 		return new UserOrderPO(driver);
 	}

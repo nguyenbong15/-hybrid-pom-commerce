@@ -1,13 +1,16 @@
-package com.nopcommerce.users;
+package com.nopcommerce.learn;
 
 import org.testng.annotations.Test;
 
 import commons.AbstractTest;
-import pageFactory.CustomerInfoPageObject;
-import pageFactory.HomePageObject;
-import pageFactory.LoginPageObject;
-
-import pageFactory.RegisterPageObject;
+import pageObjects.UserAddressesPO;
+import pageObjects.UserCustomerInfoPO;
+import pageObjects.UserHomePO;
+import pageObjects.UserLoginPO;
+import pageObjects.UserMyProductReviewPO;
+import pageObjects.UserOrderPO;
+import pageObjects.PageGenerator;
+import pageObjects.UserRegisterPO;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -15,17 +18,19 @@ import org.testng.annotations.Parameters;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
-
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
-public class Level_05_Register_Login_Page_Factory extends AbstractTest {
+public class Level_08_Register_Login_Dynamic_Locator_Rest_Parameter extends AbstractTest {
 
 	WebDriver driver;
-	HomePageObject homePageObject;
-	CustomerInfoPageObject customerInfoPageObject;
-	LoginPageObject loginPageObject;
-	RegisterPageObject registerPageObject;
+	UserHomePO homePageObject;
+	UserCustomerInfoPO customerInfoPageObject;
+	UserLoginPO loginPageObject;
+	UserRegisterPO registerPageObject;
+	UserAddressesPO addressesPage;
+	UserMyProductReviewPO myProductReview;
+	UserOrderPO orderPageObject;
 
 	String firstName, lastName, email, companyName, passWord, day, month, year;
 
@@ -35,7 +40,6 @@ public class Level_05_Register_Login_Page_Factory extends AbstractTest {
 
 		driver = getBrowserName(browser);
 
-		
 		driver.get("https://demo.nopcommerce.com/");
 		firstName = "Tony";
 		lastName = "Buoi Sang";
@@ -46,14 +50,13 @@ public class Level_05_Register_Login_Page_Factory extends AbstractTest {
 		month = "May";
 		year = "2000";
 
-		homePageObject = new HomePageObject(driver);
 	}
 
 	@Test
 	public void TC_01_Register() {
+		homePageObject = PageGenerator.getUserHomePage(driver);
 
-		homePageObject.clickToRegisterLink();
-		registerPageObject = new RegisterPageObject(driver);
+		registerPageObject = homePageObject.clickToRegisterLink();
 		registerPageObject.clickToGenderMaleRadio();
 		registerPageObject.inputToFirstNameTextbox(firstName);
 		registerPageObject.inputToLastNameTextbox(lastName);
@@ -68,26 +71,28 @@ public class Level_05_Register_Login_Page_Factory extends AbstractTest {
 		registerPageObject.clickToRegisterButton();
 		Assert.assertEquals(registerPageObject.getTextRegisterSuccessMessage(), "Your registration completed");
 
-		registerPageObject.clickToLogoutLink();
-		homePageObject = new HomePageObject(driver);
+		homePageObject = registerPageObject.clickToLogoutLink();
+
 	}
 
 	@Test
 	public void TC_02_Login() {
-		homePageObject.clickToLoginLink();
-		loginPageObject = new LoginPageObject(driver);
+		loginPageObject = homePageObject.clickToLoginLink();
+
 		loginPageObject.senkeyToEmailTexbox(email);
 		loginPageObject.senkeyToPassWordTexbox(passWord);
 		loginPageObject.clickToLoginButton();
 
 		Assert.assertTrue(loginPageObject.isMyAccountLinkDisplayed());
 		Assert.assertTrue(loginPageObject.isLogoutLinkDisplayed());
+		Assert.assertTrue( loginPageObject.isRegesterLinkUnDisplayed());
+		Assert.assertTrue( loginPageObject.isLoginLinkUnDisplayed());
 	}
 
-	@Test
+	//@Test
 	public void TC_03_MyAcount() {
-		homePageObject.clickToMyAccountLink();
-		customerInfoPageObject = new CustomerInfoPageObject(driver);
+		customerInfoPageObject = homePageObject.clickToMyAccountLink();
+
 		Assert.assertTrue(customerInfoPageObject.isGenderMaleRadioSelected());
 		Assert.assertEquals(customerInfoPageObject.getFirstNameTextboxValue(), firstName);
 		Assert.assertEquals(customerInfoPageObject.getLastNameTextboxValue(), lastName);
@@ -99,9 +104,40 @@ public class Level_05_Register_Login_Page_Factory extends AbstractTest {
 		Assert.assertTrue(customerInfoPageObject.isNewsletterSelected());
 
 	}
+//<10 page
+//	@Test
+	public void TC_04_Switch_Page_Solution_01() {
+		addressesPage=  (UserAddressesPO) customerInfoPageObject.openLinkByPageName(driver, "Addresses");
+		
+		customerInfoPageObject=(UserCustomerInfoPO) addressesPage.openLinkByPageName(driver,"Customer info");
+		
+		myProductReview=(UserMyProductReviewPO) customerInfoPageObject.openLinkByPageName(driver,"My product reviews");
+		
+		orderPageObject=(UserOrderPO) myProductReview.openLinkByPageName(driver,"Orders");
+		customerInfoPageObject=(UserCustomerInfoPO) orderPageObject.openLinkByPageName(driver,"Customer info");
+	}
+	//Trường hợp nhiều page >10
+//	@Test
+	public void TC_04_Switch_Page_Solution_02() {
+      customerInfoPageObject.openLinkWithPageName(driver, "Addresses");
+      addressesPage=PageGenerator.getUserAddressesPage(driver);
+      addressesPage.openLinkWithPageName(driver, "Customer info");
+      customerInfoPageObject=PageGenerator.getUserCustomerInfoPage(driver);
+      
+      customerInfoPageObject.openLinkWithPageName(driver, "My product reviews");
+      myProductReview=PageGenerator.getUserMyProductReviewPage(driver);
+      
+      myProductReview.openLinkWithPageName(driver, "Orders");
+      orderPageObject=PageGenerator.getUserOrderPage(driver);
+      
+      orderPageObject.openLinkWithPageName(driver, "Customer info");
+      customerInfoPageObject=PageGenerator.getUserCustomerInfoPage(driver);
+	}
 
 	@AfterClass
 	public void afterClass() {
 		driver.quit();
 	}
+
+
 }

@@ -3,6 +3,7 @@ package pageObjects;
 import org.openqa.selenium.WebDriver;
 
 import commons.AbstractPage;
+import pageUIs.UserCustomerInfoPageUI;
 import pageUIs.UserLoginPageUI;
 
 public class UserLoginPO extends AbstractPage {
@@ -69,6 +70,12 @@ public class UserLoginPO extends AbstractPage {
 		waitToElementclickable(driver, UserLoginPageUI.LOGIN_BUTTON);
 		clickToElement(driver,  UserLoginPageUI.LOGIN_BUTTON);
 		return PageGenerator.getUserCustomerInfoPage(driver);
+	}
+
+	public void clickToMyAccountLink() {
+		waitToElementclickable(driver, UserLoginPageUI.MYACCOUNT_LINK);
+		clickToElement(driver, UserLoginPageUI.MYACCOUNT_LINK);
+		
 	}
 
 	

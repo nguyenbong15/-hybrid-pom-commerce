@@ -15,23 +15,29 @@ import pageObjects.UserChangePasswordPO;
 import pageObjects.UserCustomerInfoPO;
 import pageObjects.UserHomePO;
 import pageObjects.UserLoginPO;
+import pageObjects.UserMyProductReviewPO;
 import pageObjects.UserRegisterPO;
 
 public class User_03_MyAccount extends AbstractTest {
 	WebDriver driver;
 	UserHomePO homePageObject;
 	UserLoginPO loginPageObject;
+	UserMyProductReviewPO myProductsReviews;
 	UserCustomerInfoPO customerInfo;
 	UserChangePasswordPO changePasswordPage;
 	UserAddressesPO addressesPage;
 	String firstName, lastName, companyName, day, month, year;
-	String email, password, cityName, address, zipCode, phoneNumber,country,newPassWord;
+	String email, password, cityName, address, zipCode, phoneNumber,country,newPassWord,nameProduct,
+	titleReview,textReview;
 
 	@Parameters(value = { "browser", "url" })
 	@BeforeClass
 	public void beforeClass(String browser, String urlValue) {
-		email = "hoanghai@gmail.com";
-		password = "123456";
+		//email = "hoanghai@gmail.com";
+		//password = "123456";
+		nameProduct="Build your own computer";
+		titleReview="hello";
+		textReview="Bong";
 		firstName = "Tony";
 		lastName = "Buoi Sang";
 		companyName = "Tony Buoi Sang";
@@ -47,7 +53,7 @@ public class User_03_MyAccount extends AbstractTest {
 		driver = getBrowserName(browser, urlValue);
 		homePageObject = PageGenerator.getUserHomePage(driver);
 		loginPageObject = homePageObject.clickToLoginLink();
-		customerInfo =loginPageObject.loginToSystem(email,password);
+		customerInfo =loginPageObject.loginToSystem(Common_01_Register.email,Common_01_Register.passWord);
 		customerInfo.clickToMyaccountLink();
 
 	}
@@ -77,7 +83,7 @@ public class User_03_MyAccount extends AbstractTest {
 		addressesPage.clickToAddNewButton();
 		addressesPage.inputToFirstName(firstName);
 		addressesPage.inputToLastName(lastName);
-		addressesPage.inputToEmail(email);
+		addressesPage.inputToEmail(Common_01_Register.email);
 		addressesPage.selectCountry(country);
 		addressesPage.inputToCity(cityName);
 		addressesPage.inputToAddress1(address);
@@ -85,9 +91,9 @@ public class User_03_MyAccount extends AbstractTest {
 		addressesPage.inputToPhoneNumber(phoneNumber);
 		addressesPage.clickToSaveButton();
 		
-		verifyEquals(addressesPage.getName(), firstName+" "+lastName);
+		verifyEquals(addressesPage.getName(),firstName+" "+lastName);
 	
-		verifyEquals(addressesPage.getEmail(),"Email: "+email);
+		verifyEquals(addressesPage.getEmail(),"Email: "+Common_01_Register.email);
 		verifyEquals(addressesPage.getPhoneNumber(),"Phone number: "+ phoneNumber);
 		verifyEquals(addressesPage.getFaxNumber(), "Fax number:");
 		verifyEquals(addressesPage.getAdrress(), address);
@@ -99,14 +105,14 @@ public class User_03_MyAccount extends AbstractTest {
 	@Test
 	public void TC_03_Chage_Password() {
      changePasswordPage=addressesPage.openChangePasswordPage(driver);
-     changePasswordPage.inputOldPassword(password);
+     changePasswordPage.inputOldPassword(Common_01_Register.passWord);
      changePasswordPage.ipnutNewPassword(newPassWord);
      changePasswordPage.inputConfirmNewPassword(newPassWord);
      changePasswordPage.clickToChangePasswordButton();
      customerInfo=changePasswordPage.openCustomerInfoPage(driver);
      homePageObject= customerInfo.clickToLogoutLink();
      loginPageObject= homePageObject.clickToLoginLink();
-     loginPageObject.loginToSystem(email, newPassWord);
+     loginPageObject.loginToSystem(Common_01_Register.email, newPassWord);
      verifyTrue(loginPageObject.isLogoutLinkDisplayed());
      verifyTrue(loginPageObject.isLoginLinkUnDisplayed());
      verifyTrue(loginPageObject.isMyAccountLinkDisplayed());
@@ -115,12 +121,26 @@ public class User_03_MyAccount extends AbstractTest {
 
 	@Test
 	public void TC_04_My_Products_Reviews() {
-
-	}
-
-	
-
-	
+	   loginPageObject.clickToMyAccountLink();
+      customerInfo=loginPageObject.openCustomerInfoPage(driver);
+      customerInfo.hoverToComputerLink();
+      customerInfo.clickToDesktopLink();
+      customerInfo.clickToProductsName(nameProduct);
+      customerInfo.clickToAddReviewLink();
+      customerInfo.senkeyTopTitleReviewTexbox(titleReview);
+      customerInfo.senkeyTopReviewTextTexbox(textReview);
+      customerInfo.clickToRattingRadio();
+      customerInfo.clickToSubmitLink();
+      verifyEquals(customerInfo.getTextProdustReviewSuccess(),"Product review is successfully added.");
+      customerInfo.clickToMyaccountLink();
+      myProductsReviews=customerInfo.openMyProductReviewPage(driver);
+      verifyEquals(myProductsReviews.getTitleReview(),titleReview );
+      verifyEquals(myProductsReviews.getTextReview(),textReview );
+      verifyEquals(myProductsReviews.getNameProductsReview(),nameProduct);
+      
+      
+    
+	}	
 
 	@AfterClass(alwaysRun = true)
 	public void afterClass() {
