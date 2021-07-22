@@ -32,4 +32,12 @@ public class UserHomePO extends AbstractPage {
 		clickToElement(driver, UserHomePageUI.MYACCOUNT_LINK);
        return PageGenerator.getUserCustomerInfoPage(driver);
 	}
+
+	public UserSortDisplayPagingPO openSortDiplayPagingPage(WebDriver driver) {
+		waitToElementVisible(driver, UserHomePageUI.COMPUTER_MENU_LINK);
+		hoverMouseToElement(driver, UserHomePageUI.COMPUTER_MENU_LINK);
+		waitToElementclickable(driver, UserHomePageUI.NOTEBOOKS_MENU_LINK);
+		clickToElement(driver, UserHomePageUI.NOTEBOOKS_MENU_LINK);
+		return PageGenerator.getSortDisplayPagingPage(driver);
+	}
 }

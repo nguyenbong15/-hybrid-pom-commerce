@@ -46,8 +46,6 @@ public class User_04_Search_Advanced_Search extends AbstractTest {
          
         
 		homePageObject = PageGenerator.getUserHomePage(driver);
-//		loginPageObject = homePageObject.clickToLoginLink();
-//		customerInfor=loginPageObject.loginToSystem(Common_01_Register.email, Common_01_Register.passWord);
          searchPagePO=homePageObject.openSearchPage(driver);
 	}
 
