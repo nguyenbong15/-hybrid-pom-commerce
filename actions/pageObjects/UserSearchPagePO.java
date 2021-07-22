@@ -38,6 +38,7 @@ public class UserSearchPagePO extends AbstractPage {
 	}
 
 	public boolean isProductDisplayed(String b) {
+		sleepSecond(1);
 		waitToElementVisible(driver, UserSeachPageUI.PRODUCTS);
 		List<WebElement> products = getElements(driver, UserSeachPageUI.PRODUCTS);
 		List<String> a=new ArrayList<String>();
@@ -46,6 +47,38 @@ public class UserSearchPagePO extends AbstractPage {
 				a.add(element.getText());
 		}
 		return !a.isEmpty();
+	}
+
+	public void clickToAdvanceSearchChechBox() {
+		waitToElementclickable(driver, UserSeachPageUI.ADVANCED_SEARCH_CHECKBOX);
+		checkToCheckbox(driver, UserSeachPageUI.ADVANCED_SEARCH_CHECKBOX);
+	}
+
+	public void chosseItemInCategoryDropdown(String itemValue) {
+		waitToElementVisible(driver, UserSeachPageUI.CATEGORY_DROPDOWN);
+		selectItemInDropdown(driver, UserSeachPageUI.CATEGORY_DROPDOWN, itemValue);
+	}
+
+	public boolean isCheckBoxCheck() {
+		waitToElementVisible(driver, UserSeachPageUI.AUTO_SEARCH_WITH_SUB_CATEGORIES_CHECKBOX);
+		return isElementSelected(driver, UserSeachPageUI.AUTO_SEARCH_WITH_SUB_CATEGORIES_CHECKBOX);
+	}
+
+	public void clickToAutoSearchSubCategoriesChechBox() {
+		waitToElementclickable(driver, UserSeachPageUI.AUTO_SEARCH_WITH_SUB_CATEGORIES_CHECKBOX);
+		checkToCheckbox(driver, UserSeachPageUI.AUTO_SEARCH_WITH_SUB_CATEGORIES_CHECKBOX);
+		
+	}
+
+	public void chooseItemInManufactureDropdown(String itemValue) {
+		waitToElementVisible(driver, UserSeachPageUI.MANUFACTURE_DROPDOWN);
+		selectItemInDropdown(driver, UserSeachPageUI.MANUFACTURE_DROPDOWN, itemValue);
+		
+	}
+
+	public boolean isOneProductDisplayed(String value) {
+		waitToElementVisible(driver, UserSeachPageUI.ONE_PRODUCTS_DISPLAYED, value);
+		return isElementDisplayed(driver, UserSeachPageUI.ONE_PRODUCTS_DISPLAYED,value);
 	}
 
 	

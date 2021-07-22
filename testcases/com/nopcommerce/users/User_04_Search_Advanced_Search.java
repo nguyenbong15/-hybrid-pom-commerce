@@ -21,6 +21,8 @@ import org.testng.annotations.Parameters;
 
 import java.util.ArrayList;
 
+import javax.sql.rowset.serial.SerialArray;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 
@@ -62,21 +64,68 @@ public class User_04_Search_Advanced_Search extends AbstractTest {
       verifyTrue(searchPagePO.isMessageNoProducts());
       
 	}
-	@Test
+	//@Test
 	public void TC_03_Search_With_Name_Products_Relative() {
 		searchPagePO.senkeyToSeachTexbox(keyRelative);
         searchPagePO.clickToSearchButton();
         verifyTrue(searchPagePO.isProductDisplayed(keyRelative)); 
-        searchPagePO.sleepSecond(3);
+     
 	}
 	@Test
 	public void TC_04_Search_With_Name_Products_Absolute() {
 		searchPagePO.senkeyToSeachTexbox(keyAbsolute);
         searchPagePO.clickToSearchButton();
         verifyTrue(searchPagePO.isProductDisplayed(keyAbsolute)); 
-        searchPagePO.sleepSecond(3);
+    
+        
 	}
-
+	@Test
+	public void TC_05_Search_Advance_With_Parent_Categories() {	
+			searchPagePO.senkeyToSeachTexbox("Apple Macbook Pro");
+			searchPagePO.clickToAdvanceSearchChechBox();
+			searchPagePO.chosseItemInCategoryDropdown("Computers");
+			verifyFalse(searchPagePO.isCheckBoxCheck());
+	        searchPagePO.clickToSearchButton();
+	        verifyTrue(searchPagePO.isMessageNoProducts()); 
+	       
+		}
+	@Test
+	public void TC_06_Search_Advance_With_Sub_Categories() {	
+			searchPagePO.senkeyToSeachTexbox("Apple Macbook Pro");
+			searchPagePO.clickToAdvanceSearchChechBox();
+			searchPagePO.chosseItemInCategoryDropdown("Computers");			
+			searchPagePO.clickToAutoSearchSubCategoriesChechBox();
+			verifyTrue(searchPagePO.isCheckBoxCheck());
+	        searchPagePO.clickToSearchButton();
+	        verifyTrue(searchPagePO.isProductDisplayed("Apple MacBook Pro 13-inch")); 
+	      
+		}
+	@Test
+	public void TC_07_Search_Advance_With_Incorrect_Manufacturer() {	
+			searchPagePO.senkeyToSeachTexbox("Apple Macbook Pro");
+			searchPagePO.clickToAdvanceSearchChechBox();
+			searchPagePO.chosseItemInCategoryDropdown("Computers");		
+			searchPagePO.clickToAutoSearchSubCategoriesChechBox();
+			verifyTrue(searchPagePO.isCheckBoxCheck());
+			searchPagePO.chooseItemInManufactureDropdown("HP");
+	        searchPagePO.clickToSearchButton();	      
+	        verifyTrue(searchPagePO.isMessageNoProducts()); 
+	        
+		}
+	
+	@Test
+	public void TC_08_Search_Advance_With_Correct_Manufacturer() {	
+			searchPagePO.senkeyToSeachTexbox("Apple Macbook Pro");
+			searchPagePO.clickToAdvanceSearchChechBox();
+			searchPagePO.chosseItemInCategoryDropdown("Computers");		
+			searchPagePO.clickToAutoSearchSubCategoriesChechBox();
+			verifyTrue(searchPagePO.isCheckBoxCheck());
+			searchPagePO.chooseItemInManufactureDropdown("Apple");
+	        searchPagePO.clickToSearchButton();	      
+	        verifyTrue(searchPagePO.isOneProductDisplayed("Apple MacBook Pro 13-inch")); 
+	      
+		}
+	
 	@AfterClass(alwaysRun = true)
 	public void afterClass() {
 		closeBrowserAndDriver(driver);
