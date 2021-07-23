@@ -1,10 +1,12 @@
-package pageObjects;
+package pageObjectsUsers;
 
 import org.openqa.selenium.WebDriver;
 
+import pageObjectAdmin.AdminDashboardPagePO;
+import pageObjectAdmin.AdminLoginPagePO;
+import pageObjectAdmin.AdminProductsPagePO;
 
-
-public class PageGenerator{
+public class PageGenerator {
 	public static UserLoginPO getUserLoginPage(WebDriver driver) {
 		return new UserLoginPO(driver);
 	}
@@ -20,19 +22,21 @@ public class PageGenerator{
 	public static UserCustomerInfoPO getUserCustomerInfoPage(WebDriver driver) {
 		return new UserCustomerInfoPO(driver);
 	}
+
 	public static UserAddressesPO getUserAddressesPage(WebDriver driver) {
 		return new UserAddressesPO(driver);
 	}
+
 	public static UserMyProductReviewPO getUserMyProductReviewPage(WebDriver driver) {
 		return new UserMyProductReviewPO(driver);
 	}
-	
+
 	public static UserOrderPO getUserOrderPage(WebDriver driver) {
 		return new UserOrderPO(driver);
 	}
 
 	public static AdminLoginPagePO getAdminLoginPage(WebDriver driver) {
-		
+
 		return new AdminLoginPagePO(driver);
 	}
 
@@ -45,10 +49,21 @@ public class PageGenerator{
 	}
 
 	public static UserChangePasswordPO getChangePasswordPage(WebDriver driver) {
-		
+
 		return new UserChangePasswordPO(driver);
 	}
 
-	
-	
+	public static UserSearchPagePO getSearchPage(WebDriver driver) {
+
+		return new UserSearchPagePO(driver);
+	}
+	public static UserSortDisplayPagingPO getSortDisplayPagingPage(WebDriver driver) {
+
+		return new UserSortDisplayPagingPO(driver);
+	}
+	public static UserWishlistPagePO getWishlistPage(WebDriver driver) {
+
+		return new UserWishlistPagePO(driver);
+	}
+
 }
