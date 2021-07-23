@@ -1,4 +1,4 @@
-package pageObjects;
+package pageObjectsUsers;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import commons.AbstractPage;
-import pageUIs.UserSeachPageUI;
+import pageUIsUser.UserSeachPageUI;
 
 public class UserSearchPagePO extends AbstractPage {
 	WebDriver driver;

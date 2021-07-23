@@ -15,14 +15,17 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import pageObjects.UserAddressesPO;
-import pageObjects.UserChangePasswordPO;
-import pageObjects.UserCustomerInfoPO;
-import pageObjects.UserMyProductReviewPO;
-import pageObjects.UserOrderPO;
-import pageObjects.PageGenerator;
-import pageUIs.AbstracPageUI;
-import pageUIs.AdminProductPageUI;
+import pageObjectsUsers.PageGenerator;
+import pageObjectsUsers.UserAddressesPO;
+import pageObjectsUsers.UserChangePasswordPO;
+import pageObjectsUsers.UserCustomerInfoPO;
+import pageObjectsUsers.UserMyProductReviewPO;
+import pageObjectsUsers.UserOrderPO;
+import pageObjectsUsers.UserSearchPagePO;
+import pageObjectsUsers.UserWishlistPagePO;
+import pageUIAdmin.AdminProductPageUI;
+import pageUIsUser.AbstracPageUI;
+import pageUIsUser.UserCustomerInfoPageUI;
 
 public class AbstractPage {
 
@@ -382,6 +385,16 @@ public class AbstractPage {
 		explicitWait.until(ExpectedConditions.visibilityOfElementLocated(getByXpath(locator)));
 
 	}
+	public void waitToAllElementVisible(WebDriver driver, String locator) {
+		explicitWait = new WebDriverWait(driver, GlobalConsarts.LONG_TIMEOUT);
+		explicitWait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(getByXpath(locator)));
+
+	}
+	public void waitToAjaxLoading(WebDriver driver, String locator) {
+		explicitWait = new WebDriverWait(driver, GlobalConsarts.LONG_TIMEOUT);
+		explicitWait.until(ExpectedConditions.invisibilityOfElementLocated(getByXpath(locator)));
+
+	}
 
 	public void waitToElementVisible(WebDriver driver, String locator, String... values) {
 		explicitWait = new WebDriverWait(driver, GlobalConsarts.LONG_TIMEOUT);
@@ -396,6 +409,13 @@ public class AbstractPage {
 		explicitWait.until(ExpectedConditions.invisibilityOfElementLocated(getByXpath(locator)));
 		overideImplicitWait(driver, GlobalConsarts.LONG_TIMEOUT);
 	}
+	public boolean waitToElementStaleness(WebDriver driver, String locator) {
+		explicitWait = new WebDriverWait(driver, GlobalConsarts.SHORT_TIMEOUT);
+		overideImplicitWait(driver, GlobalConsarts.SHORT_TIMEOUT);
+	return	explicitWait.until(ExpectedConditions.stalenessOf(getElement(driver, locator)));
+		//overideImplicitWait(driver, GlobalConsarts.LONG_TIMEOUT);
+	}
+	
   
 	public void waitToElementclickable(WebDriver driver, String locator) {
 		explicitWait = new WebDriverWait(driver, GlobalConsarts.LONG_TIMEOUT);
@@ -460,7 +480,20 @@ public class AbstractPage {
 		clickToElement(driver, AbstracPageUI.MY_PRODUCT_REVIEW_LINK);
 		return PageGenerator.getUserMyProductReviewPage(driver);
 	}
+	public UserSearchPagePO openSearchPage(WebDriver driver) {
+		waitToElementclickable(driver, AbstracPageUI.SEARCH_LINK_FOOTER);
+		clickToElement(driver, AbstracPageUI.SEARCH_LINK_FOOTER);
+		return PageGenerator.getSearchPage(driver);
+	}
 	
+	public UserWishlistPagePO openWishlistPage(WebDriver driver) {
+		   
+		waitToElementVisible(driver, AbstracPageUI.COMPUTER_LINK);
+        clickAndHoverToElement(driver, AbstracPageUI.COMPUTER_LINK);
+        waitToElementclickable(driver, AbstracPageUI.DESKTOP_LINK);
+        clickToElement(driver, AbstracPageUI.DESKTOP_LINK);
+		return PageGenerator.getWishlistPage(driver);
+	}
 
 	public AbstractPage openLinkByPageName(WebDriver driver, String pageName) {
 		waitToElementclickable(driver, AbstracPageUI.DYNAMIC_LOCATOR, pageName);

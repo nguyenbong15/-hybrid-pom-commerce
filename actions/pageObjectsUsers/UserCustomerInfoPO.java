@@ -1,10 +1,11 @@
-package pageObjects;
+package pageObjectsUsers;
 
 import org.openqa.selenium.WebDriver;
 
 import commons.AbstractPage;
-import pageUIs.UserCustomerInfoPageUI;
-import pageUIs.UserRegisterPageUI;
+import pageUIsUser.UserCustomerInfoPageUI;
+import pageUIsUser.UserRegisterPageUI;
+import pageUIsUser.UserWishlistPageUI;
 
 public class UserCustomerInfoPO extends AbstractPage {
 	WebDriver driver;
@@ -116,46 +117,36 @@ public class UserCustomerInfoPO extends AbstractPage {
 		return PageGenerator.getUserHomePage(driver);
 	}
 
-	public void hoverToComputerLink() {
-		waitToElementVisible(driver, UserCustomerInfoPageUI.COMPUTER_LINK);
-        clickAndHoverToElement(driver, UserCustomerInfoPageUI.COMPUTER_LINK);
-	}
-
-	public void clickToDesktopLink() {
-		waitToElementclickable(driver, UserCustomerInfoPageUI.DESKTOP_LINK);
-        clickToElement(driver, UserCustomerInfoPageUI.DESKTOP_LINK);
-	}
-
 	public void clickToProductsName(String nameProduct) {
-		waitToElementclickable(driver, UserCustomerInfoPageUI.PRODUCT_NAME_LINK,nameProduct);
-        clickToElement(driver, UserCustomerInfoPageUI.PRODUCT_NAME_LINK,nameProduct);
+		waitToElementclickable(driver, UserCustomerInfoPageUI.PRODUCT_NAME_LINK, nameProduct);
+		clickToElement(driver, UserCustomerInfoPageUI.PRODUCT_NAME_LINK, nameProduct);
 	}
 
 	public void senkeyTopTitleReviewTexbox(String value) {
 		waitToElementVisible(driver, UserCustomerInfoPageUI.TITLE_REVIEW_TEXBOX);
-        senkeyToElement(driver, UserCustomerInfoPageUI.TITLE_REVIEW_TEXBOX, value);
+		senkeyToElement(driver, UserCustomerInfoPageUI.TITLE_REVIEW_TEXBOX, value);
 	}
 
 	public void clickToAddReviewLink() {
 		waitToElementclickable(driver, UserCustomerInfoPageUI.ADD_REVIEW_LINK);
-        clickToElement(driver, UserCustomerInfoPageUI.ADD_REVIEW_LINK);
+		clickToElement(driver, UserCustomerInfoPageUI.ADD_REVIEW_LINK);
 	}
 
 	public void senkeyTopReviewTextTexbox(String value) {
 		waitToElementVisible(driver, UserCustomerInfoPageUI.TEXT_REVIEW_TEXBOX);
-        senkeyToElement(driver, UserCustomerInfoPageUI.TEXT_REVIEW_TEXBOX, value);
+		senkeyToElement(driver, UserCustomerInfoPageUI.TEXT_REVIEW_TEXBOX, value);
 
 	}
 
 	public void clickToRattingRadio() {
-	
+
 		waitToElementclickable(driver, UserCustomerInfoPageUI.RATTING_REVIEW_RADIO);
-        clickToElement(driver, UserCustomerInfoPageUI.RATTING_REVIEW_RADIO);
+		clickToElement(driver, UserCustomerInfoPageUI.RATTING_REVIEW_RADIO);
 	}
 
 	public void clickToSubmitLink() {
 		waitToElementclickable(driver, UserCustomerInfoPageUI.SUBMIT_REVIEW_LINK);
-        clickToElement(driver, UserCustomerInfoPageUI.SUBMIT_REVIEW_LINK);
+		clickToElement(driver, UserCustomerInfoPageUI.SUBMIT_REVIEW_LINK);
 
 	}
 
@@ -163,6 +154,16 @@ public class UserCustomerInfoPO extends AbstractPage {
 		return getTextElement(driver, UserCustomerInfoPageUI.MESSAGE_REVIEW_SUCCESS);
 	}
 
-	
+	public void hoverToComputerLink() {
+		waitToElementVisible(driver, UserWishlistPageUI.COMPUTER_LINK);
+		hoverMouseToElement(driver, UserWishlistPageUI.COMPUTER_LINK);
+
+	}
+
+	public void clickToDesktopLink() {
+		waitToElementclickable(driver, UserWishlistPageUI.DESKTOP_LINK);
+		clickToElement(driver, UserWishlistPageUI.DESKTOP_LINK);
+
+	}
 
 }

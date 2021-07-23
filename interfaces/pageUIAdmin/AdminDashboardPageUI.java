@@ -1,4 +1,4 @@
-package pageUIs;
+package pageUIAdmin;
 
 public class AdminDashboardPageUI {
 	public static final String CATALOG_LINK= "//i[@class='nav-icon fas fa-book']/following-sibling::p";

@@ -3,14 +3,14 @@ package com.nopcommerce.learn;
 import org.testng.annotations.Test;
 
 import commons.AbstractTest;
-import pageObjects.UserAddressesPO;
-import pageObjects.UserCustomerInfoPO;
-import pageObjects.UserHomePO;
-import pageObjects.UserLoginPO;
-import pageObjects.UserMyProductReviewPO;
-import pageObjects.UserOrderPO;
-import pageObjects.PageGenerator;
-import pageObjects.UserRegisterPO;
+import pageObjectsUsers.PageGenerator;
+import pageObjectsUsers.UserAddressesPO;
+import pageObjectsUsers.UserCustomerInfoPO;
+import pageObjectsUsers.UserHomePO;
+import pageObjectsUsers.UserLoginPO;
+import pageObjectsUsers.UserMyProductReviewPO;
+import pageObjectsUsers.UserOrderPO;
+import pageObjectsUsers.UserRegisterPO;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;

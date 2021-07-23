@@ -1,4 +1,4 @@
-package pageUIs;
+package pageUIsUser;
 
 public class UserHomePageUI {
 	public static final String REGESTER_LINK="//a[@class='ico-register']";

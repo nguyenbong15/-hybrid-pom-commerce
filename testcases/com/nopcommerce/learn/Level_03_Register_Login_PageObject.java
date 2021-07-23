@@ -2,11 +2,10 @@ package com.nopcommerce.learn;
 
 import org.testng.annotations.Test;
 
-import pageObjects.UserCustomerInfoPO;
-import pageObjects.UserHomePO;
-import pageObjects.UserLoginPO;
-
-import pageObjects.UserRegisterPO;
+import pageObjectsUsers.UserCustomerInfoPO;
+import pageObjectsUsers.UserHomePO;
+import pageObjectsUsers.UserLoginPO;
+import pageObjectsUsers.UserRegisterPO;
 
 import org.testng.annotations.BeforeClass;
 

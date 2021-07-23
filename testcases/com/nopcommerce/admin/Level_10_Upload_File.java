@@ -4,10 +4,10 @@ import org.testng.annotations.Test;
 
 import commons.AbstractTest;
 import facebook.web.users.package_info;
-import pageObjects.AdminDashboardPagePO;
-import pageObjects.AdminLoginPagePO;
-import pageObjects.AdminProductsPagePO;
-import pageObjects.PageGenerator;
+import pageObjectAdmin.AdminDashboardPagePO;
+import pageObjectAdmin.AdminLoginPagePO;
+import pageObjectAdmin.AdminProductsPagePO;
+import pageObjectsUsers.PageGenerator;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;

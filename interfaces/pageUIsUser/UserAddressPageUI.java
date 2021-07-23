@@ -1,4 +1,4 @@
-package pageUIs;
+package pageUIsUser;
 
 public class UserAddressPageUI {
     public static final String ADD_NEW_BUTTON="//button[text()='Add new']";

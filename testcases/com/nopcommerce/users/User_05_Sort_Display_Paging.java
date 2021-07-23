@@ -7,11 +7,11 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.AbstractTest;
-import pageObjects.PageGenerator;
-import pageObjects.UserHomePO;
-import pageObjects.UserLoginPO;
-import pageObjects.UserRegisterPO;
-import pageObjects.UserSortDisplayPagingPO;
+import pageObjectsUsers.PageGenerator;
+import pageObjectsUsers.UserHomePO;
+import pageObjectsUsers.UserLoginPO;
+import pageObjectsUsers.UserRegisterPO;
+import pageObjectsUsers.UserSortDisplayPagingPO;
 
 public class User_05_Sort_Display_Paging extends AbstractTest {
 	WebDriver driver;
@@ -66,8 +66,8 @@ public class User_05_Sort_Display_Paging extends AbstractTest {
         	verifyTrue(sortPagePO.iconNextPageDiplayed());
         	sortPagePO.clickToTwoPage();
         	verifyTrue(sortPagePO.iconPreviousPageDiplayed());     	
-        	sortPagePO.selectItemInPagingDropDown("6");
-        	verifyTrue(sortPagePO.iconNextPageAndPreviousUnDiplayed());
+//        	sortPagePO.selectItemInPagingDropDown("6");
+//        	verifyTrue(sortPagePO.iconNextPageAndPreviousUnDiplayed());
         
 	}
 	

@@ -11,10 +11,10 @@ import org.testng.annotations.Test;
 import com.nopcommerce.commons.Common_01_Register;
 
 import commons.AbstractTest;
-import pageObjects.PageGenerator;
-import pageObjects.UserHomePO;
-import pageObjects.UserLoginPO;
-import pageObjects.UserRegisterPO;
+import pageObjectsUsers.PageGenerator;
+import pageObjectsUsers.UserHomePO;
+import pageObjectsUsers.UserLoginPO;
+import pageObjectsUsers.UserRegisterPO;
 
 public class User_02_Login extends AbstractTest {
 	WebDriver driver;

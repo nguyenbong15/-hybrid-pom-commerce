@@ -1,10 +1,10 @@
-package pageObjects;
+package pageObjectsUsers;
 
 import org.openqa.selenium.WebDriver;
 
 import commons.AbstractPage;
-import pageUIs.UserAddressPageUI;
-import pageUIs.UserCustomerInfoPageUI;
+import pageUIsUser.UserAddressPageUI;
+import pageUIsUser.UserCustomerInfoPageUI;
 
 public class UserAddressesPO extends AbstractPage{
 	WebDriver driver;

@@ -1,9 +1,9 @@
-package pageObjects;
+package pageObjectsUsers;
 
 import org.openqa.selenium.WebDriver;
 
 import commons.AbstractPage;
-import pageUIs.UserRegisterPageUI;
+import pageUIsUser.UserRegisterPageUI;
 
 public class UserRegisterPO extends AbstractPage {
 	WebDriver driver;

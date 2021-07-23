@@ -1,4 +1,4 @@
-package pageUIs;
+package pageUIsUser;
 
 public class UserSeachPageUI {
 	public static final String SEARCH_BUTTON="//button[@class='button-1 search-button']";

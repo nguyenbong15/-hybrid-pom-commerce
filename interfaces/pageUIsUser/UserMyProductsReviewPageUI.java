@@ -1,4 +1,4 @@
-package pageUIs;
+package pageUIsUser;
 
 public class UserMyProductsReviewPageUI {
 	public static final String TITLE_REVIEW_TEXTBOX="//div[@class='review-item-head']";

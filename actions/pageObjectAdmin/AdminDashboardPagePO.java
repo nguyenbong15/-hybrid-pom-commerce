@@ -1,10 +1,11 @@
-package pageObjects;
+package pageObjectAdmin;
 
 import org.openqa.selenium.WebDriver;
 
 import commons.AbstractPage;
-import pageUIs.AdminDashboardPageUI;
-import pageUIs.AdminProductPageUI;
+import pageObjectsUsers.PageGenerator;
+import pageUIAdmin.AdminDashboardPageUI;
+import pageUIAdmin.AdminProductPageUI;
 
 public class AdminDashboardPagePO extends AbstractPage{
 	WebDriver driver;

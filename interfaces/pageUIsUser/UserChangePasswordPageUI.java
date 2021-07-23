@@ -1,4 +1,4 @@
-package pageUIs;
+package pageUIsUser;
 
 public class UserChangePasswordPageUI {
 	public static final String OLD_PASSWORD_TEXBOX="//input[@id='OldPassword']";

@@ -1,9 +1,9 @@
-package pageObjects;
+package pageObjectsUsers;
 
 import org.openqa.selenium.WebDriver;
 
 import commons.AbstractPage;
-import pageUIs.UserMyProductsReviewPageUI;
+import pageUIsUser.UserMyProductsReviewPageUI;
 
 public class UserMyProductReviewPO extends AbstractPage {
 	WebDriver driver;

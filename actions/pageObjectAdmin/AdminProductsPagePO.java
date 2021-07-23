@@ -1,4 +1,4 @@
-package pageObjects;
+package pageObjectAdmin;
 
 import java.util.List;
 
@@ -8,8 +8,8 @@ import org.testng.Assert;
 
 import commons.AbstractPage;
 import commons.GlobalConsarts;
-import pageUIs.AdminDashboardPageUI;
-import pageUIs.AdminProductPageUI;
+import pageUIAdmin.AdminDashboardPageUI;
+import pageUIAdmin.AdminProductPageUI;
 
 public class AdminProductsPagePO extends AbstractPage {
 	WebDriver driver;

@@ -1,4 +1,4 @@
-package pageUIs;
+package pageUIsUser;
 
 public class UserSortDisplayPagingUI {
 	public static final String SORTBY_DROPDOWN="//select[@id='products-orderby']";

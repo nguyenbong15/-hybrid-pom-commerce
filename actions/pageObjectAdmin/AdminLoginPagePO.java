@@ -1,9 +1,10 @@
-package pageObjects;
+package pageObjectAdmin;
 
 import org.openqa.selenium.WebDriver;
 
 import commons.AbstractPage;
-import pageUIs.AdminLoginPageUI;
+import pageObjectsUsers.PageGenerator;
+import pageUIAdmin.AdminLoginPageUI;
 
 public class AdminLoginPagePO extends AbstractPage {
 	WebDriver driver;

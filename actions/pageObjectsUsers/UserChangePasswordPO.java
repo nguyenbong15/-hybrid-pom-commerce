@@ -1,9 +1,9 @@
-package pageObjects;
+package pageObjectsUsers;
 
 import org.openqa.selenium.WebDriver;
 
 import commons.AbstractPage;
-import pageUIs.UserChangePasswordPageUI;
+import pageUIsUser.UserChangePasswordPageUI;
 
 public class UserChangePasswordPO extends AbstractPage {
 	WebDriver driver;

@@ -1,4 +1,4 @@
-package pageObjects;
+package pageObjectsUsers;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import commons.AbstractPage;
-import pageUIs.UserSortDisplayPagingUI;
+import pageUIsUser.UserSortDisplayPagingUI;
 
 public class UserSortDisplayPagingPO extends AbstractPage{
 	WebDriver driver;

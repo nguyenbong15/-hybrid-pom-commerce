@@ -1,11 +1,8 @@
 package com.nopcommerce.commons;
 import commons.AbstractTest;
-
-import pageObjects.PageGenerator;
-
-import pageObjects.UserHomePO;
-
-import pageObjects.UserRegisterPO;
+import pageObjectsUsers.PageGenerator;
+import pageObjectsUsers.UserHomePO;
+import pageObjectsUsers.UserRegisterPO;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;

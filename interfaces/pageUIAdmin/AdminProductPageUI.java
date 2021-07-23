@@ -1,4 +1,4 @@
-package pageUIs;
+package pageUIAdmin;
 
 public class AdminProductPageUI {
 	public static final String ICON_LOADING = "//div[@id='ajaxBusy']/span";

@@ -5,8 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import pageUIs.UserCustomerInfoPageUI;
-import pageUIs.UserRegisterPageUI;
+import pageUIsUser.UserCustomerInfoPageUI;
+import pageUIsUser.UserRegisterPageUI;
 
 public class CustomerInfoPageObject extends AbstractPage_Factory {
 	WebDriver driver;
