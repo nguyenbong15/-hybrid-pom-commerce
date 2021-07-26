@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RUN ON FIREFOX_UI"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="17.611">
+  <properties />
+  
+  
+            <testcase name="TC_04_My_Products_Reviews" time="17.611" classname="com.nopcommerce.users.User_03_MyAccount" />
+      
+</testsuite>

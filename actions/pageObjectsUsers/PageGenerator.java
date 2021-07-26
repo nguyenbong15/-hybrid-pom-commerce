@@ -57,13 +57,19 @@ public class PageGenerator {
 
 		return new UserSearchPagePO(driver);
 	}
+
 	public static UserSortDisplayPagingPO getSortDisplayPagingPage(WebDriver driver) {
 
 		return new UserSortDisplayPagingPO(driver);
 	}
+
 	public static UserWishlistPagePO getWishlistPage(WebDriver driver) {
 
 		return new UserWishlistPagePO(driver);
 	}
 
+	public static UserCompareProductsPO getComparePage(WebDriver driver) {
+		return new UserCompareProductsPO(driver);
+		}
+	
 }

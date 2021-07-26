@@ -15,6 +15,8 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.Assert;
 import org.testng.Reporter;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class AbstractTest {
 	
 	private WebDriver driver;
@@ -27,26 +29,31 @@ public class AbstractTest {
  	protected WebDriver getBrowserName(String browser) {
 		
 		if (browser.equals("firefox_ui")) {
-			System.setProperty("webdriver.gecko.driver", projectFolder + "\\browserDriver\\geckodriver.exe");
+		//	System.setProperty("webdriver.gecko.driver", projectFolder + "\\browserDriver\\geckodriver.exe");
+			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 		} else if (browser.equals("chrome_ui")) {
 			ChromeOptions options = new ChromeOptions();
 			options.setExperimentalOption("useAutomationExtension", false);
 			options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
-			System.setProperty("webdriver.chrome.driver", projectFolder + "\\browserDriver\\chromedriver.exe");
+		//	System.setProperty("webdriver.chrome.driver", projectFolder + "\\browserDriver\\chromedriver.exe");
+			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver(options);
 		} else if (browser.equals("firefox_headless")) {
-			System.setProperty("webdriver.gecko.driver", projectFolder + "\\browserDriver\\geckodriver.exe");
+			//System.setProperty("webdriver.gecko.driver", projectFolder + "\\browserDriver\\geckodriver.exe");
+			WebDriverManager.firefoxdriver().setup();
 			FirefoxOptions options = new FirefoxOptions();
 			options.setHeadless(true);
 			driver = new FirefoxDriver(options);
 		} else if (browser.equals("chrome_headless")) {
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("headless");
-			System.setProperty("webdriver.chrome.driver", projectFolder + "\\browserDriver\\chromedriver.exe");
+			//System.setProperty("webdriver.chrome.driver", projectFolder + "\\browserDriver\\chromedriver.exe");
+			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver(options);
 		} else if (browser.equals("edge_chromium")) {
-			System.setProperty("webdriver.edge.driver", projectFolder + "\\browserDriver\\msedgedriver.exe");
+			//System.setProperty("webdriver.edge.driver", projectFolder + "\\browserDriver\\msedgedriver.exe");
+			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
 		} else {
 			throw new RuntimeException("Pleasse input browser name!!!");
@@ -59,26 +66,31 @@ public class AbstractTest {
 	protected WebDriver getBrowserName(String browser,String url) {
 		
 	if (browser.equals("firefox_ui")) {
-		System.setProperty("webdriver.gecko.driver", projectFolder + "\\browserDriver\\geckodriver.exe");
+		//System.setProperty("webdriver.gecko.driver", projectFolder + "\\browserDriver\\geckodriver.exe");
+		WebDriverManager.firefoxdriver().setup();
 		driver = new FirefoxDriver();
 	} else if (browser.equals("chrome_ui")) {
 		ChromeOptions options = new ChromeOptions();
 		options.setExperimentalOption("useAutomationExtension", false);
 		options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
-		System.setProperty("webdriver.chrome.driver", projectFolder + "\\browserDriver\\chromedriver.exe");
+	//	System.setProperty("webdriver.chrome.driver", projectFolder + "\\browserDriver\\chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver(options);
 	} else if (browser.equals("firefox_headless")) {
-		System.setProperty("webdriver.gecko.driver", projectFolder + "\\browserDriver\\geckodriver.exe");
+		//System.setProperty("webdriver.gecko.driver", projectFolder + "\\browserDriver\\geckodriver.exe");
+		WebDriverManager.firefoxdriver().setup();
 		FirefoxOptions options = new FirefoxOptions();
 		options.setHeadless(true);
 		driver = new FirefoxDriver(options);
 	} else if (browser.equals("chrome_headless")) {
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("headless");
-		System.setProperty("webdriver.chrome.driver", projectFolder + "\\browserDriver\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", projectFolder + "\\browserDriver\\chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver(options);
 	} else if (browser.equals("edge_chromium")) {
-		System.setProperty("webdriver.edge.driver", projectFolder + "\\browserDriver\\msedgedriver.exe");
+		//System.setProperty("webdriver.edge.driver", projectFolder + "\\browserDriver\\msedgedriver.exe");
+		WebDriverManager.edgedriver().setup();
 		driver = new EdgeDriver();
 	} else {
 		throw new RuntimeException("Pleasse input browser name!!!");

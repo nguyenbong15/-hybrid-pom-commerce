@@ -36,14 +36,11 @@
 	
 </listeners>
   <test name="RUN ON FIREFOX_UI">
-  <parameter name="browser" value="firefox_ui"/>
+  <parameter name="browser" value="chrome_ui"/>
    <parameter name="url" value="https://demo.nopcommerce.com"/>
-    <classes>
-
-   <!--    <class name="com.nopcommerce.users.User_01_Regester"/> -->
-      <class name="com.nopcommerce.commons.Common_01_Register"/>
-     <!--  <class name="com.nopcommerce.users.User_02_Login"/> -->
-      <class name="com.nopcommerce.users.User_03_MyAccount"/>
+    <classes>   
+     <!--  <class name="com.nopcommerce.commons.Common_01_Register"/> -->
+      <class name="com.nopcommerce.users.User_06_Wishlist_Compare_RecentView"/>
     </classes>
   </test> 
 <!--   <test name="RUN ON EDGE_CHROMIUM"> -->
