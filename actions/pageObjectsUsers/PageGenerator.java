@@ -71,5 +71,8 @@ public class PageGenerator {
 	public static UserCompareProductsPO getComparePage(WebDriver driver) {
 		return new UserCompareProductsPO(driver);
 		}
+	public static UserOrderPagePO getOrderPage(WebDriver driver) {
+		return new UserOrderPagePO(driver);
+		}
 	
 }

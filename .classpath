@@ -25,5 +25,12 @@
 	<classpathentry kind="lib" path="libExtentVS2/mongodb-driver-3.0.4.jar"/>
 	<classpathentry kind="lib" path="libExtentVS2/mongodb-driver-core-3.0.4.jar"/>
 	<classpathentry kind="lib" path="libExtentVS2/sqlite-jdbc-3.8.11.1.jar"/>
+	<classpathentry kind="lib" path="libWebManager/commons-compress-1.20.jar"/>
+	<classpathentry kind="lib" path="libWebManager/gson-2.8.6.jar"/>
+	<classpathentry kind="lib" path="libWebManager/httpclient5-5.0.1.jar"/>
+	<classpathentry kind="lib" path="libWebManager/httpcore5-5.0.1.jar"/>
+	<classpathentry kind="lib" path="libWebManager/jarchivelib-1.0.0.jar"/>
+	<classpathentry kind="lib" path="libWebManager/webdrivermanager-4.2.0.jar"/>
+	<classpathentry kind="lib" path="libWebManager/slf4j-api-1.7.30.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

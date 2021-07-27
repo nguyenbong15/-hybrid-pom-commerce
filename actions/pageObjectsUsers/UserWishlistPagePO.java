@@ -3,9 +3,6 @@ package pageObjectsUsers;
 import org.openqa.selenium.WebDriver;
 
 import commons.AbstractPage;
-import pageUIsUser.AbstracPageUI;
-import pageUIsUser.UserCustomerInfoPageUI;
-import pageUIsUser.UserHomePageUI;
 import pageUIsUser.UserWishlistPageUI;
 
 public class UserWishlistPagePO extends AbstractPage {

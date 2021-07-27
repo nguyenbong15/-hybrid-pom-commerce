@@ -1,29 +1,18 @@
 package com.nopcommerce.users;
 
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
-import com.nopcommerce.commons.Common_01_Register;
 
 import commons.AbstractTest;
 import pageObjectsUsers.PageGenerator;
-import pageObjectsUsers.UserAddressesPO;
 import pageObjectsUsers.UserCustomerInfoPO;
 import pageObjectsUsers.UserHomePO;
 import pageObjectsUsers.UserLoginPO;
-import pageObjectsUsers.UserMyProductReviewPO;
-import pageObjectsUsers.UserOrderPO;
 import pageObjectsUsers.UserRegisterPO;
 import pageObjectsUsers.UserSearchPagePO;
-
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Parameters;
-
-import java.util.ArrayList;
-
-import javax.sql.rowset.serial.SerialArray;
-
-import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterClass;
 
 public class User_04_Search_Advanced_Search extends AbstractTest {
 
