@@ -11,17 +11,6 @@
     <parameter name="browser" value="chrome_ui"/>
     <parameter name="url" value="https://demo.nopcommerce.com"/>
     <classes>
-      <class name="com.nopcommerce.users.User_06_Wishlist_Compare_RecentView">
-        <methods>
-          <include name="TC_05_Verify_Detial_Product"/>
-          <include name="afterClass"/>
-          <include name="TC_01_Remove_Product"/>
-          <include name="TC_04_Add_To_CompareList"/>
-          <include name="TC_03_Add_To_Shopping_Cart"/>
-          <include name="beforeClass"/>
-          <include name="TC_02_Add_To_Wishlist"/>
-        </methods>
-      </class> <!-- com.nopcommerce.users.User_06_Wishlist_Compare_RecentView -->
       <class name="com.nopcommerce.users.User_07_Order_Edit_Remove_Update_Payment_Shopping_Cart">
         <methods>
           <include name="beforeClass"/>

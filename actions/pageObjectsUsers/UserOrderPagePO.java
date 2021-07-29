@@ -289,9 +289,14 @@ public class UserOrderPagePO extends AbstractPage {
 
 	}
 
-	public void clictToMethodPaymentRadio() {
-		waitToElementclickable(driver, UserOrderPageUI.METHOD_PAYMENT_RADIO);
-		clickToElement(driver, UserOrderPageUI.METHOD_PAYMENT_RADIO);
+	public void clictToCheckMethodPaymentRadio() {
+		waitToElementclickable(driver, UserOrderPageUI.CHECK_PAYMENT_RADIO);
+		clickToElement(driver, UserOrderPageUI.CHECK_PAYMENT_RADIO);
+
+	}
+	public void clicktToCreditCardMethodPaymentRadio() {
+		waitToElementclickable(driver, UserOrderPageUI.CREDIT_CARD_PAYMENT_RADIO);
+		clickToElement(driver, UserOrderPageUI.CREDIT_CARD_PAYMENT_RADIO);
 
 	}
 
@@ -364,6 +369,13 @@ public class UserOrderPagePO extends AbstractPage {
 		waitToElementVisible(driver, UserOrderPageUI.ORDER_NUMBER_TEXT);
 		return getTextElement(driver, UserOrderPageUI.ORDER_NUMBER_TEXT);
 	}
+
+	public void chooseItemInDropdownById(String itemValue, String id) {
+		waitToElementVisible(driver, UserOrderPageUI.DROPDOWN,id);
+		selectItemInDropdown(driver, UserOrderPageUI.DROPDOWN, itemValue,id);
+	}
+
+	
 
 	
 

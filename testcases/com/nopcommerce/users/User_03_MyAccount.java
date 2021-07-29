@@ -102,7 +102,7 @@ public class User_03_MyAccount extends AbstractTest {
 
 	}
 
-	@Test
+	//@Test
 	public void TC_03_Chage_Password() {
      changePasswordPage=addressesPage.openChangePasswordPage(driver);
      changePasswordPage.inputOldPassword(Common_01_Register.passWord);

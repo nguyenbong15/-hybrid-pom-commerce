@@ -112,7 +112,7 @@ public class Level_07_Register_Login_Switch_Page extends AbstractTest {
       
       myProductReview=customerInfoPageObject.openMyProductReviewPage(driver);
       
-      orderPageObject=myProductReview.openOrderPage(driver);
+      orderPageObject=myProductReview.openOrderInCustomerPage(driver);
       customerInfoPageObject=myProductReview.openCustomerInfoPage(driver);
 	}
 

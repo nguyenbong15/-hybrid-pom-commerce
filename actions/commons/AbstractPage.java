@@ -21,6 +21,7 @@ import pageObjectsUsers.UserChangePasswordPO;
 import pageObjectsUsers.UserCustomerInfoPO;
 import pageObjectsUsers.UserMyProductReviewPO;
 import pageObjectsUsers.UserOrderInCustomerInfoPO;
+import pageObjectsUsers.UserOrderPagePO;
 import pageObjectsUsers.UserSearchPagePO;
 import pageObjectsUsers.UserWishlistPagePO;
 import pageUIAdmin.AdminProductPageUI;
@@ -166,6 +167,11 @@ public class AbstractPage {
 
 	public void selectItemInDropdown(WebDriver driver, String locator, String itemValue) {
 		element = getElement(driver, locator);
+		select = new Select(element);
+		select.selectByVisibleText(itemValue);
+	}
+	public void selectItemInDropdown(WebDriver driver, String locator, String itemValue,String...values) {
+		element = getElement(driver, getDynammicLocator(locator, values));
 		select = new Select(element);
 		select.selectByVisibleText(itemValue);
 	}
@@ -473,7 +479,7 @@ public class AbstractPage {
 		return PageGenerator.getUserCustomerInfoPage(driver);
 	}
 
-	public UserOrderInCustomerInfoPO openOrderPage(WebDriver driver) {
+	public UserOrderInCustomerInfoPO openOrderInCustomerPage(WebDriver driver) {
 		waitToElementclickable(driver, AbstracPageUI.ORDER_LINK);
 		clickToElement(driver, AbstracPageUI.ORDER_LINK);
 		return PageGenerator.getUserOrderPage(driver);
@@ -489,6 +495,7 @@ public class AbstractPage {
 		clickToElement(driver, AbstracPageUI.SEARCH_LINK_FOOTER);
 		return PageGenerator.getSearchPage(driver);
 	}
+	
 	
 	public UserWishlistPagePO openWishlistPage(WebDriver driver) {
 		   

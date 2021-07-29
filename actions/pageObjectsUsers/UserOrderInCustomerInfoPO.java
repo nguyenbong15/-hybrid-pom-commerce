@@ -80,4 +80,10 @@ clickToElement(driver, UserOrderInCustomerUI.DETAILS_BUTTON);
 		return getTextElement(driver, UserOrderInCustomerUI.ORDER_TOTAl);
 	}
 
+	public UserOrderPagePO openOrderPage() {
+		waitToElementclickable(driver, UserOrderInCustomerUI.RE_ORDER_BUTTON);
+		clickToElement(driver, UserOrderInCustomerUI.RE_ORDER_BUTTON);
+		return PageGenerator.getOrderPage(driver);
+	}
+
 }

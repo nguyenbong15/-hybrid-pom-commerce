@@ -1,7 +1,7 @@
 package pageUIsUser;
 
 public class UserCompareProductsUI {
-	public static final String COMPUTER_LINK="//ul[@class='top-menu notmobile']//a[text()='Computers ']";
+	public static final String COMPUTER_LINK="//ul[@class='top-menu notmobile']//li[1]//a[text()='Computers ']";
 	public static final String NOTEBOOK_LINK="//ul[@class='top-menu notmobile']//a[text()='Notebooks ']";
 	public static final String ADD_TO_COMPARE_LIST_BUTTON_BY_NAME="//div[@class='center-2']//a[text()='%s']/parent::h2/following-sibling::div[@class='add-info']//button[text()='Add to compare list']";
 	public static final String COMPARE_PRODUCTS_LIST_LINK="//div[@class='footer']//a[text()='Compare products list']";

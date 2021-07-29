@@ -1,7 +1,7 @@
 package pageUIsUser;
 
 public class UserOrderPageUI {
-	public static final String COMPUTER_LINK = "//div[@class='header-menu']//ul[1]//a[text()='Computers ']";
+	public static final String COMPUTER_LINK = "//div[@class='header-menu']//li[1]//a[text()='Computers ']";
 	public static final String DESKTOP_LINK = "//ul[@class='top-menu notmobile']//a[text()='Desktops ']";
 	public static final String NOTEBOOK_LINK = "//ul[@class='top-menu notmobile']//a[text()='Notebooks ']";
 	public static final String NAME_PROUCTS_LINK = "//div[@class='products-wrapper']//a[text()='%s']";
@@ -48,7 +48,8 @@ public class UserOrderPageUI {
 	public static final String CONTINUE_BUTTON = "//div[@id='%s']//button[text()='Continue']";
 	public static final String COUNTRY_DROPDOWN = "//select[@id='BillingNewAddress_CountryId']";
 	public static final String METHOD_SHIP_RADIO = "//input[@id='shippingoption_0']";
-	public static final String METHOD_PAYMENT_RADIO = "//input[@id='paymentmethod_0']";
+	public static final String CHECK_PAYMENT_RADIO = "//input[@id='paymentmethod_0']";
+	public static final String CREDIT_CARD_PAYMENT_RADIO = "//input[@id='paymentmethod_1']";
 	public static final String PAYMENT_INFO = "//div[@class='info']//td";
 	public static final String BILLING_ADDRESS_VERIFY = "//div[@class='billing-info-wrap']//li[@class='%s']";
 	public static final String SHPPING_ADDRESS_VERIFY = "//div[@class='shipping-info-wrap']//li[@class='%s']";
@@ -59,5 +60,7 @@ public class UserOrderPageUI {
 	public static final String COFIRM_BUTTON = "//button[text()='Confirm']";
 	public static final String MESSAGE_ORDER_SUCESS = "//strong[text()='Your order has been successfully processed!']";
 	public static final String ORDER_NUMBER_TEXT= "//strong[contains(text(),'Order number')]";
+	public static final String DROPDOWN= "//select[@id='%s']";
+	
 
 }
