@@ -11,7 +11,7 @@ import pageObjectsUsers.UserCustomerInfoPO;
 import pageObjectsUsers.UserHomePO;
 import pageObjectsUsers.UserLoginPO;
 import pageObjectsUsers.UserMyProductReviewPO;
-import pageObjectsUsers.UserOrderPO;
+import pageObjectsUsers.UserOrderInCustomerInfoPO;
 import pageObjectsUsers.UserRegisterPO;
 
 import org.testng.annotations.BeforeClass;
@@ -30,7 +30,7 @@ public class Level_12_Demo_Share_State extends AbstractTest {
 	UserRegisterPO registerPageObject;
 	UserAddressesPO addressesPage;
 	UserMyProductReviewPO myProductReview;
-	UserOrderPO orderPageObject;
+	UserOrderInCustomerInfoPO orderPageObject;
 
 	
 

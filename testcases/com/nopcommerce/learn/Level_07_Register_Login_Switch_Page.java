@@ -9,7 +9,7 @@ import pageObjectsUsers.UserCustomerInfoPO;
 import pageObjectsUsers.UserHomePO;
 import pageObjectsUsers.UserLoginPO;
 import pageObjectsUsers.UserMyProductReviewPO;
-import pageObjectsUsers.UserOrderPO;
+import pageObjectsUsers.UserOrderInCustomerInfoPO;
 import pageObjectsUsers.UserRegisterPO;
 
 import org.testng.annotations.BeforeClass;
@@ -30,7 +30,7 @@ public class Level_07_Register_Login_Switch_Page extends AbstractTest {
 	UserRegisterPO registerPageObject;
 	UserAddressesPO addressesPage;
 	UserMyProductReviewPO myProductReview;
-	UserOrderPO orderPageObject;
+	UserOrderInCustomerInfoPO orderPageObject;
 
 	String firstName, lastName, email, companyName, passWord, day, month, year;
 

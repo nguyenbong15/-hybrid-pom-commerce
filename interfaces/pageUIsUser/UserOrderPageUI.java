@@ -3,6 +3,7 @@ package pageUIsUser;
 public class UserOrderPageUI {
 	public static final String COMPUTER_LINK = "//div[@class='header-menu']//ul[1]//a[text()='Computers ']";
 	public static final String DESKTOP_LINK = "//ul[@class='top-menu notmobile']//a[text()='Desktops ']";
+	public static final String NOTEBOOK_LINK = "//ul[@class='top-menu notmobile']//a[text()='Notebooks ']";
 	public static final String NAME_PROUCTS_LINK = "//div[@class='products-wrapper']//a[text()='%s']";
 	public static final String PROCESSOR_DROPDOWN = "//select[@id='product_attribute_1']";
 	public static final String RAM_DROPDOWN = "//select[@id='product_attribute_2']";
@@ -14,7 +15,7 @@ public class UserOrderPageUI {
 	public static final String MICROSOFT_CHECKBOX = "//input[@id='product_attribute_5_10']";
 	public static final String ACROBAT_CHECKBOX = "//input[@id='product_attribute_5_11']";
 	public static final String TOTAL_CHECKBOX = "//input[@id='product_attribute_5_12']";
-	public static final String ADD_TO_CART_BUTTON = "//button[@id='add-to-cart-button-1']";
+	public static final String ADD_TO_CART_BUTTON = "//div[@class='overview']//button[text()='Add to cart']";
 	public static final String MESSAGE = "//div[@id='bar-notification']//p";
 	public static final String SHOPPING_CART_LINK = "//li[@id='topcartlink']//a";
 	public static final String NUMBER_IN_CART_LINK = "//li[@id='topcartlink']//span[@class='cart-qty']";
@@ -37,5 +38,26 @@ public class UserOrderPageUI {
 	public static final String QUANTITY_TEXTBOX_IN_SHOPPING_CART_BY_NAME = "//a[text()='%s']/parent::td/following-sibling::td[@class='quantity']//input";
 	public static final String TOTAL_PRICES_IN_SHOPPING_CART_BY_NAME = "//a[text()='%s']/parent::td/following-sibling::td[@class='subtotal']//span";
 	public static final String ICON_LOADING = "//div[@id='ajaxBusy']/span";
+	public static final String GIFT_WRAPPING_DROPDOWN = "//select[@id='checkout_attribute_1']";
+	public static final String GIFT_WRAPPING_TEXT_VERIFY = "//div[@class='selected-checkout-attributes']";
+	public static final String AGREE_SERVICE_CHECKBOX = "//input[@id='termsofservice']";
+	public static final String CHECK_OUT_BUTTON = "//button[@id='checkout']";
+	public static final String SHIP_TO_SAME_ADDRESS_CHECKBOX = "//input[@id='ShipToSameAddress']";
+	public static final String FIRST_LAST_NAME_EMAIL_VERIFY = "//input[@id='%s']";
+	public static final String INPUT_TEXTBOX_BY_ID = "//input[@id='%s']";
+	public static final String CONTINUE_BUTTON = "//div[@id='%s']//button[text()='Continue']";
+	public static final String COUNTRY_DROPDOWN = "//select[@id='BillingNewAddress_CountryId']";
+	public static final String METHOD_SHIP_RADIO = "//input[@id='shippingoption_0']";
+	public static final String METHOD_PAYMENT_RADIO = "//input[@id='paymentmethod_0']";
+	public static final String PAYMENT_INFO = "//div[@class='info']//td";
+	public static final String BILLING_ADDRESS_VERIFY = "//div[@class='billing-info-wrap']//li[@class='%s']";
+	public static final String SHPPING_ADDRESS_VERIFY = "//div[@class='shipping-info-wrap']//li[@class='%s']";
+	public static final String PAYMENT_TEX_VERIFY = "//div[@class='billing-info-wrap']//span[@class='value']";
+	public static final String SHIPPING_TEX_VERIFY = "//div[@class='shipping-info-wrap']//span[@class='value']";
+	public static final String INFO_PRODUCT_VERIFY = "//span[text()='%s']/parent::td/following-sibling::td[@class='product']/a[text()='%s']/parent::td/following-sibling::td[@class='unit-price']/span[text()='%s']/parent::td/following-sibling::td[@class='quantity']/span[text()='%s']/parent::td/following-sibling::td[@class='subtotal']/span[text()='%s']";
+	public static final String CART_FOOTER_VERIFY = "//td//span[@class='value-summary']";
+	public static final String COFIRM_BUTTON = "//button[text()='Confirm']";
+	public static final String MESSAGE_ORDER_SUCESS = "//strong[text()='Your order has been successfully processed!']";
+	public static final String ORDER_NUMBER_TEXT= "//strong[contains(text(),'Order number')]";
 
 }

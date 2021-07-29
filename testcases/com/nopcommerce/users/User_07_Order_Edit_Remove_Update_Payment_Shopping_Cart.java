@@ -1,10 +1,15 @@
 package com.nopcommerce.users;
 
+import java.util.Arrays;
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+
+import com.nopcommerce.commons.Common_01_Register;
 
 import commons.AbstractTest;
 import pageObjectsUsers.PageGenerator;
@@ -12,6 +17,7 @@ import pageObjectsUsers.UserCompareProductsPO;
 import pageObjectsUsers.UserCustomerInfoPO;
 import pageObjectsUsers.UserHomePO;
 import pageObjectsUsers.UserLoginPO;
+import pageObjectsUsers.UserOrderInCustomerInfoPO;
 import pageObjectsUsers.UserOrderPagePO;
 import pageObjectsUsers.UserRegisterPO;
 import pageObjectsUsers.UserWishlistPagePO;
@@ -27,17 +33,25 @@ public class User_07_Order_Edit_Remove_Update_Payment_Shopping_Cart extends Abst
 	UserWishlistPagePO wishlistPage;
 	UserCompareProductsPO comparePage;
 	UserOrderPagePO orderPage;
-
+	UserOrderInCustomerInfoPO orderInCustomer;
+	 String cityName,address,zipCode,phoneNumber,country;
+	String[] info = {"$3,600.00","$0.00","$0.00","$3,600.00","360 points"};
+	 List<String> a= Arrays.asList(info);
+			 
 	@Parameters(value = { "browser", "url" })
 	@BeforeClass
 	public void beforeClass(String browser, String urlValue) {
 
 		driver = getBrowserName(browser, urlValue);
-
-		// homePageObject = PageGenerator.getUserHomePage(driver);
-//		 loginPageObject = homePageObject.clickToLoginLink();
-//		 customerInfor = loginPageObject.loginToSystem(Common_01_Register.email,
-//		 Common_01_Register.passWord);
+		cityName="Việt Nam";
+		address="Hà Nội";
+		zipCode="012W2";
+		phoneNumber="098765335";
+		country="Andorra";
+		 homePageObject = PageGenerator.getUserHomePage(driver);
+		 loginPageObject = homePageObject.clickToLoginLink();
+		 customerInfor = loginPageObject.loginToSystem(Common_01_Register.email,
+		 Common_01_Register.passWord);
 		orderPage = PageGenerator.getOrderPage(driver);
 	}
 
@@ -109,11 +123,11 @@ public class User_07_Order_Edit_Remove_Update_Payment_Shopping_Cart extends Abst
 		verifyEquals(orderPage.getTextMessage(), "Your Shopping Cart is empty!");
 	}
 
-	@Test
+	//@Test
 	public void TC_04_Update_Shopping_cart() {
 		orderPage.clickToComputer();
 		orderPage.clickToDeskRop();
-		orderPage.addToCartByName("Lenovo IdeaCentre 600 All-in-One PC");
+		orderPage.clickAddToCartByName("Lenovo IdeaCentre 600 All-in-One PC");
 		verifyEquals(orderPage.getTexMessageDisplay(), "The product has been added to your shopping cart");
 		orderPage.hoverToShoppingCart();
 		orderPage.clickToGoToCartButton();
@@ -125,6 +139,110 @@ public class User_07_Order_Edit_Remove_Update_Payment_Shopping_Cart extends Abst
 
 	}
 
+	
+	@Test
+	public void TC_05_Order_Products() {
+		orderPage.clickToComputer();
+		orderPage.clickToNotebook();
+		orderPage.clickAddToCartByName("Apple MacBook Pro 13-inch");
+		orderPage.clickToAddToCart();
+		verifyEquals(orderPage.getTexMessageDisplay(), "The product has been added to your shopping cart");
+		orderPage.hoverToShoppingCart();
+		orderPage.clickToGoToCartButton();
+		verifyEquals(orderPage.getTitlePage(), "Shopping cart");
+		verifyEquals(orderPage.getTotalPriceInShoppingCartByName("Apple MacBook Pro 13-inch"), "$3,600.00");
+		orderPage.chooseItemInGiftWrappingDropdown("No");
+		verifyEquals(orderPage.getTexGiftWrapping(), "Gift wrapping: No");
+		orderPage.clickToAgreeServiceCheckbox();
+		orderPage.clickToCheckoutButton();
+		orderPage.clickToShipToSameAddressCheckbox();
+		verifyEquals(orderPage.getTextById("BillingNewAddress_FirstName"), Common_01_Register.firstName);
+		verifyEquals(orderPage.getTextById("BillingNewAddress_LastName"), Common_01_Register.lastName);
+		verifyEquals(orderPage.getTextById("BillingNewAddress_Email"), Common_01_Register.email);
+		verifyEquals(orderPage.getTextById("BillingNewAddress_Company"), Common_01_Register.companyName);
+		orderPage.chooseItemsInCountryDropdown(country);
+		orderPage.inputToTextBoxById(cityName,"BillingNewAddress_City");
+		orderPage.inputToTextBoxById(address,"BillingNewAddress_Address1");
+		orderPage.inputToTextBoxById(zipCode,"BillingNewAddress_ZipPostalCode");
+		orderPage.inputToTextBoxById(phoneNumber,"BillingNewAddress_PhoneNumber");
+		orderPage.clickToContinueButtonById("billing-buttons-container");
+		orderPage.clickToMethodShipRadio();
+		orderPage.clickToContinueButtonById("shipping-method-buttons-container");
+		orderPage.clictToMethodPaymentRadio();
+		orderPage.clickToContinueButtonById("payment-method-buttons-container");
+		verifyEquals(orderPage.getTextPaymentInfo(), "Mail Personal or Business Check, Cashier's Check or money order to:\n" + 
+				"\n" + 
+				"NOP SOLUTIONS\n" + 
+				"your address here,\n" + 
+				"New York, NY 10001\n" + 
+				"USA\n" + 
+				"Notice that if you pay by Personal or Business Check, your order may be held for up to 10 days after we receive your check to allow enough time for the check to clear. If you want us to ship faster upon receipt of your payment, then we recommend your send a money order or Cashier's check.\n" + 
+				"P.S. You can edit this text from admin panel.");
+		orderPage.clickToContinueButtonById("payment-info-buttons-container");
+		verifyEquals(orderPage.getTextBillingAddressByClass("name"), Common_01_Register.firstName+" "+ Common_01_Register.lastName);
+		verifyEquals(orderPage.getTextBillingAddressByClass("email"),"Email: "+ Common_01_Register.email);
+		verifyEquals(orderPage.getTextBillingAddressByClass("phone"), "Phone: "+phoneNumber);
+		verifyEquals(orderPage.getTextBillingAddressByClass("company"), Common_01_Register.companyName);
+		verifyEquals(orderPage.getTextBillingAddressByClass("address1"), address);
+		verifyEquals(orderPage.getTextBillingAddressByClass("city-state-zip"), cityName+","+zipCode);
+		verifyEquals(orderPage.getTextBillingAddressByClass("country"), country);
+		verifyEquals(orderPage.getTextMethodPayment(), "Check / Money Order");
+		
+		
+		verifyEquals(orderPage.getTextShippingAddressByClass("name"), Common_01_Register.firstName+" "+ Common_01_Register.lastName);
+		verifyEquals(orderPage.getTextShippingAddressByClass("email"), "Email: "+Common_01_Register.email);
+		verifyEquals(orderPage.getTextShippingAddressByClass("phone"), "Phone: "+phoneNumber);
+		verifyEquals(orderPage.getTextShippingAddressByClass("company"), Common_01_Register.companyName);
+		verifyEquals(orderPage.getTextShippingAddressByClass("address1"), address);
+		verifyEquals(orderPage.getTextShippingAddressByClass("city-state-zip"), cityName+","+zipCode);
+		verifyEquals(orderPage.getTextShippingAddressByClass("country"), country);
+		verifyEquals(orderPage.getTextMethodShipping(), "Ground");
+		
+		verifyTrue(orderPage.isInfoProductsDiplayed("AP_MBP_13","Apple MacBook Pro 13-inch","$1,800.00","2","$3,600.00"));
+		verifyEquals(orderPage.getTexGiftWrapping(), "Gift wrapping: No");
+		verifyTrue(orderPage.areInfoPaymentInCartFooter(a));
+		
+		orderPage.clickToCofirmButton();
+		
+	//	verifyEquals(orderPage.getTitlePage(), "Thank you");
+		verifyTrue(orderPage.isMessageOrderSuccessDisplayed());
+		verifyTrue(orderPage.isOrderNumberDisplayed());
+		String orderNumber=orderPage.getOrderNumber();
+		homePageObject=PageGenerator.getUserHomePage(driver);
+		customerInfor=homePageObject.clickToMyAccountLink();
+		orderInCustomer=customerInfor.openOrderPage(driver);
+		verifyEquals(orderInCustomer.getOrderNumberInCustomerIfo().toLowerCase(), orderNumber.toLowerCase());
+		orderInCustomer.clickToDetailButton();
+		
+		
+		//verifyEquals(orderInCustomer.getOrderDate(),"" );
+		//verifyEquals(orderInCustomer.getOrderNumberInCustomerIfo().split(""),"" );
+		verifyEquals(orderInCustomer.getOrderTotal(),"$3,600.00" );
+		
+		
+		verifyEquals(orderInCustomer.getTextBillingAddressByClass("name"), Common_01_Register.firstName+" "+ Common_01_Register.lastName);
+		verifyEquals(orderInCustomer.getTextBillingAddressByClass("email"),"Email: "+ Common_01_Register.email);
+		verifyEquals(orderInCustomer.getTextBillingAddressByClass("phone"), "Phone: "+phoneNumber);
+		verifyEquals(orderInCustomer.getTextBillingAddressByClass("company"), Common_01_Register.companyName);
+		verifyEquals(orderInCustomer.getTextBillingAddressByClass("address1"), address);
+		verifyEquals(orderInCustomer.getTextBillingAddressByClass("city-state-zip"), cityName+","+zipCode);
+		verifyEquals(orderInCustomer.getTextBillingAddressByClass("country"), country);
+		verifyEquals(orderInCustomer.getTextMethodPayment(), "Check / Money Order");
+		
+		
+		verifyEquals(orderInCustomer.getTextShippingAddressByClass("name"), Common_01_Register.firstName+" "+ Common_01_Register.lastName);
+		verifyEquals(orderInCustomer.getTextShippingAddressByClass("email"), "Email: "+Common_01_Register.email);
+		verifyEquals(orderInCustomer.getTextShippingAddressByClass("phone"), "Phone: "+phoneNumber);
+		verifyEquals(orderInCustomer.getTextShippingAddressByClass("company"), Common_01_Register.companyName);
+		verifyEquals(orderInCustomer.getTextShippingAddressByClass("address1"), address);
+		verifyEquals(orderInCustomer.getTextShippingAddressByClass("city-state-zip"), cityName+","+zipCode);
+		verifyEquals(orderInCustomer.getTextShippingAddressByClass("country"), country);
+		verifyEquals(orderInCustomer.getTextMethodShipping(), "Ground");
+		
+		verifyTrue(orderInCustomer.isInfoProductsDiplayed("AP_MBP_13","Apple MacBook Pro 13-inch","$1,800.00","2","$3,600.00"));
+		verifyEquals(orderInCustomer.getTexGiftWrapping(), "Gift wrapping: No");
+		verifyTrue(orderInCustomer.areInfoPaymentInCartFooter(a));
+	}
 	@AfterClass(alwaysRun = true)
 	public void afterClass() {
 		closeBrowserAndDriver(driver);

@@ -9,7 +9,7 @@ import pageObjectsUsers.UserCustomerInfoPO;
 import pageObjectsUsers.UserHomePO;
 import pageObjectsUsers.UserLoginPO;
 import pageObjectsUsers.UserMyProductReviewPO;
-import pageObjectsUsers.UserOrderPO;
+import pageObjectsUsers.UserOrderInCustomerInfoPO;
 import pageObjectsUsers.UserRegisterPO;
 
 import org.testng.annotations.BeforeClass;
@@ -30,7 +30,7 @@ public class Level_08_Register_Login_Dynamic_Locator_Rest_Parameter extends Abst
 	UserRegisterPO registerPageObject;
 	UserAddressesPO addressesPage;
 	UserMyProductReviewPO myProductReview;
-	UserOrderPO orderPageObject;
+	UserOrderInCustomerInfoPO orderPageObject;
 
 	String firstName, lastName, email, companyName, passWord, day, month, year;
 
@@ -113,7 +113,7 @@ public class Level_08_Register_Login_Dynamic_Locator_Rest_Parameter extends Abst
 		
 		myProductReview=(UserMyProductReviewPO) customerInfoPageObject.openLinkByPageName(driver,"My product reviews");
 		
-		orderPageObject=(UserOrderPO) myProductReview.openLinkByPageName(driver,"Orders");
+		orderPageObject=(UserOrderInCustomerInfoPO) myProductReview.openLinkByPageName(driver,"Orders");
 		customerInfoPageObject=(UserCustomerInfoPO) orderPageObject.openLinkByPageName(driver,"Customer info");
 	}
 	//Trường hợp nhiều page >10

@@ -39,9 +39,14 @@
   <parameter name="browser" value="chrome_ui"/>
    <parameter name="url" value="https://demo.nopcommerce.com"/>
     <classes>   
-     <!--  <class name="com.nopcommerce.commons.Common_01_Register"/> -->
+      <class name="com.nopcommerce.commons.Common_01_Register"/>
       <class name="com.nopcommerce.users.User_07_Order_Edit_Remove_Update_Payment_Shopping_Cart"/>
-    </classes>
+       </classes>
+      <!-- <packages>
+       <package name="com.nopcommerce.commons"/>
+       <package name="com.nopcommerce.users"/>
+      </packages> -->
+   
   </test> 
 <!--   <test name="RUN ON EDGE_CHROMIUM"> -->
 <!--    <parameter name="browser" value="edge_chromium"/> -->

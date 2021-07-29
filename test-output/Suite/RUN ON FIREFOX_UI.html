@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>RUN ON FIREFOX_UI</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/4</td>
+<td>Tests passed/Failed/Skipped:</td><td>21/6/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Jun 12 14:53:14 ICT 2021</td>
+<td>Started on:</td><td>Thu Jul 29 18:04:49 ICT 2021</td>
 </tr>
-<tr><td>Total time:</td><td>18 seconds (18446 ms)</td>
+<tr><td>Total time:</td><td>306 seconds (306224 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,21 +68,29 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.nopcommerce.users.User_03_MyAccount.beforeClass()'><b>beforeClass</b><br>Test class: com.nopcommerce.users.User_03_MyAccount<br>Parameters: firefox_ui, https://demo.nopcommerce.com</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: Failed to convert data to an object
+<td title='com.nopcommerce.users.User_06_Wishlist_Compare_RecentView.TC_01_Remove_Product()'><b>TC_01_Remove_Product</b><br>Test class: com.nopcommerce.users.User_06_Wishlist_Compare_RecentView</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //ul[@class=&apos;top-menu notmobile&apos;]//a[text()=&apos;Computers &apos;] (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at commons.AbstractPage.waitToElementVisible(AbstractPage.java:389)
+	at commons.AbstractPage.openWishlistPage(AbstractPage.java:495)
+	at com.nopcommerce.users.User_06_Wishlist_Compare_RecentView.TC_01_Remove_Product(User_06_Wishlist_Compare_RecentView.java:46)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//ul[@class=&apos;top-menu notmobile&apos;]//a[text()=&apos;Computers &apos;]&quot;}
+  (Session info: chrome=92.0.4515.107)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
 System info: host: &apos;DESKTOP-MC&apos;, ip: &apos;192.168.109.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200708170202, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 3152, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 40b6c6cd-7ba9-4d9e-8f7c-9df3b631a5ca
-*** Element info: {Using=xpath, value=//a[@class=&apos;ico-account&apos;]}
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58332}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 172f97b11169881291ca61af6ac2fb2d
+*** Element info: {Using=xpath, value=//ul[@class=&apos;top-menu notmobile&apos;]//a[text()=&apos;Computers &apos;]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -95,20 +103,49 @@ Session ID: 40b6c6cd-7ba9-4d9e-8f7c-9df3b631a5ca
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
 	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at commons.AbstractPage.waitToElementclickable(AbstractPage.java:402)
-	at pageObjects.UserCustomerInfoPO.clickToMyaccountLink(UserCustomerInfoPO.java:61)
-	at com.nopcommerce.users.User_03_MyAccount.beforeClass(User_03_MyAccount.java:51)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1332691311", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1332691311'><pre>org.openqa.selenium.WebDriverException: Failed to convert data to an object
+	... 28 more
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1771486148", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1771486148'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //ul[@class=&apos;top-menu notmobile&apos;]//a[text()=&apos;Computers &apos;] (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at commons.AbstractPage.waitToElementVisible(AbstractPage.java:389)
+	at commons.AbstractPage.openWishlistPage(AbstractPage.java:495)
+	at com.nopcommerce.users.User_06_Wishlist_Compare_RecentView.TC_01_Remove_Product(User_06_Wishlist_Compare_RecentView.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//ul[@class=&apos;top-menu notmobile&apos;]//a[text()=&apos;Computers &apos;]&quot;}
+  (Session info: chrome=92.0.4515.107)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
 System info: host: &apos;DESKTOP-MC&apos;, ip: &apos;192.168.109.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200708170202, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 3152, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 40b6c6cd-7ba9-4d9e-8f7c-9df3b631a5ca
-*** Element info: {Using=xpath, value=//a[@class=&apos;ico-account&apos;]}
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58332}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 172f97b11169881291ca61af6ac2fb2d
+*** Element info: {Using=xpath, value=//ul[@class=&apos;top-menu notmobile&apos;]//a[text()=&apos;Computers &apos;]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -125,23 +162,28 @@ Session ID: 40b6c6cd-7ba9-4d9e-8f7c-9df3b631a5ca
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
 	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at commons.AbstractPage.waitToElementclickable(AbstractPage.java:402)
-	at pageObjects.UserCustomerInfoPO.clickToMyaccountLink(UserCustomerInfoPO.java:61)
-	at com.nopcommerce.users.User_03_MyAccount.beforeClass(User_03_MyAccount.java:51)
+	... 28 more
+</pre></div></td>
+<td>30</td>
+<td>com.nopcommerce.users.User_06_Wishlist_Compare_RecentView@44c8afef</td></tr>
+<tr>
+<td title='com.nopcommerce.users.User_06_Wishlist_Compare_RecentView.TC_02_Add_To_Wishlist()'><b>TC_02_Add_To_Wishlist</b><br>Test class: com.nopcommerce.users.User_06_Wishlist_Compare_RecentView</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.nopcommerce.users.User_06_Wishlist_Compare_RecentView.TC_02_Add_To_Wishlist(User_06_Wishlist_Compare_RecentView.java:63)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace564508057", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace564508057'><pre>java.lang.NullPointerException
+	at com.nopcommerce.users.User_06_Wishlist_Compare_RecentView.TC_02_Add_To_Wishlist(User_06_Wishlist_Compare_RecentView.java:63)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
 	at org.testng.TestRunner.run(TestRunner.java:505)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
@@ -158,360 +200,713 @@ Session ID: 40b6c6cd-7ba9-4d9e-8f7c-9df3b631a5ca
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>17</td>
-<td>com.nopcommerce.users.User_03_MyAccount@3d921e20</td></tr>
+<td>0</td>
+<td>com.nopcommerce.users.User_06_Wishlist_Compare_RecentView@44c8afef</td></tr>
+<tr>
+<td title='com.nopcommerce.users.User_06_Wishlist_Compare_RecentView.TC_03_Add_To_Shopping_Cart()'><b>TC_03_Add_To_Shopping_Cart</b><br>Test class: com.nopcommerce.users.User_06_Wishlist_Compare_RecentView</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.nopcommerce.users.User_06_Wishlist_Compare_RecentView.TC_03_Add_To_Shopping_Cart(User_06_Wishlist_Compare_RecentView.java:79)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1693686046", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1693686046'><pre>java.lang.NullPointerException
+	at com.nopcommerce.users.User_06_Wishlist_Compare_RecentView.TC_03_Add_To_Shopping_Cart(User_06_Wishlist_Compare_RecentView.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.nopcommerce.users.User_06_Wishlist_Compare_RecentView@44c8afef</td></tr>
+<tr>
+<td title='com.nopcommerce.users.User_06_Wishlist_Compare_RecentView.TC_04_Add_To_CompareList()'><b>TC_04_Add_To_CompareList</b><br>Test class: com.nopcommerce.users.User_06_Wishlist_Compare_RecentView</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //ul[@class=&apos;top-menu notmobile&apos;]//a[text()=&apos;Computers &apos;] (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at commons.AbstractPage.waitToElementVisible(AbstractPage.java:389)
+	at pageObjectsUsers.UserCompareProductsPO.hoverToComputerLink(UserCompareProductsPO.java:17)
+	at com.nopcommerce.users.User_06_Wishlist_Compare_RecentView.TC_04_Add_To_CompareList(User_06_Wishlist_Compare_RecentView.java:92)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//ul[@class=&apos;top-menu notmobile&apos;]//a[text()=&apos;Computers &apos;]&quot;}
+  (Session info: chrome=92.0.4515.107)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-MC&apos;, ip: &apos;192.168.109.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58332}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 172f97b11169881291ca61af6ac2fb2d
+*** Element info: {Using=xpath, value=//ul[@class=&apos;top-menu notmobile&apos;]//a[text()=&apos;Computers &apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 28 more
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace997919575", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace997919575'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //ul[@class=&apos;top-menu notmobile&apos;]//a[text()=&apos;Computers &apos;] (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at commons.AbstractPage.waitToElementVisible(AbstractPage.java:389)
+	at pageObjectsUsers.UserCompareProductsPO.hoverToComputerLink(UserCompareProductsPO.java:17)
+	at com.nopcommerce.users.User_06_Wishlist_Compare_RecentView.TC_04_Add_To_CompareList(User_06_Wishlist_Compare_RecentView.java:92)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//ul[@class=&apos;top-menu notmobile&apos;]//a[text()=&apos;Computers &apos;]&quot;}
+  (Session info: chrome=92.0.4515.107)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-MC&apos;, ip: &apos;192.168.109.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58332}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 172f97b11169881291ca61af6ac2fb2d
+*** Element info: {Using=xpath, value=//ul[@class=&apos;top-menu notmobile&apos;]//a[text()=&apos;Computers &apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 28 more
+</pre></div></td>
+<td>30</td>
+<td>com.nopcommerce.users.User_06_Wishlist_Compare_RecentView@44c8afef</td></tr>
+<tr>
+<td title='com.nopcommerce.users.User_07_Order_Edit_Remove_Update_Payment_Shopping_Cart.TC_05_Order_Products()'><b>TC_05_Order_Products</b><br>Test class: com.nopcommerce.users.User_07_Order_Edit_Remove_Update_Payment_Shopping_Cart</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class=&apos;header-menu&apos;]//ul[1]//a[text()=&apos;Computers &apos;] (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at commons.AbstractPage.waitToElementVisible(AbstractPage.java:389)
+	at pageObjectsUsers.UserOrderPagePO.clickToComputer(UserOrderPagePO.java:24)
+	at com.nopcommerce.users.User_07_Order_Edit_Remove_Update_Payment_Shopping_Cart.TC_05_Order_Products(User_07_Order_Edit_Remove_Update_Payment_Shopping_Cart.java:145)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;header-menu&apos;]//ul[1]//a[text()=&apos;Computers &apos;]&quot;}
+  (Session info: chrome=92.0.4515.107)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-MC&apos;, ip: &apos;192.168.109.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52176}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5fbe3064e64ac8b8447772e2105b33ee
+*** Element info: {Using=xpath, value=//div[@class=&apos;header-menu&apos;]//ul[1]//a[text()=&apos;Computers &apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 28 more
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace422534969", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace422534969'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class=&apos;header-menu&apos;]//ul[1]//a[text()=&apos;Computers &apos;] (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at commons.AbstractPage.waitToElementVisible(AbstractPage.java:389)
+	at pageObjectsUsers.UserOrderPagePO.clickToComputer(UserOrderPagePO.java:24)
+	at com.nopcommerce.users.User_07_Order_Edit_Remove_Update_Payment_Shopping_Cart.TC_05_Order_Products(User_07_Order_Edit_Remove_Update_Payment_Shopping_Cart.java:145)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;header-menu&apos;]//ul[1]//a[text()=&apos;Computers &apos;]&quot;}
+  (Session info: chrome=92.0.4515.107)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-MC&apos;, ip: &apos;192.168.109.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52176}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5fbe3064e64ac8b8447772e2105b33ee
+*** Element info: {Using=xpath, value=//div[@class=&apos;header-menu&apos;]//ul[1]//a[text()=&apos;Computers &apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 28 more
+</pre></div></td>
+<td>30</td>
+<td>com.nopcommerce.users.User_07_Order_Edit_Remove_Update_Payment_Shopping_Cart@7b69c6ba</td></tr>
+<tr>
+<td title='com.nopcommerce.users.User_06_Wishlist_Compare_RecentView.TC_05_Verify_Detial_Product()'><b>TC_05_Verify_Detial_Product</b><br>Test class: com.nopcommerce.users.User_06_Wishlist_Compare_RecentView</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //ul[@class=&apos;top-menu notmobile&apos;]//a[text()=&apos;Computers &apos;] (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at commons.AbstractPage.waitToElementVisible(AbstractPage.java:389)
+	at pageObjectsUsers.UserCompareProductsPO.hoverToComputerLink(UserCompareProductsPO.java:17)
+	at com.nopcommerce.users.User_06_Wishlist_Compare_RecentView.TC_05_Verify_Detial_Product(User_06_Wishlist_Compare_RecentView.java:118)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//ul[@class=&apos;top-menu notmobile&apos;]//a[text()=&apos;Computers &apos;]&quot;}
+  (Session info: chrome=92.0.4515.107)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-MC&apos;, ip: &apos;192.168.109.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58332}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 172f97b11169881291ca61af6ac2fb2d
+*** Element info: {Using=xpath, value=//ul[@class=&apos;top-menu notmobile&apos;]//a[text()=&apos;Computers &apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 28 more
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace474210166", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace474210166'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //ul[@class=&apos;top-menu notmobile&apos;]//a[text()=&apos;Computers &apos;] (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at commons.AbstractPage.waitToElementVisible(AbstractPage.java:389)
+	at pageObjectsUsers.UserCompareProductsPO.hoverToComputerLink(UserCompareProductsPO.java:17)
+	at com.nopcommerce.users.User_06_Wishlist_Compare_RecentView.TC_05_Verify_Detial_Product(User_06_Wishlist_Compare_RecentView.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//ul[@class=&apos;top-menu notmobile&apos;]//a[text()=&apos;Computers &apos;]&quot;}
+  (Session info: chrome=92.0.4515.107)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-MC&apos;, ip: &apos;192.168.109.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58332}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 172f97b11169881291ca61af6ac2fb2d
+*** Element info: {Using=xpath, value=//ul[@class=&apos;top-menu notmobile&apos;]//a[text()=&apos;Computers &apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 28 more
+</pre></div></td>
+<td>30</td>
+<td>com.nopcommerce.users.User_06_Wishlist_Compare_RecentView@44c8afef</td></tr>
 </table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.nopcommerce.users.User_03_MyAccount.TC_01_Update_Customer_Info()'><b>TC_01_Update_Customer_Info</b><br>Test class: com.nopcommerce.users.User_03_MyAccount</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: Failed to convert data to an object
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
-System info: host: &apos;DESKTOP-MC&apos;, ip: &apos;192.168.109.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200708170202, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 3152, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 40b6c6cd-7ba9-4d9e-8f7c-9df3b631a5ca
-*** Element info: {Using=xpath, value=//a[@class=&apos;ico-account&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at commons.AbstractPage.waitToElementclickable(AbstractPage.java:402)
-	at pageObjects.UserCustomerInfoPO.clickToMyaccountLink(UserCustomerInfoPO.java:61)
-	at com.nopcommerce.users.User_03_MyAccount.beforeClass(User_03_MyAccount.java:51)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1845517769", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1845517769'><pre>org.openqa.selenium.WebDriverException: Failed to convert data to an object
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
-System info: host: &apos;DESKTOP-MC&apos;, ip: &apos;192.168.109.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200708170202, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 3152, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 40b6c6cd-7ba9-4d9e-8f7c-9df3b631a5ca
-*** Element info: {Using=xpath, value=//a[@class=&apos;ico-account&apos;]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at commons.AbstractPage.waitToElementclickable(AbstractPage.java:402)
-	at pageObjects.UserCustomerInfoPO.clickToMyaccountLink(UserCustomerInfoPO.java:61)
-	at com.nopcommerce.users.User_03_MyAccount.beforeClass(User_03_MyAccount.java:51)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
+<td title='com.nopcommerce.users.User_02_Login.TC_01_Login_With_Empty_Data()'><b>TC_01_Login_With_Empty_Data</b><br>Test class: com.nopcommerce.users.User_02_Login<br/>
+<a href="#Output-655059806" onClick='toggleBox("Output-655059806", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-655059806" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-655059806">
+[INFO ] [2021-07-29 18:05:37,198] Step-01: Click login button
+<br><br/>
+[INFO ] [2021-07-29 18:05:37,342] Step-02: verify text
+<br><br/>
+[INFO ] [2021-07-29 18:05:37,433]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
 <td>0</td>
-<td>com.nopcommerce.users.User_03_MyAccount@3d921e20</td></tr>
+<td>com.nopcommerce.users.User_02_Login@5f3a4b84</td></tr>
 <tr>
-<td title='com.nopcommerce.users.User_03_MyAccount.TC_02_Add_Address()'><b>TC_02_Add_Address</b><br>Test class: com.nopcommerce.users.User_03_MyAccount</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: Failed to convert data to an object
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
-System info: host: &apos;DESKTOP-MC&apos;, ip: &apos;192.168.109.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200708170202, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 3152, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 40b6c6cd-7ba9-4d9e-8f7c-9df3b631a5ca
-*** Element info: {Using=xpath, value=//a[@class=&apos;ico-account&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at commons.AbstractPage.waitToElementclickable(AbstractPage.java:402)
-	at pageObjects.UserCustomerInfoPO.clickToMyaccountLink(UserCustomerInfoPO.java:61)
-	at com.nopcommerce.users.User_03_MyAccount.beforeClass(User_03_MyAccount.java:51)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1131184547", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1131184547'><pre>org.openqa.selenium.WebDriverException: Failed to convert data to an object
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
-System info: host: &apos;DESKTOP-MC&apos;, ip: &apos;192.168.109.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200708170202, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 3152, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 40b6c6cd-7ba9-4d9e-8f7c-9df3b631a5ca
-*** Element info: {Using=xpath, value=//a[@class=&apos;ico-account&apos;]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at commons.AbstractPage.waitToElementclickable(AbstractPage.java:402)
-	at pageObjects.UserCustomerInfoPO.clickToMyaccountLink(UserCustomerInfoPO.java:61)
-	at com.nopcommerce.users.User_03_MyAccount.beforeClass(User_03_MyAccount.java:51)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
+<td title='com.nopcommerce.users.User_01_Regester.TC_01_Register_With_Empty_Data()'><b>TC_01_Register_With_Empty_Data</b><br>Test class: com.nopcommerce.users.User_01_Regester<br/>
+<a href="#Output-1337835760" onClick='toggleBox("Output-1337835760", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1337835760" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1337835760">
+[INFO ] [2021-07-29 18:05:14,459] Step 01 - click to register button
+<br><br/>
+[INFO ] [2021-07-29 18:05:14,632] Step 02 - verify message error
+<br><br/>
+[INFO ] [2021-07-29 18:05:14,722]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-07-29 18:05:14,801]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-07-29 18:05:14,878]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-07-29 18:05:14,954]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-07-29 18:05:15,033]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
 <td>0</td>
-<td>com.nopcommerce.users.User_03_MyAccount@3d921e20</td></tr>
+<td>com.nopcommerce.users.User_01_Regester@5bcea91b</td></tr>
 <tr>
-<td title='com.nopcommerce.users.User_03_MyAccount.TC_03_Chage_Password()'><b>TC_03_Chage_Password</b><br>Test class: com.nopcommerce.users.User_03_MyAccount</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: Failed to convert data to an object
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
-System info: host: &apos;DESKTOP-MC&apos;, ip: &apos;192.168.109.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200708170202, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 3152, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 40b6c6cd-7ba9-4d9e-8f7c-9df3b631a5ca
-*** Element info: {Using=xpath, value=//a[@class=&apos;ico-account&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at commons.AbstractPage.waitToElementclickable(AbstractPage.java:402)
-	at pageObjects.UserCustomerInfoPO.clickToMyaccountLink(UserCustomerInfoPO.java:61)
-	at com.nopcommerce.users.User_03_MyAccount.beforeClass(User_03_MyAccount.java:51)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1508059488", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1508059488'><pre>org.openqa.selenium.WebDriverException: Failed to convert data to an object
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
-System info: host: &apos;DESKTOP-MC&apos;, ip: &apos;192.168.109.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200708170202, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 3152, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 40b6c6cd-7ba9-4d9e-8f7c-9df3b631a5ca
-*** Element info: {Using=xpath, value=//a[@class=&apos;ico-account&apos;]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at commons.AbstractPage.waitToElementclickable(AbstractPage.java:402)
-	at pageObjects.UserCustomerInfoPO.clickToMyaccountLink(UserCustomerInfoPO.java:61)
-	at com.nopcommerce.users.User_03_MyAccount.beforeClass(User_03_MyAccount.java:51)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.nopcommerce.users.User_03_MyAccount@3d921e20</td></tr>
+<td title='com.nopcommerce.users.User_03_MyAccount.TC_01_Update_Customer_Info()'><b>TC_01_Update_Customer_Info</b><br>Test class: com.nopcommerce.users.User_03_MyAccount<br/>
+<a href="#Output-1476484694" onClick='toggleBox("Output-1476484694", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1476484694" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1476484694">
+[INFO ] [2021-07-29 18:06:19,645]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-07-29 18:06:19,712]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-07-29 18:06:19,777]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-07-29 18:06:19,902]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-07-29 18:06:20,055]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-07-29 18:06:21,067]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-07-29 18:06:21,137]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.nopcommerce.users.User_03_MyAccount@27f723</td></tr>
 <tr>
-<td title='com.nopcommerce.users.User_03_MyAccount.TC_04_My_Products_Reviews()'><b>TC_04_My_Products_Reviews</b><br>Test class: com.nopcommerce.users.User_03_MyAccount</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: Failed to convert data to an object
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
-System info: host: &apos;DESKTOP-MC&apos;, ip: &apos;192.168.109.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200708170202, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 3152, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 40b6c6cd-7ba9-4d9e-8f7c-9df3b631a5ca
-*** Element info: {Using=xpath, value=//a[@class=&apos;ico-account&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at commons.AbstractPage.waitToElementclickable(AbstractPage.java:402)
-	at pageObjects.UserCustomerInfoPO.clickToMyaccountLink(UserCustomerInfoPO.java:61)
-	at com.nopcommerce.users.User_03_MyAccount.beforeClass(User_03_MyAccount.java:51)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1533524862", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1533524862'><pre>org.openqa.selenium.WebDriverException: Failed to convert data to an object
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
-System info: host: &apos;DESKTOP-MC&apos;, ip: &apos;192.168.109.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200708170202, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 3152, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 40b6c6cd-7ba9-4d9e-8f7c-9df3b631a5ca
-*** Element info: {Using=xpath, value=//a[@class=&apos;ico-account&apos;]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at commons.AbstractPage.waitToElementclickable(AbstractPage.java:402)
-	at pageObjects.UserCustomerInfoPO.clickToMyaccountLink(UserCustomerInfoPO.java:61)
-	at com.nopcommerce.users.User_03_MyAccount.beforeClass(User_03_MyAccount.java:51)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
+<td title='com.nopcommerce.users.User_03_MyAccount.TC_02_Add_Address()'><b>TC_02_Add_Address</b><br>Test class: com.nopcommerce.users.User_03_MyAccount<br/>
+<a href="#Output-1260308116" onClick='toggleBox("Output-1260308116", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1260308116" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1260308116">
+[INFO ] [2021-07-29 18:06:30,582]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-07-29 18:06:30,663]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-07-29 18:06:30,742]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-07-29 18:06:30,819]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-07-29 18:06:30,914]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-07-29 18:06:30,988]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-07-29 18:06:31,066]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>com.nopcommerce.users.User_03_MyAccount@27f723</td></tr>
+<tr>
+<td title='com.nopcommerce.users.User_02_Login.TC_02_Login_With_Invalid_Email()'><b>TC_02_Login_With_Invalid_Email</b><br>Test class: com.nopcommerce.users.User_02_Login<br/>
+<a href="#Output-287859212" onClick='toggleBox("Output-287859212", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-287859212" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-287859212">
+[INFO ] [2021-07-29 18:05:37,436] Step-01: senkey to Email Texbox
+<br><br/>
+[INFO ] [2021-07-29 18:05:38,159] Step-02: Click login button
+<br><br/>
+[INFO ] [2021-07-29 18:05:38,274] Step-03: verify text
+<br><br/>
+[INFO ] [2021-07-29 18:05:38,357]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
 <td>0</td>
-<td>com.nopcommerce.users.User_03_MyAccount@3d921e20</td></tr>
+<td>com.nopcommerce.users.User_02_Login@5f3a4b84</td></tr>
+<tr>
+<td title='com.nopcommerce.users.User_01_Regester.TC_02_Register_With_Invalid_Email()'><b>TC_02_Register_With_Invalid_Email</b><br>Test class: com.nopcommerce.users.User_01_Regester<br/>
+<a href="#Output-689448569" onClick='toggleBox("Output-689448569", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-689448569" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-689448569">
+[INFO ] [2021-07-29 18:05:20,471]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.nopcommerce.users.User_01_Regester@5bcea91b</td></tr>
+<tr>
+<td title='com.nopcommerce.users.User_03_MyAccount.TC_03_Chage_Password()'><b>TC_03_Chage_Password</b><br>Test class: com.nopcommerce.users.User_03_MyAccount<br/>
+<a href="#Output-1262638455" onClick='toggleBox("Output-1262638455", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1262638455" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1262638455">
+[INFO ] [2021-07-29 18:06:41,118]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-07-29 18:06:51,217]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-07-29 18:06:51,279]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>com.nopcommerce.users.User_03_MyAccount@27f723</td></tr>
+<tr>
+<td title='com.nopcommerce.users.User_02_Login.TC_03_Login_With_Email_Not_Exist()'><b>TC_03_Login_With_Email_Not_Exist</b><br>Test class: com.nopcommerce.users.User_02_Login<br/>
+<a href="#Output-1237907176" onClick='toggleBox("Output-1237907176", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1237907176" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1237907176">
+[INFO ] [2021-07-29 18:05:38,365] Step-01: senkey to Email Texbox
+<br><br/>
+[INFO ] [2021-07-29 18:05:39,105] Step-02: Click login button
+<br><br/>
+[INFO ] [2021-07-29 18:05:39,861] Step-03: verify text
+<br><br/>
+[INFO ] [2021-07-29 18:05:39,953]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.nopcommerce.users.User_02_Login@5f3a4b84</td></tr>
+<tr>
+<td title='com.nopcommerce.users.User_02_Login.TC_04_Login_With_Email_Exist_And_Empty_Password()'><b>TC_04_Login_With_Email_Exist_And_Empty_Password</b><br>Test class: com.nopcommerce.users.User_02_Login<br/>
+<a href="#Output-508756323" onClick='toggleBox("Output-508756323", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-508756323" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-508756323">
+[INFO ] [2021-07-29 18:05:39,956] Step-01: senkey to Email Texbox
+<br><br/>
+[INFO ] [2021-07-29 18:05:40,690] Step-02: Click login button
+<br><br/>
+[INFO ] [2021-07-29 18:05:41,282] Step-03: verify text
+<br><br/>
+[INFO ] [2021-07-29 18:05:41,368]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.nopcommerce.users.User_02_Login@5f3a4b84</td></tr>
+<tr>
+<td title='com.nopcommerce.users.User_03_MyAccount.TC_04_My_Products_Reviews()'><b>TC_04_My_Products_Reviews</b><br>Test class: com.nopcommerce.users.User_03_MyAccount<br/>
+<a href="#Output-1258539949" onClick='toggleBox("Output-1258539949", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1258539949" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1258539949">
+[INFO ] [2021-07-29 18:06:59,591]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-07-29 18:07:01,674]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-07-29 18:07:01,748]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-07-29 18:07:01,828]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>com.nopcommerce.users.User_03_MyAccount@27f723</td></tr>
+<tr>
+<td title='com.nopcommerce.users.User_01_Regester.TC_04_Register_With_Password_Under6()'><b>TC_04_Register_With_Password_Under6</b><br>Test class: com.nopcommerce.users.User_01_Regester<br/>
+<a href="#Output-1399398408" onClick='toggleBox("Output-1399398408", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1399398408" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1399398408">
+[INFO ] [2021-07-29 18:05:22,892]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-07-29 18:05:22,970]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.nopcommerce.users.User_01_Regester@5bcea91b</td></tr>
+<tr>
+<td title='com.nopcommerce.users.User_04_Search_Advanced_Search.TC_04_Search_With_Name_Products_Absolute()'><b>TC_04_Search_With_Name_Products_Absolute</b><br>Test class: com.nopcommerce.users.User_04_Search_Advanced_Search<br/>
+<a href="#Output-120999784" onClick='toggleBox("Output-120999784", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-120999784" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-120999784">
+[INFO ] [2021-07-29 18:07:10,939]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.nopcommerce.users.User_04_Search_Advanced_Search@670b40af</td></tr>
+<tr>
+<td title='com.nopcommerce.users.User_05_Sort_Display_Paging.TC_05_Display_Products_By_Number_Paging()'><b>TC_05_Display_Products_By_Number_Paging</b><br>Test class: com.nopcommerce.users.User_05_Sort_Display_Paging<br/>
+<a href="#Output-1855229724" onClick='toggleBox("Output-1855229724", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1855229724" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1855229724">
+[INFO ] [2021-07-29 18:07:29,759]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-07-29 18:07:29,837]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-07-29 18:07:31,168]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.nopcommerce.users.User_05_Sort_Display_Paging@4923ab24</td></tr>
+<tr>
+<td title='com.nopcommerce.users.User_02_Login.TC_05_Login_With_Email_Exist_And_Password_Wrong()'><b>TC_05_Login_With_Email_Exist_And_Password_Wrong</b><br>Test class: com.nopcommerce.users.User_02_Login<br/>
+<a href="#Output-679613617" onClick='toggleBox("Output-679613617", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-679613617" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-679613617">
+[INFO ] [2021-07-29 18:05:41,371] Step-01: senkey to Email Texbox
+<br><br/>
+[INFO ] [2021-07-29 18:05:42,133] Step-02: senkey to password Texbox
+<br><br/>
+[INFO ] [2021-07-29 18:05:42,856] Step-03: Click login button
+<br><br/>
+[INFO ] [2021-07-29 18:05:43,406] Step-04: verify text
+<br><br/>
+[INFO ] [2021-07-29 18:05:43,517]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.nopcommerce.users.User_02_Login@5f3a4b84</td></tr>
+<tr>
+<td title='com.nopcommerce.users.User_01_Regester.TC_05_Register_With_Password_Wrong()'><b>TC_05_Register_With_Password_Wrong</b><br>Test class: com.nopcommerce.users.User_01_Regester<br/>
+<a href="#Output-1572820532" onClick='toggleBox("Output-1572820532", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1572820532" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1572820532">
+[INFO ] [2021-07-29 18:05:24,568]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.nopcommerce.users.User_01_Regester@5bcea91b</td></tr>
+<tr>
+<td title='com.nopcommerce.users.User_04_Search_Advanced_Search.TC_05_Search_Advance_With_Parent_Categories()'><b>TC_05_Search_Advance_With_Parent_Categories</b><br>Test class: com.nopcommerce.users.User_04_Search_Advanced_Search<br/>
+<a href="#Output-1549377783" onClick='toggleBox("Output-1549377783", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1549377783" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1549377783">
+[INFO ] [2021-07-29 18:07:12,083]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-07-29 18:07:13,291]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.nopcommerce.users.User_04_Search_Advanced_Search@670b40af</td></tr>
+<tr>
+<td title='com.nopcommerce.users.User_02_Login.TC_06_Login_Success()'><b>TC_06_Login_Success</b><br>Test class: com.nopcommerce.users.User_02_Login<br/>
+<a href="#Output-1681434622" onClick='toggleBox("Output-1681434622", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1681434622" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1681434622">
+[INFO ] [2021-07-29 18:05:43,520] Step 01- input email texbox
+<br><br/>
+[INFO ] [2021-07-29 18:05:44,298] Step 02- input passWord texbox
+<br><br/>
+[INFO ] [2021-07-29 18:05:44,987] Step 03- click to login button 
+<br><br/>
+[INFO ] [2021-07-29 18:05:46,119] Step 04-verify my account link displayed 
+<br><br/>
+[INFO ] [2021-07-29 18:05:46,179]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-07-29 18:05:46,179] Step 05-verify Logout link displayed 
+<br><br/>
+[INFO ] [2021-07-29 18:05:46,225]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-07-29 18:05:46,225] Step 06-verify Regester Link UnDisplayed 
+<br><br/>
+[INFO ] [2021-07-29 18:05:56,420]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-07-29 18:05:56,420] Step 07-verify Login link undisplayed 
+<br><br/>
+[INFO ] [2021-07-29 18:06:06,631]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>23</td>
+<td>com.nopcommerce.users.User_02_Login@5f3a4b84</td></tr>
+<tr>
+<td title='com.nopcommerce.users.User_01_Regester.TC_06_Register_Success()'><b>TC_06_Register_Success</b><br>Test class: com.nopcommerce.users.User_01_Regester<br/>
+<a href="#Output-1155399955" onClick='toggleBox("Output-1155399955", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1155399955" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1155399955">
+[INFO ] [2021-07-29 18:05:28,167]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>com.nopcommerce.users.User_01_Regester@5bcea91b</td></tr>
+<tr>
+<td title='com.nopcommerce.users.User_04_Search_Advanced_Search.TC_06_Search_Advance_With_Sub_Categories()'><b>TC_06_Search_Advance_With_Sub_Categories</b><br>Test class: com.nopcommerce.users.User_04_Search_Advanced_Search<br/>
+<a href="#Output-1386903362" onClick='toggleBox("Output-1386903362", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1386903362" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1386903362">
+[INFO ] [2021-07-29 18:07:14,367]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-07-29 18:07:16,412]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.nopcommerce.users.User_04_Search_Advanced_Search@670b40af</td></tr>
+<tr>
+<td title='com.nopcommerce.users.User_04_Search_Advanced_Search.TC_07_Search_Advance_With_Incorrect_Manufacturer()'><b>TC_07_Search_Advance_With_Incorrect_Manufacturer</b><br>Test class: com.nopcommerce.users.User_04_Search_Advanced_Search<br/>
+<a href="#Output-163476249" onClick='toggleBox("Output-163476249", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-163476249" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-163476249">
+[INFO ] [2021-07-29 18:07:17,435]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-07-29 18:07:18,940]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.nopcommerce.users.User_04_Search_Advanced_Search@670b40af</td></tr>
+<tr>
+<td title='com.nopcommerce.users.User_04_Search_Advanced_Search.TC_08_Search_Advance_With_Correct_Manufacturer()'><b>TC_08_Search_Advance_With_Correct_Manufacturer</b><br>Test class: com.nopcommerce.users.User_04_Search_Advanced_Search<br/>
+<a href="#Output-1630986748" onClick='toggleBox("Output-1630986748", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1630986748" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1630986748">
+[INFO ] [2021-07-29 18:07:20,046]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-07-29 18:07:21,252]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.nopcommerce.users.User_04_Search_Advanced_Search@670b40af</td></tr>
 </table><p>
 </body>
 </html>

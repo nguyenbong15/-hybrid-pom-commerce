@@ -20,7 +20,7 @@ import pageObjectsUsers.UserAddressesPO;
 import pageObjectsUsers.UserChangePasswordPO;
 import pageObjectsUsers.UserCustomerInfoPO;
 import pageObjectsUsers.UserMyProductReviewPO;
-import pageObjectsUsers.UserOrderPO;
+import pageObjectsUsers.UserOrderInCustomerInfoPO;
 import pageObjectsUsers.UserSearchPagePO;
 import pageObjectsUsers.UserWishlistPagePO;
 import pageUIAdmin.AdminProductPageUI;
@@ -216,8 +216,12 @@ public class AbstractPage {
 		}
 	}
 
-	public String getElementAttribute(WebDriver driver, String locator, String attributeName) {
+	public String getAttributeElement(WebDriver driver, String locator, String attributeName) {
 		element = getElement(driver, locator);
+		return element.getAttribute(attributeName);
+	}
+	public String getAttributeElement(WebDriver driver, String locator, String attributeName,String... classTexbox) {
+		element = getElement(driver, getDynammicLocator(locator, classTexbox));
 		return element.getAttribute(attributeName);
 	}
 
@@ -469,7 +473,7 @@ public class AbstractPage {
 		return PageGenerator.getUserCustomerInfoPage(driver);
 	}
 
-	public UserOrderPO openOrderPage(WebDriver driver) {
+	public UserOrderInCustomerInfoPO openOrderPage(WebDriver driver) {
 		waitToElementclickable(driver, AbstracPageUI.ORDER_LINK);
 		clickToElement(driver, AbstracPageUI.ORDER_LINK);
 		return PageGenerator.getUserOrderPage(driver);

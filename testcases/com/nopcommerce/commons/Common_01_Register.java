@@ -22,7 +22,7 @@ public class Common_01_Register extends AbstractTest {
 		UserRegisterPO registerPageObject;
 		
 
-		String firstName, lastName, companyName, day, month, year;
+		public static String firstName, lastName, companyName, day, month, year;
        public static    String  email, passWord;
 		@Parameters(value = { "browser", "url" })
 		@BeforeTest

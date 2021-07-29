@@ -21,12 +21,12 @@ public class UserCustomerInfoPO extends AbstractPage {
 
 	public String getFirstNameTextboxValue() {
 		waitToElementVisible(driver, UserCustomerInfoPageUI.FIRST_NAME);
-		return getElementAttribute(driver, UserCustomerInfoPageUI.FIRST_NAME, "value");
+		return getAttributeElement(driver, UserCustomerInfoPageUI.FIRST_NAME, "value");
 	}
 
 	public String getLastNameTextboxValue() {
 		waitToElementVisible(driver, UserCustomerInfoPageUI.LAST_NAME);
-		return getElementAttribute(driver, UserCustomerInfoPageUI.LAST_NAME, "value");
+		return getAttributeElement(driver, UserCustomerInfoPageUI.LAST_NAME, "value");
 	}
 
 	public String getSelectedTextDayInDropdown() {
@@ -46,12 +46,12 @@ public class UserCustomerInfoPO extends AbstractPage {
 
 	public String getEmailTextBoxValue() {
 		waitToElementVisible(driver, UserCustomerInfoPageUI.EMAIL_TEXTBOX);
-		return getElementAttribute(driver, UserCustomerInfoPageUI.EMAIL_TEXTBOX, "value");
+		return getAttributeElement(driver, UserCustomerInfoPageUI.EMAIL_TEXTBOX, "value");
 	}
 
 	public String getCompanyTextboxValue() {
 		waitToElementVisible(driver, UserCustomerInfoPageUI.COMPANY_TEXTBOX);
-		return getElementAttribute(driver, UserCustomerInfoPageUI.COMPANY_TEXTBOX, "value");
+		return getAttributeElement(driver, UserCustomerInfoPageUI.COMPANY_TEXTBOX, "value");
 	}
 
 	public boolean isNewsletterSelected() {

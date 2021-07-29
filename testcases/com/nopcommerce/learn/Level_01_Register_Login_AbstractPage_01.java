@@ -70,13 +70,13 @@ public class Level_01_Register_Login_AbstractPage_01 {
 		public void TC_03_MyAcount() {
 			abstractPage.clickToElement(driver, "//a[@class='ico-account']");
 			Assert.assertTrue(abstractPage.isElementSelected(driver, "//input[@id='gender-male']"));
-			 Assert.assertEquals(abstractPage.getElementAttribute(driver,"//input[@id='FirstName']","value"),firstName);
-			 Assert.assertEquals(abstractPage.getElementAttribute(driver,"//input[@id='LastName']","value"),lastName);
+			 Assert.assertEquals(abstractPage.getAttributeElement(driver,"//input[@id='FirstName']","value"),firstName);
+			 Assert.assertEquals(abstractPage.getAttributeElement(driver,"//input[@id='LastName']","value"),lastName);
 			 Assert.assertEquals(abstractPage.getFirstSelectedTextInDropdown(driver,"//select[@name='DateOfBirthDay']"),"2");
 			 Assert.assertEquals(abstractPage.getFirstSelectedTextInDropdown(driver,"//select[@name='DateOfBirthMonth']"),"May");
 			 Assert.assertEquals(abstractPage.getFirstSelectedTextInDropdown(driver,"//select[@name='DateOfBirthYear']"),"2000");
-			 Assert.assertEquals(abstractPage.getElementAttribute(driver,"//input[@id='Email']","value"),email);
-			 Assert.assertEquals(abstractPage.getElementAttribute(driver,"//input[@id='Company']","value"),companyName);
+			 Assert.assertEquals(abstractPage.getAttributeElement(driver,"//input[@id='Email']","value"),email);
+			 Assert.assertEquals(abstractPage.getAttributeElement(driver,"//input[@id='Company']","value"),companyName);
 			 Assert.assertTrue(abstractPage.isElementSelected(driver, "//input[@id='Newsletter']"));
 			 
 		

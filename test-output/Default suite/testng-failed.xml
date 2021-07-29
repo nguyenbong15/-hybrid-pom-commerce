@@ -3,16 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.nopcommerce.users.User_03_MyAccount">
+      <class name="com.nopcommerce.users.User_05_Sort_Display_Paging">
         <methods>
-          <include name="TC_01_Update_Customer_Info"/>
-          <include name="TC_03_Chage_Password"/>
           <include name="afterClass"/>
+          <include name="TC_05_Display_Products_By_Number_Paging"/>
           <include name="beforeClass"/>
-          <include name="TC_02_Add_Address"/>
-          <include name="TC_04_My_Products_Reviews"/>
         </methods>
-      </class> <!-- com.nopcommerce.users.User_03_MyAccount -->
+      </class> <!-- com.nopcommerce.users.User_05_Sort_Display_Paging -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

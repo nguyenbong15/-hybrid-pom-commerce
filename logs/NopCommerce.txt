@@ -1,7 +1,90 @@
-2021-06-12 14:53:32,597 INFO  com.nopcommerce.users.User_03_MyAccount OS name = windows 10
-2021-06-12 14:53:33,430 INFO  com.nopcommerce.users.User_03_MyAccount Failed to decode response from marionette
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'DESKTOP-MC', ip: '192.168.109.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200708170202, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 3152, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 40b6c6cd-7ba9-4d9e-8f7c-9df3b631a5ca
+2021-07-29 18:05:14,459 INFO  com.nopcommerce.users.User_01_Regester Step 01 - click to register button
+2021-07-29 18:05:14,632 INFO  com.nopcommerce.users.User_01_Regester Step 02 - verify message error
+2021-07-29 18:05:14,722 INFO  com.nopcommerce.users.User_01_Regester  -------------------------- PASSED -------------------------- 
+2021-07-29 18:05:14,801 INFO  com.nopcommerce.users.User_01_Regester  -------------------------- PASSED -------------------------- 
+2021-07-29 18:05:14,878 INFO  com.nopcommerce.users.User_01_Regester  -------------------------- PASSED -------------------------- 
+2021-07-29 18:05:14,954 INFO  com.nopcommerce.users.User_01_Regester  -------------------------- PASSED -------------------------- 
+2021-07-29 18:05:15,033 INFO  com.nopcommerce.users.User_01_Regester  -------------------------- PASSED -------------------------- 
+2021-07-29 18:05:20,471 INFO  com.nopcommerce.users.User_01_Regester  -------------------------- PASSED -------------------------- 
+2021-07-29 18:05:22,892 INFO  com.nopcommerce.users.User_01_Regester  -------------------------- PASSED -------------------------- 
+2021-07-29 18:05:22,970 INFO  com.nopcommerce.users.User_01_Regester  -------------------------- PASSED -------------------------- 
+2021-07-29 18:05:24,568 INFO  com.nopcommerce.users.User_01_Regester  -------------------------- PASSED -------------------------- 
+2021-07-29 18:05:28,167 INFO  com.nopcommerce.users.User_01_Regester  -------------------------- PASSED -------------------------- 
+2021-07-29 18:05:31,010 INFO  com.nopcommerce.users.User_01_Regester OS name = windows 10
+2021-07-29 18:05:31,956 INFO  com.nopcommerce.users.User_01_Regester ---------- QUIT BROWSER SUCCESS ----------
+2021-07-29 18:05:37,198 INFO  com.nopcommerce.users.User_02_Login Step-01: Click login button
+2021-07-29 18:05:37,342 INFO  com.nopcommerce.users.User_02_Login Step-02: verify text
+2021-07-29 18:05:37,433 INFO  com.nopcommerce.users.User_02_Login  -------------------------- PASSED -------------------------- 
+2021-07-29 18:05:37,436 INFO  com.nopcommerce.users.User_02_Login Step-01: senkey to Email Texbox
+2021-07-29 18:05:38,159 INFO  com.nopcommerce.users.User_02_Login Step-02: Click login button
+2021-07-29 18:05:38,274 INFO  com.nopcommerce.users.User_02_Login Step-03: verify text
+2021-07-29 18:05:38,357 INFO  com.nopcommerce.users.User_02_Login  -------------------------- PASSED -------------------------- 
+2021-07-29 18:05:38,365 INFO  com.nopcommerce.users.User_02_Login Step-01: senkey to Email Texbox
+2021-07-29 18:05:39,105 INFO  com.nopcommerce.users.User_02_Login Step-02: Click login button
+2021-07-29 18:05:39,861 INFO  com.nopcommerce.users.User_02_Login Step-03: verify text
+2021-07-29 18:05:39,953 INFO  com.nopcommerce.users.User_02_Login  -------------------------- PASSED -------------------------- 
+2021-07-29 18:05:39,956 INFO  com.nopcommerce.users.User_02_Login Step-01: senkey to Email Texbox
+2021-07-29 18:05:40,690 INFO  com.nopcommerce.users.User_02_Login Step-02: Click login button
+2021-07-29 18:05:41,282 INFO  com.nopcommerce.users.User_02_Login Step-03: verify text
+2021-07-29 18:05:41,368 INFO  com.nopcommerce.users.User_02_Login  -------------------------- PASSED -------------------------- 
+2021-07-29 18:05:41,371 INFO  com.nopcommerce.users.User_02_Login Step-01: senkey to Email Texbox
+2021-07-29 18:05:42,133 INFO  com.nopcommerce.users.User_02_Login Step-02: senkey to password Texbox
+2021-07-29 18:05:42,856 INFO  com.nopcommerce.users.User_02_Login Step-03: Click login button
+2021-07-29 18:05:43,406 INFO  com.nopcommerce.users.User_02_Login Step-04: verify text
+2021-07-29 18:05:43,517 INFO  com.nopcommerce.users.User_02_Login  -------------------------- PASSED -------------------------- 
+2021-07-29 18:05:43,520 INFO  com.nopcommerce.users.User_02_Login Step 01- input email texbox
+2021-07-29 18:05:44,298 INFO  com.nopcommerce.users.User_02_Login Step 02- input passWord texbox
+2021-07-29 18:05:44,987 INFO  com.nopcommerce.users.User_02_Login Step 03- click to login button 
+2021-07-29 18:05:46,119 INFO  com.nopcommerce.users.User_02_Login Step 04-verify my account link displayed 
+2021-07-29 18:05:46,179 INFO  com.nopcommerce.users.User_02_Login  -------------------------- PASSED -------------------------- 
+2021-07-29 18:05:46,179 INFO  com.nopcommerce.users.User_02_Login Step 05-verify Logout link displayed 
+2021-07-29 18:05:46,225 INFO  com.nopcommerce.users.User_02_Login  -------------------------- PASSED -------------------------- 
+2021-07-29 18:05:46,225 INFO  com.nopcommerce.users.User_02_Login Step 06-verify Regester Link UnDisplayed 
+2021-07-29 18:05:56,420 INFO  com.nopcommerce.users.User_02_Login  -------------------------- PASSED -------------------------- 
+2021-07-29 18:05:56,420 INFO  com.nopcommerce.users.User_02_Login Step 07-verify Login link undisplayed 
+2021-07-29 18:06:06,631 INFO  com.nopcommerce.users.User_02_Login  -------------------------- PASSED -------------------------- 
+2021-07-29 18:06:06,633 INFO  com.nopcommerce.users.User_02_Login OS name = windows 10
+2021-07-29 18:06:07,592 INFO  com.nopcommerce.users.User_02_Login ---------- QUIT BROWSER SUCCESS ----------
+2021-07-29 18:06:19,645 INFO  com.nopcommerce.users.User_03_MyAccount  -------------------------- PASSED -------------------------- 
+2021-07-29 18:06:19,712 INFO  com.nopcommerce.users.User_03_MyAccount  -------------------------- PASSED -------------------------- 
+2021-07-29 18:06:19,777 INFO  com.nopcommerce.users.User_03_MyAccount  -------------------------- PASSED -------------------------- 
+2021-07-29 18:06:19,902 INFO  com.nopcommerce.users.User_03_MyAccount  -------------------------- PASSED -------------------------- 
+2021-07-29 18:06:20,055 INFO  com.nopcommerce.users.User_03_MyAccount  -------------------------- PASSED -------------------------- 
+2021-07-29 18:06:21,067 INFO  com.nopcommerce.users.User_03_MyAccount  -------------------------- PASSED -------------------------- 
+2021-07-29 18:06:21,137 INFO  com.nopcommerce.users.User_03_MyAccount  -------------------------- PASSED -------------------------- 
+2021-07-29 18:06:30,582 INFO  com.nopcommerce.users.User_03_MyAccount  -------------------------- PASSED -------------------------- 
+2021-07-29 18:06:30,663 INFO  com.nopcommerce.users.User_03_MyAccount  -------------------------- PASSED -------------------------- 
+2021-07-29 18:06:30,742 INFO  com.nopcommerce.users.User_03_MyAccount  -------------------------- PASSED -------------------------- 
+2021-07-29 18:06:30,819 INFO  com.nopcommerce.users.User_03_MyAccount  -------------------------- PASSED -------------------------- 
+2021-07-29 18:06:30,914 INFO  com.nopcommerce.users.User_03_MyAccount  -------------------------- PASSED -------------------------- 
+2021-07-29 18:06:30,988 INFO  com.nopcommerce.users.User_03_MyAccount  -------------------------- PASSED -------------------------- 
+2021-07-29 18:06:31,066 INFO  com.nopcommerce.users.User_03_MyAccount  -------------------------- PASSED -------------------------- 
+2021-07-29 18:06:41,118 INFO  com.nopcommerce.users.User_03_MyAccount  -------------------------- PASSED -------------------------- 
+2021-07-29 18:06:51,217 INFO  com.nopcommerce.users.User_03_MyAccount  -------------------------- PASSED -------------------------- 
+2021-07-29 18:06:51,279 INFO  com.nopcommerce.users.User_03_MyAccount  -------------------------- PASSED -------------------------- 
+2021-07-29 18:06:59,591 INFO  com.nopcommerce.users.User_03_MyAccount  -------------------------- PASSED -------------------------- 
+2021-07-29 18:07:01,674 INFO  com.nopcommerce.users.User_03_MyAccount  -------------------------- PASSED -------------------------- 
+2021-07-29 18:07:01,748 INFO  com.nopcommerce.users.User_03_MyAccount  -------------------------- PASSED -------------------------- 
+2021-07-29 18:07:01,828 INFO  com.nopcommerce.users.User_03_MyAccount  -------------------------- PASSED -------------------------- 
+2021-07-29 18:07:01,830 INFO  com.nopcommerce.users.User_03_MyAccount OS name = windows 10
+2021-07-29 18:07:02,734 INFO  com.nopcommerce.users.User_03_MyAccount ---------- QUIT BROWSER SUCCESS ----------
+2021-07-29 18:07:10,939 INFO  com.nopcommerce.users.User_04_Search_Advanced_Search  -------------------------- PASSED -------------------------- 
+2021-07-29 18:07:12,083 INFO  com.nopcommerce.users.User_04_Search_Advanced_Search  -------------------------- PASSED -------------------------- 
+2021-07-29 18:07:13,291 INFO  com.nopcommerce.users.User_04_Search_Advanced_Search  -------------------------- PASSED -------------------------- 
+2021-07-29 18:07:14,367 INFO  com.nopcommerce.users.User_04_Search_Advanced_Search  -------------------------- PASSED -------------------------- 
+2021-07-29 18:07:16,412 INFO  com.nopcommerce.users.User_04_Search_Advanced_Search  -------------------------- PASSED -------------------------- 
+2021-07-29 18:07:17,435 INFO  com.nopcommerce.users.User_04_Search_Advanced_Search  -------------------------- PASSED -------------------------- 
+2021-07-29 18:07:18,940 INFO  com.nopcommerce.users.User_04_Search_Advanced_Search  -------------------------- PASSED -------------------------- 
+2021-07-29 18:07:20,046 INFO  com.nopcommerce.users.User_04_Search_Advanced_Search  -------------------------- PASSED -------------------------- 
+2021-07-29 18:07:21,252 INFO  com.nopcommerce.users.User_04_Search_Advanced_Search  -------------------------- PASSED -------------------------- 
+2021-07-29 18:07:21,253 INFO  com.nopcommerce.users.User_04_Search_Advanced_Search OS name = windows 10
+2021-07-29 18:07:22,180 INFO  com.nopcommerce.users.User_04_Search_Advanced_Search ---------- QUIT BROWSER SUCCESS ----------
+2021-07-29 18:07:29,759 INFO  com.nopcommerce.users.User_05_Sort_Display_Paging  -------------------------- PASSED -------------------------- 
+2021-07-29 18:07:29,837 INFO  com.nopcommerce.users.User_05_Sort_Display_Paging  -------------------------- PASSED -------------------------- 
+2021-07-29 18:07:31,168 INFO  com.nopcommerce.users.User_05_Sort_Display_Paging  -------------------------- PASSED -------------------------- 
+2021-07-29 18:07:31,169 INFO  com.nopcommerce.users.User_05_Sort_Display_Paging OS name = windows 10
+2021-07-29 18:07:33,352 INFO  com.nopcommerce.users.User_05_Sort_Display_Paging ---------- QUIT BROWSER SUCCESS ----------
+2021-07-29 18:09:10,678 INFO  com.nopcommerce.users.User_06_Wishlist_Compare_RecentView OS name = windows 10
+2021-07-29 18:09:11,723 INFO  com.nopcommerce.users.User_06_Wishlist_Compare_RecentView ---------- QUIT BROWSER SUCCESS ----------
+2021-07-29 18:09:50,137 INFO  com.nopcommerce.users.User_07_Order_Edit_Remove_Update_Payment_Shopping_Cart OS name = windows 10
+2021-07-29 18:09:51,318 INFO  com.nopcommerce.users.User_07_Order_Edit_Remove_Update_Payment_Shopping_Cart ---------- QUIT BROWSER SUCCESS ----------

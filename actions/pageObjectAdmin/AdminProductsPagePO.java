@@ -105,7 +105,7 @@ public class AdminProductsPagePO extends AbstractPage {
 	}
 
 	public void clickToHideButton() {
-		String attributeValue=getElementAttribute(driver, AdminProductPageUI.PICTURE_PANEL, "class");
+		String attributeValue=getAttributeElement(driver, AdminProductPageUI.PICTURE_PANEL, "class");
 		if(attributeValue.contains("collapsed-card")) {
 			waitToElementclickable(driver, AdminProductPageUI.ICON_HIDE_OR_SHOW);
 			clickToElement(driver, AdminProductPageUI.ICON_HIDE_OR_SHOW);

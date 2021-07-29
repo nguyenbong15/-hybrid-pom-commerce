@@ -14,7 +14,7 @@ public class UserWishlistPageUI {
 	public static final String MESSAGE_ADD_TO_WISHLIST="//div[@class='bar-notification success']/p[text()='The product has been added to your ']";
 	public static final String CLOSE_MESSAGE_BUTTON="//span[@class='close']";
 	public static final String PRODUCT_NAME_LINK="//div[@class='details']//a[text()='%s']";
-	public static final String COMPUTER_LINK="//ul[@class='top-menu notmobile']//a[text()='Computers ']";
+	public static final String COMPUTER_LINK="//ul[@class='top-menu notmobile']//li[1]//a[text()='Computers ']";
 	public static final String DESKTOP_LINK="//ul[@class='top-menu notmobile']//a[text()='Desktops ']";
 	public static final String AJAX_ICON="//div[@class='ajax-products-busy']";
 }

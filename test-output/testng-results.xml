@@ -1,30 +1,377 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="4" failed="0" ignored="0" total="4" passed="0">
+<testng-results skipped="0" failed="6" ignored="0" total="27" passed="21">
   <reporter-output>
     <line>
-      <![CDATA[[INFO ] [2021-06-12 14:53:32,597] OS name = windows 10
+      <![CDATA[[INFO ] [2021-07-29 18:05:14,459] Step 01 - click to register button
 <br>]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2021-06-12 14:53:33,430] Failed to decode response from marionette
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'DESKTOP-MC', ip: '192.168.109.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200708170202, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 3152, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 40b6c6cd-7ba9-4d9e-8f7c-9df3b631a5ca
+      <![CDATA[[INFO ] [2021-07-29 18:05:14,632] Step 02 - verify message error
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:05:14,722]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:05:14,801]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:05:14,878]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:05:14,954]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:05:15,033]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:05:20,471]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:05:22,892]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:05:22,970]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:05:24,568]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:05:28,167]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:05:31,010] OS name = windows 10
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:05:31,956] ---------- QUIT BROWSER SUCCESS ----------
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:05:37,198] Step-01: Click login button
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:05:37,342] Step-02: verify text
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:05:37,433]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:05:37,436] Step-01: senkey to Email Texbox
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:05:38,159] Step-02: Click login button
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:05:38,274] Step-03: verify text
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:05:38,357]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:05:38,365] Step-01: senkey to Email Texbox
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:05:39,105] Step-02: Click login button
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:05:39,861] Step-03: verify text
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:05:39,953]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:05:39,956] Step-01: senkey to Email Texbox
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:05:40,690] Step-02: Click login button
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:05:41,282] Step-03: verify text
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:05:41,368]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:05:41,371] Step-01: senkey to Email Texbox
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:05:42,133] Step-02: senkey to password Texbox
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:05:42,856] Step-03: Click login button
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:05:43,406] Step-04: verify text
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:05:43,517]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:05:43,520] Step 01- input email texbox
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:05:44,298] Step 02- input passWord texbox
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:05:44,987] Step 03- click to login button 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:05:46,119] Step 04-verify my account link displayed 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:05:46,179]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:05:46,179] Step 05-verify Logout link displayed 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:05:46,225]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:05:46,225] Step 06-verify Regester Link UnDisplayed 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:05:56,420]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:05:56,420] Step 07-verify Login link undisplayed 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:06:06,631]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:06:06,633] OS name = windows 10
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:06:07,592] ---------- QUIT BROWSER SUCCESS ----------
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:06:19,645]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:06:19,712]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:06:19,777]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:06:19,902]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:06:20,055]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:06:21,067]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:06:21,137]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:06:30,582]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:06:30,663]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:06:30,742]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:06:30,819]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:06:30,914]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:06:30,988]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:06:31,066]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:06:41,118]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:06:51,217]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:06:51,279]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:06:59,591]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:07:01,674]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:07:01,748]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:07:01,828]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:07:01,830] OS name = windows 10
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:07:02,734] ---------- QUIT BROWSER SUCCESS ----------
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:07:10,939]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:07:12,083]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:07:13,291]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:07:14,367]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:07:16,412]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:07:17,435]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:07:18,940]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:07:20,046]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:07:21,252]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:07:21,253] OS name = windows 10
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:07:22,180] ---------- QUIT BROWSER SUCCESS ----------
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:07:29,759]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:07:29,837]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:07:31,168]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:07:31,169] OS name = windows 10
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:07:33,352] ---------- QUIT BROWSER SUCCESS ----------
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:09:10,678] OS name = windows 10
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:09:11,723] ---------- QUIT BROWSER SUCCESS ----------
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:09:50,137] OS name = windows 10
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-07-29 18:09:51,318] ---------- QUIT BROWSER SUCCESS ----------
 <br>]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="18446" started-at="2021-06-12T07:53:14Z" finished-at="2021-06-12T07:53:33Z">
+  <suite name="Suite" duration-ms="306224" started-at="2021-07-29T11:04:49Z" finished-at="2021-07-29T11:09:55Z">
     <groups>
     </groups>
-    <test name="RUN ON FIREFOX_UI" duration-ms="18446" started-at="2021-06-12T07:53:14Z" finished-at="2021-06-12T07:53:33Z">
-      <class name="com.nopcommerce.users.User_03_MyAccount">
-        <test-method status="FAIL" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.users.User_03_MyAccount@3d921e20]" name="beforeClass" is-config="true" duration-ms="17533" started-at="2021-06-12T07:53:15Z" finished-at="2021-06-12T07:53:32Z">
+    <test name="RUN ON FIREFOX_UI" duration-ms="306224" started-at="2021-07-29T11:04:49Z" finished-at="2021-07-29T11:09:55Z">
+      <class name="com.nopcommerce.users.User_04_Search_Advanced_Search">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.users.User_04_Search_Advanced_Search@670b40af]" name="beforeClass" is-config="true" duration-ms="5164" started-at="2021-07-29T11:07:02Z" finished-at="2021-07-29T11:07:07Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox_ui]]>
+                <![CDATA[chrome_ui]]>
               </value>
             </param>
             <param index="1">
@@ -33,388 +380,964 @@ Session ID: 40b6c6cd-7ba9-4d9e-8f7c-9df3b631a5ca
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Failed to convert data to an object
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'DESKTOP-MC', ip: '192.168.109.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200708170202, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 3152, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 40b6c6cd-7ba9-4d9e-8f7c-9df3b631a5ca
-*** Element info: {Using=xpath, value=//a[@class='ico-account']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Failed to convert data to an object
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'DESKTOP-MC', ip: '192.168.109.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200708170202, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 3152, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 40b6c6cd-7ba9-4d9e-8f7c-9df3b631a5ca
-*** Element info: {Using=xpath, value=//a[@class='ico-account']}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
-at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-at commons.AbstractPage.waitToElementclickable(AbstractPage.java:402)
-at pageObjects.UserCustomerInfoPO.clickToMyaccountLink(UserCustomerInfoPO.java:61)
-at com.nopcommerce.users.User_03_MyAccount.beforeClass(User_03_MyAccount.java:51)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="SKIP" signature="TC_01_Update_Customer_Info()[pri:0, instance:com.nopcommerce.users.User_03_MyAccount@3d921e20]" name="TC_01_Update_Customer_Info" duration-ms="0" started-at="2021-06-12T07:53:32Z" finished-at="2021-06-12T07:53:32Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Failed to convert data to an object
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'DESKTOP-MC', ip: '192.168.109.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200708170202, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 3152, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 40b6c6cd-7ba9-4d9e-8f7c-9df3b631a5ca
-*** Element info: {Using=xpath, value=//a[@class='ico-account']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Failed to convert data to an object
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'DESKTOP-MC', ip: '192.168.109.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200708170202, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 3152, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 40b6c6cd-7ba9-4d9e-8f7c-9df3b631a5ca
-*** Element info: {Using=xpath, value=//a[@class='ico-account']}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
-at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-at commons.AbstractPage.waitToElementclickable(AbstractPage.java:402)
-at pageObjects.UserCustomerInfoPO.clickToMyaccountLink(UserCustomerInfoPO.java:61)
-at com.nopcommerce.users.User_03_MyAccount.beforeClass(User_03_MyAccount.java:51)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_01_Update_Customer_Info -->
-        <test-method status="SKIP" signature="TC_02_Add_Address()[pri:0, instance:com.nopcommerce.users.User_03_MyAccount@3d921e20]" name="TC_02_Add_Address" duration-ms="0" started-at="2021-06-12T07:53:32Z" finished-at="2021-06-12T07:53:32Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Failed to convert data to an object
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'DESKTOP-MC', ip: '192.168.109.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200708170202, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 3152, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 40b6c6cd-7ba9-4d9e-8f7c-9df3b631a5ca
-*** Element info: {Using=xpath, value=//a[@class='ico-account']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Failed to convert data to an object
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'DESKTOP-MC', ip: '192.168.109.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200708170202, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 3152, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 40b6c6cd-7ba9-4d9e-8f7c-9df3b631a5ca
-*** Element info: {Using=xpath, value=//a[@class='ico-account']}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
-at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-at commons.AbstractPage.waitToElementclickable(AbstractPage.java:402)
-at pageObjects.UserCustomerInfoPO.clickToMyaccountLink(UserCustomerInfoPO.java:61)
-at com.nopcommerce.users.User_03_MyAccount.beforeClass(User_03_MyAccount.java:51)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_02_Add_Address -->
-        <test-method status="SKIP" signature="TC_03_Chage_Password()[pri:0, instance:com.nopcommerce.users.User_03_MyAccount@3d921e20]" name="TC_03_Chage_Password" duration-ms="0" started-at="2021-06-12T07:53:32Z" finished-at="2021-06-12T07:53:32Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Failed to convert data to an object
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'DESKTOP-MC', ip: '192.168.109.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200708170202, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 3152, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 40b6c6cd-7ba9-4d9e-8f7c-9df3b631a5ca
-*** Element info: {Using=xpath, value=//a[@class='ico-account']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Failed to convert data to an object
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'DESKTOP-MC', ip: '192.168.109.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200708170202, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 3152, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 40b6c6cd-7ba9-4d9e-8f7c-9df3b631a5ca
-*** Element info: {Using=xpath, value=//a[@class='ico-account']}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
-at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-at commons.AbstractPage.waitToElementclickable(AbstractPage.java:402)
-at pageObjects.UserCustomerInfoPO.clickToMyaccountLink(UserCustomerInfoPO.java:61)
-at com.nopcommerce.users.User_03_MyAccount.beforeClass(User_03_MyAccount.java:51)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_03_Chage_Password -->
-        <test-method status="SKIP" signature="TC_04_My_Products_Reviews()[pri:0, instance:com.nopcommerce.users.User_03_MyAccount@3d921e20]" name="TC_04_My_Products_Reviews" duration-ms="0" started-at="2021-06-12T07:53:32Z" finished-at="2021-06-12T07:53:32Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Failed to convert data to an object
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'DESKTOP-MC', ip: '192.168.109.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200708170202, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 3152, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 40b6c6cd-7ba9-4d9e-8f7c-9df3b631a5ca
-*** Element info: {Using=xpath, value=//a[@class='ico-account']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Failed to convert data to an object
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'DESKTOP-MC', ip: '192.168.109.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200708170202, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 3152, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 40b6c6cd-7ba9-4d9e-8f7c-9df3b631a5ca
-*** Element info: {Using=xpath, value=//a[@class='ico-account']}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
-at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-at commons.AbstractPage.waitToElementclickable(AbstractPage.java:402)
-at pageObjects.UserCustomerInfoPO.clickToMyaccountLink(UserCustomerInfoPO.java:61)
-at com.nopcommerce.users.User_03_MyAccount.beforeClass(User_03_MyAccount.java:51)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_04_My_Products_Reviews -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.nopcommerce.users.User_03_MyAccount@3d921e20]" name="afterClass" is-config="true" duration-ms="836" started-at="2021-06-12T07:53:32Z" finished-at="2021-06-12T07:53:33Z">
+        <test-method status="PASS" signature="TC_04_Search_With_Name_Products_Absolute()[pri:0, instance:com.nopcommerce.users.User_04_Search_Advanced_Search@670b40af]" name="TC_04_Search_With_Name_Products_Absolute" duration-ms="3041" started-at="2021-07-29T11:07:07Z" finished-at="2021-07-29T11:07:10Z">
           <reporter-output>
             <line>
-              <![CDATA[[INFO ] [2021-06-12 14:53:32,597] OS name = windows 10
+              <![CDATA[[INFO ] [2021-07-29 18:07:10,939]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_04_Search_With_Name_Products_Absolute -->
+        <test-method status="PASS" signature="TC_05_Search_Advance_With_Parent_Categories()[pri:0, instance:com.nopcommerce.users.User_04_Search_Advanced_Search@670b40af]" name="TC_05_Search_Advance_With_Parent_Categories" duration-ms="2350" started-at="2021-07-29T11:07:10Z" finished-at="2021-07-29T11:07:13Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:07:12,083]  -------------------------- PASSED -------------------------- 
 <br>]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2021-06-12 14:53:33,430] Failed to decode response from marionette
+              <![CDATA[[INFO ] [2021-07-29 18:07:13,291]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_05_Search_Advance_With_Parent_Categories -->
+        <test-method status="PASS" signature="TC_06_Search_Advance_With_Sub_Categories()[pri:0, instance:com.nopcommerce.users.User_04_Search_Advanced_Search@670b40af]" name="TC_06_Search_Advance_With_Sub_Categories" duration-ms="3120" started-at="2021-07-29T11:07:13Z" finished-at="2021-07-29T11:07:16Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:07:14,367]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:07:16,412]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_06_Search_Advance_With_Sub_Categories -->
+        <test-method status="PASS" signature="TC_07_Search_Advance_With_Incorrect_Manufacturer()[pri:0, instance:com.nopcommerce.users.User_04_Search_Advanced_Search@670b40af]" name="TC_07_Search_Advance_With_Incorrect_Manufacturer" duration-ms="2526" started-at="2021-07-29T11:07:16Z" finished-at="2021-07-29T11:07:18Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:07:17,435]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:07:18,940]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_07_Search_Advance_With_Incorrect_Manufacturer -->
+        <test-method status="PASS" signature="TC_08_Search_Advance_With_Correct_Manufacturer()[pri:0, instance:com.nopcommerce.users.User_04_Search_Advanced_Search@670b40af]" name="TC_08_Search_Advance_With_Correct_Manufacturer" duration-ms="2311" started-at="2021-07-29T11:07:18Z" finished-at="2021-07-29T11:07:21Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:07:20,046]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:07:21,252]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_08_Search_Advance_With_Correct_Manufacturer -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.nopcommerce.users.User_04_Search_Advanced_Search@670b40af]" name="afterClass" is-config="true" duration-ms="929" started-at="2021-07-29T11:07:21Z" finished-at="2021-07-29T11:07:22Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:07:21,253] OS name = windows 10
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:07:22,180] ---------- QUIT BROWSER SUCCESS ----------
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.nopcommerce.users.User_04_Search_Advanced_Search -->
+      <class name="com.nopcommerce.users.User_07_Order_Edit_Remove_Update_Payment_Shopping_Cart">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.users.User_07_Order_Edit_Remove_Update_Payment_Shopping_Cart@7b69c6ba]" name="beforeClass" is-config="true" duration-ms="8378" started-at="2021-07-29T11:09:11Z" finished-at="2021-07-29T11:09:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome_ui]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://demo.nopcommerce.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="FAIL" signature="TC_05_Order_Products()[pri:0, instance:com.nopcommerce.users.User_07_Order_Edit_Remove_Update_Payment_Shopping_Cart@7b69c6ba]" name="TC_05_Order_Products" duration-ms="30032" started-at="2021-07-29T11:09:20Z" finished-at="2021-07-29T11:09:50Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class='header-menu']//ul[1]//a[text()='Computers '] (tried for 30 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class='header-menu']//ul[1]//a[text()='Computers '] (tried for 30 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at commons.AbstractPage.waitToElementVisible(AbstractPage.java:389)
+at pageObjectsUsers.UserOrderPagePO.clickToComputer(UserOrderPagePO.java:24)
+at com.nopcommerce.users.User_07_Order_Edit_Remove_Update_Payment_Shopping_Cart.TC_05_Order_Products(User_07_Order_Edit_Remove_Update_Payment_Shopping_Cart.java:145)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='header-menu']//ul[1]//a[text()='Computers ']"}
+  (Session info: chrome=92.0.4515.107)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
 System info: host: 'DESKTOP-MC', ip: '192.168.109.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200708170202, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 3152, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 40b6c6cd-7ba9-4d9e-8f7c-9df3b631a5ca
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52176}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5fbe3064e64ac8b8447772e2105b33ee
+*** Element info: {Using=xpath, value=//div[@class='header-menu']//ul[1]//a[text()='Computers ']}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_05_Order_Products -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.nopcommerce.users.User_07_Order_Edit_Remove_Update_Payment_Shopping_Cart@7b69c6ba]" name="afterClass" is-config="true" duration-ms="1182" started-at="2021-07-29T11:09:50Z" finished-at="2021-07-29T11:09:51Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:09:50,137] OS name = windows 10
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:09:51,318] ---------- QUIT BROWSER SUCCESS ----------
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.nopcommerce.users.User_07_Order_Edit_Remove_Update_Payment_Shopping_Cart -->
+      <class name="com.nopcommerce.users.User_01_Regester">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.users.User_01_Regester@5bcea91b]" name="beforeClass" is-config="true" duration-ms="8822" started-at="2021-07-29T11:05:05Z" finished-at="2021-07-29T11:05:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome_ui]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://demo.nopcommerce.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="TC_01_Register_With_Empty_Data()[pri:0, instance:com.nopcommerce.users.User_01_Regester@5bcea91b]" name="TC_01_Register_With_Empty_Data" duration-ms="580" started-at="2021-07-29T11:05:14Z" finished-at="2021-07-29T11:05:15Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:05:14,459] Step 01 - click to register button
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:05:14,632] Step 02 - verify message error
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:05:14,722]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:05:14,801]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:05:14,878]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:05:14,954]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:05:15,033]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_01_Register_With_Empty_Data -->
+        <test-method status="PASS" signature="TC_02_Register_With_Invalid_Email()[pri:0, instance:com.nopcommerce.users.User_01_Regester@5bcea91b]" name="TC_02_Register_With_Invalid_Email" duration-ms="5412" started-at="2021-07-29T11:05:15Z" finished-at="2021-07-29T11:05:20Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:05:20,471]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_02_Register_With_Invalid_Email -->
+        <test-method status="PASS" signature="TC_04_Register_With_Password_Under6()[pri:0, instance:com.nopcommerce.users.User_01_Regester@5bcea91b]" name="TC_04_Register_With_Password_Under6" duration-ms="2497" started-at="2021-07-29T11:05:20Z" finished-at="2021-07-29T11:05:22Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:05:22,892]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:05:22,970]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_04_Register_With_Password_Under6 -->
+        <test-method status="PASS" signature="TC_05_Register_With_Password_Wrong()[pri:0, instance:com.nopcommerce.users.User_01_Regester@5bcea91b]" name="TC_05_Register_With_Password_Wrong" duration-ms="1596" started-at="2021-07-29T11:05:22Z" finished-at="2021-07-29T11:05:24Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:05:24,568]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_05_Register_With_Password_Wrong -->
+        <test-method status="PASS" signature="TC_06_Register_Success()[pri:0, instance:com.nopcommerce.users.User_01_Regester@5bcea91b]" name="TC_06_Register_Success" duration-ms="6437" started-at="2021-07-29T11:05:24Z" finished-at="2021-07-29T11:05:31Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:05:28,167]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_06_Register_Success -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.nopcommerce.users.User_01_Regester@5bcea91b]" name="afterClass" is-config="true" duration-ms="947" started-at="2021-07-29T11:05:31Z" finished-at="2021-07-29T11:05:31Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:05:31,010] OS name = windows 10
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:05:31,956] ---------- QUIT BROWSER SUCCESS ----------
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.nopcommerce.users.User_01_Regester -->
+      <class name="com.nopcommerce.users.User_03_MyAccount">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.users.User_03_MyAccount@27f723]" name="beforeClass" is-config="true" duration-ms="9170" started-at="2021-07-29T11:06:07Z" finished-at="2021-07-29T11:06:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome_ui]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://demo.nopcommerce.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="TC_01_Update_Customer_Info()[pri:0, instance:com.nopcommerce.users.User_03_MyAccount@27f723]" name="TC_01_Update_Customer_Info" duration-ms="4373" started-at="2021-07-29T11:06:16Z" finished-at="2021-07-29T11:06:21Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:06:19,645]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:06:19,712]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:06:19,777]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:06:19,902]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:06:20,055]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:06:21,067]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:06:21,137]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_01_Update_Customer_Info -->
+        <test-method status="PASS" signature="TC_02_Add_Address()[pri:0, instance:com.nopcommerce.users.User_03_MyAccount@27f723]" name="TC_02_Add_Address" duration-ms="9928" started-at="2021-07-29T11:06:21Z" finished-at="2021-07-29T11:06:31Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:06:30,582]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:06:30,663]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:06:30,742]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:06:30,819]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:06:30,914]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:06:30,988]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:06:31,066]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_02_Add_Address -->
+        <test-method status="PASS" signature="TC_03_Chage_Password()[pri:0, instance:com.nopcommerce.users.User_03_MyAccount@27f723]" name="TC_03_Chage_Password" duration-ms="20212" started-at="2021-07-29T11:06:31Z" finished-at="2021-07-29T11:06:51Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:06:41,118]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:06:51,217]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:06:51,279]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_03_Chage_Password -->
+        <test-method status="PASS" signature="TC_04_My_Products_Reviews()[pri:0, instance:com.nopcommerce.users.User_03_MyAccount@27f723]" name="TC_04_My_Products_Reviews" duration-ms="10547" started-at="2021-07-29T11:06:51Z" finished-at="2021-07-29T11:07:01Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:06:59,591]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:07:01,674]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:07:01,748]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:07:01,828]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_04_My_Products_Reviews -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.nopcommerce.users.User_03_MyAccount@27f723]" name="afterClass" is-config="true" duration-ms="905" started-at="2021-07-29T11:07:01Z" finished-at="2021-07-29T11:07:02Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:07:01,830] OS name = windows 10
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:07:02,734] ---------- QUIT BROWSER SUCCESS ----------
 <br>]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.nopcommerce.users.User_03_MyAccount -->
+      <class name="com.nopcommerce.users.User_06_Wishlist_Compare_RecentView">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.users.User_06_Wishlist_Compare_RecentView@44c8afef]" name="beforeClass" is-config="true" duration-ms="7072" started-at="2021-07-29T11:07:33Z" finished-at="2021-07-29T11:07:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome_ui]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://demo.nopcommerce.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="FAIL" signature="TC_01_Remove_Product()[pri:0, instance:com.nopcommerce.users.User_06_Wishlist_Compare_RecentView@44c8afef]" name="TC_01_Remove_Product" duration-ms="30063" started-at="2021-07-29T11:07:40Z" finished-at="2021-07-29T11:08:10Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //ul[@class='top-menu notmobile']//a[text()='Computers '] (tried for 30 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //ul[@class='top-menu notmobile']//a[text()='Computers '] (tried for 30 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at commons.AbstractPage.waitToElementVisible(AbstractPage.java:389)
+at commons.AbstractPage.openWishlistPage(AbstractPage.java:495)
+at com.nopcommerce.users.User_06_Wishlist_Compare_RecentView.TC_01_Remove_Product(User_06_Wishlist_Compare_RecentView.java:46)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//ul[@class='top-menu notmobile']//a[text()='Computers ']"}
+  (Session info: chrome=92.0.4515.107)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-MC', ip: '192.168.109.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58332}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 172f97b11169881291ca61af6ac2fb2d
+*** Element info: {Using=xpath, value=//ul[@class='top-menu notmobile']//a[text()='Computers ']}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_01_Remove_Product -->
+        <test-method status="FAIL" signature="TC_02_Add_To_Wishlist()[pri:0, instance:com.nopcommerce.users.User_06_Wishlist_Compare_RecentView@44c8afef]" name="TC_02_Add_To_Wishlist" duration-ms="27" started-at="2021-07-29T11:08:10Z" finished-at="2021-07-29T11:08:10Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.nopcommerce.users.User_06_Wishlist_Compare_RecentView.TC_02_Add_To_Wishlist(User_06_Wishlist_Compare_RecentView.java:63)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_02_Add_To_Wishlist -->
+        <test-method status="FAIL" signature="TC_03_Add_To_Shopping_Cart()[pri:0, instance:com.nopcommerce.users.User_06_Wishlist_Compare_RecentView@44c8afef]" name="TC_03_Add_To_Shopping_Cart" duration-ms="2" started-at="2021-07-29T11:08:10Z" finished-at="2021-07-29T11:08:10Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.nopcommerce.users.User_06_Wishlist_Compare_RecentView.TC_03_Add_To_Shopping_Cart(User_06_Wishlist_Compare_RecentView.java:79)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_03_Add_To_Shopping_Cart -->
+        <test-method status="FAIL" signature="TC_04_Add_To_CompareList()[pri:0, instance:com.nopcommerce.users.User_06_Wishlist_Compare_RecentView@44c8afef]" name="TC_04_Add_To_CompareList" duration-ms="30082" started-at="2021-07-29T11:08:10Z" finished-at="2021-07-29T11:08:40Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //ul[@class='top-menu notmobile']//a[text()='Computers '] (tried for 30 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //ul[@class='top-menu notmobile']//a[text()='Computers '] (tried for 30 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at commons.AbstractPage.waitToElementVisible(AbstractPage.java:389)
+at pageObjectsUsers.UserCompareProductsPO.hoverToComputerLink(UserCompareProductsPO.java:17)
+at com.nopcommerce.users.User_06_Wishlist_Compare_RecentView.TC_04_Add_To_CompareList(User_06_Wishlist_Compare_RecentView.java:92)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//ul[@class='top-menu notmobile']//a[text()='Computers ']"}
+  (Session info: chrome=92.0.4515.107)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-MC', ip: '192.168.109.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58332}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 172f97b11169881291ca61af6ac2fb2d
+*** Element info: {Using=xpath, value=//ul[@class='top-menu notmobile']//a[text()='Computers ']}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_04_Add_To_CompareList -->
+        <test-method status="FAIL" signature="TC_05_Verify_Detial_Product()[pri:0, instance:com.nopcommerce.users.User_06_Wishlist_Compare_RecentView@44c8afef]" name="TC_05_Verify_Detial_Product" duration-ms="30063" started-at="2021-07-29T11:08:40Z" finished-at="2021-07-29T11:09:10Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //ul[@class='top-menu notmobile']//a[text()='Computers '] (tried for 30 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //ul[@class='top-menu notmobile']//a[text()='Computers '] (tried for 30 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at commons.AbstractPage.waitToElementVisible(AbstractPage.java:389)
+at pageObjectsUsers.UserCompareProductsPO.hoverToComputerLink(UserCompareProductsPO.java:17)
+at com.nopcommerce.users.User_06_Wishlist_Compare_RecentView.TC_05_Verify_Detial_Product(User_06_Wishlist_Compare_RecentView.java:118)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//ul[@class='top-menu notmobile']//a[text()='Computers ']"}
+  (Session info: chrome=92.0.4515.107)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-MC', ip: '192.168.109.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58332}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 172f97b11169881291ca61af6ac2fb2d
+*** Element info: {Using=xpath, value=//ul[@class='top-menu notmobile']//a[text()='Computers ']}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_05_Verify_Detial_Product -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.nopcommerce.users.User_06_Wishlist_Compare_RecentView@44c8afef]" name="afterClass" is-config="true" duration-ms="1046" started-at="2021-07-29T11:09:10Z" finished-at="2021-07-29T11:09:11Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:09:10,678] OS name = windows 10
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:09:11,723] ---------- QUIT BROWSER SUCCESS ----------
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.nopcommerce.users.User_06_Wishlist_Compare_RecentView -->
+      <class name="com.nopcommerce.commons.Common_01_Register">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.commons.Common_01_Register@12cdcf4]" name="beforeClass" is-config="true" duration-ms="16417" started-at="2021-07-29T11:04:49Z" finished-at="2021-07-29T11:05:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome_ui]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://demo.nopcommerce.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.nopcommerce.commons.Common_01_Register@12cdcf4]" name="afterClass" is-config="true" duration-ms="4072" started-at="2021-07-29T11:09:51Z" finished-at="2021-07-29T11:09:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.nopcommerce.commons.Common_01_Register -->
+      <class name="com.nopcommerce.users.User_02_Login">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.users.User_02_Login@5f3a4b84]" name="beforeClass" is-config="true" duration-ms="5237" started-at="2021-07-29T11:05:31Z" finished-at="2021-07-29T11:05:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome_ui]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://demo.nopcommerce.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="TC_01_Login_With_Empty_Data()[pri:0, instance:com.nopcommerce.users.User_02_Login@5f3a4b84]" name="TC_01_Login_With_Empty_Data" duration-ms="237" started-at="2021-07-29T11:05:37Z" finished-at="2021-07-29T11:05:37Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:05:37,198] Step-01: Click login button
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:05:37,342] Step-02: verify text
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:05:37,433]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_01_Login_With_Empty_Data -->
+        <test-method status="PASS" signature="TC_02_Login_With_Invalid_Email()[pri:0, instance:com.nopcommerce.users.User_02_Login@5f3a4b84]" name="TC_02_Login_With_Invalid_Email" duration-ms="922" started-at="2021-07-29T11:05:37Z" finished-at="2021-07-29T11:05:38Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:05:37,436] Step-01: senkey to Email Texbox
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:05:38,159] Step-02: Click login button
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:05:38,274] Step-03: verify text
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:05:38,357]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_02_Login_With_Invalid_Email -->
+        <test-method status="PASS" signature="TC_03_Login_With_Email_Not_Exist()[pri:0, instance:com.nopcommerce.users.User_02_Login@5f3a4b84]" name="TC_03_Login_With_Email_Not_Exist" duration-ms="1595" started-at="2021-07-29T11:05:38Z" finished-at="2021-07-29T11:05:39Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:05:38,365] Step-01: senkey to Email Texbox
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:05:39,105] Step-02: Click login button
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:05:39,861] Step-03: verify text
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:05:39,953]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_03_Login_With_Email_Not_Exist -->
+        <test-method status="PASS" signature="TC_04_Login_With_Email_Exist_And_Empty_Password()[pri:0, instance:com.nopcommerce.users.User_02_Login@5f3a4b84]" name="TC_04_Login_With_Email_Exist_And_Empty_Password" duration-ms="1413" started-at="2021-07-29T11:05:39Z" finished-at="2021-07-29T11:05:41Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:05:39,956] Step-01: senkey to Email Texbox
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:05:40,690] Step-02: Click login button
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:05:41,282] Step-03: verify text
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:05:41,368]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_04_Login_With_Email_Exist_And_Empty_Password -->
+        <test-method status="PASS" signature="TC_05_Login_With_Email_Exist_And_Password_Wrong()[pri:0, instance:com.nopcommerce.users.User_02_Login@5f3a4b84]" name="TC_05_Login_With_Email_Exist_And_Password_Wrong" duration-ms="2147" started-at="2021-07-29T11:05:41Z" finished-at="2021-07-29T11:05:43Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:05:41,371] Step-01: senkey to Email Texbox
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:05:42,133] Step-02: senkey to password Texbox
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:05:42,856] Step-03: Click login button
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:05:43,406] Step-04: verify text
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:05:43,517]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_05_Login_With_Email_Exist_And_Password_Wrong -->
+        <test-method status="PASS" signature="TC_06_Login_Success()[pri:0, instance:com.nopcommerce.users.User_02_Login@5f3a4b84]" name="TC_06_Login_Success" duration-ms="23112" started-at="2021-07-29T11:05:43Z" finished-at="2021-07-29T11:06:06Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:05:43,520] Step 01- input email texbox
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:05:44,298] Step 02- input passWord texbox
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:05:44,987] Step 03- click to login button 
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:05:46,119] Step 04-verify my account link displayed 
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:05:46,179]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:05:46,179] Step 05-verify Logout link displayed 
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:05:46,225]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:05:46,225] Step 06-verify Regester Link UnDisplayed 
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:05:56,420]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:05:56,420] Step 07-verify Login link undisplayed 
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:06:06,631]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_06_Login_Success -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.nopcommerce.users.User_02_Login@5f3a4b84]" name="afterClass" is-config="true" duration-ms="960" started-at="2021-07-29T11:06:06Z" finished-at="2021-07-29T11:06:07Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:06:06,633] OS name = windows 10
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:06:07,592] ---------- QUIT BROWSER SUCCESS ----------
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.nopcommerce.users.User_02_Login -->
+      <class name="com.nopcommerce.users.User_05_Sort_Display_Paging">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.users.User_05_Sort_Display_Paging@4923ab24]" name="beforeClass" is-config="true" duration-ms="5913" started-at="2021-07-29T11:07:22Z" finished-at="2021-07-29T11:07:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome_ui]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://demo.nopcommerce.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="TC_05_Display_Products_By_Number_Paging()[pri:0, instance:com.nopcommerce.users.User_05_Sort_Display_Paging@4923ab24]" name="TC_05_Display_Products_By_Number_Paging" duration-ms="3074" started-at="2021-07-29T11:07:28Z" finished-at="2021-07-29T11:07:31Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:07:29,759]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:07:29,837]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:07:31,168]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_05_Display_Products_By_Number_Paging -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.nopcommerce.users.User_05_Sort_Display_Paging@4923ab24]" name="afterClass" is-config="true" duration-ms="2183" started-at="2021-07-29T11:07:31Z" finished-at="2021-07-29T11:07:33Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:07:31,169] OS name = windows 10
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-07-29 18:07:33,352] ---------- QUIT BROWSER SUCCESS ----------
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.nopcommerce.users.User_05_Sort_Display_Paging -->
     </test> <!-- RUN ON FIREFOX_UI -->
   </suite> <!-- Suite -->
 </testng-results>

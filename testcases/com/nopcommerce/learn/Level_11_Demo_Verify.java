@@ -9,7 +9,7 @@ import pageObjectsUsers.UserCustomerInfoPO;
 import pageObjectsUsers.UserHomePO;
 import pageObjectsUsers.UserLoginPO;
 import pageObjectsUsers.UserMyProductReviewPO;
-import pageObjectsUsers.UserOrderPO;
+import pageObjectsUsers.UserOrderInCustomerInfoPO;
 import pageObjectsUsers.UserRegisterPO;
 
 import org.testng.annotations.BeforeClass;
@@ -28,7 +28,7 @@ public class Level_11_Demo_Verify extends AbstractTest {
 	UserRegisterPO registerPageObject;
 	UserAddressesPO addressesPage;
 	UserMyProductReviewPO myProductReview;
-	UserOrderPO orderPageObject;
+	UserOrderInCustomerInfoPO orderPageObject;
 
 	String firstName, lastName, email, companyName, passWord, day, month, year;
 
@@ -135,7 +135,7 @@ public class Level_11_Demo_Verify extends AbstractTest {
 		myProductReview = (UserMyProductReviewPO) customerInfoPageObject.openLinkByPageName(driver,
 				"My product reviews");
 
-		orderPageObject = (UserOrderPO) myProductReview.openLinkByPageName(driver, "Orders");
+		orderPageObject = (UserOrderInCustomerInfoPO) myProductReview.openLinkByPageName(driver, "Orders");
 		customerInfoPageObject = (UserCustomerInfoPO) orderPageObject.openLinkByPageName(driver, "Customer info");
 	}
 
