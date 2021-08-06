@@ -10,7 +10,6 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -21,12 +20,10 @@ import pageObjectsUsers.UserChangePasswordPO;
 import pageObjectsUsers.UserCustomerInfoPO;
 import pageObjectsUsers.UserMyProductReviewPO;
 import pageObjectsUsers.UserOrderInCustomerInfoPO;
-import pageObjectsUsers.UserOrderPagePO;
 import pageObjectsUsers.UserSearchPagePO;
 import pageObjectsUsers.UserWishlistPagePO;
 import pageUIAdmin.AdminProductPageUI;
 import pageUIsUser.AbstracPageUI;
-import pageUIsUser.UserCustomerInfoPageUI;
 
 public class AbstractPage {
 
@@ -205,6 +202,22 @@ public class AbstractPage {
 			}
 		}
 	}
+	public void selectItemsInCustomDropdown(WebDriver driver, String parentLocator, String childItemsLocator,String expectedItem,String...values) {
+		explicitWait = new WebDriverWait(driver, GlobalConsarts.LONG_TIMEOUT);
+		getElement(driver, parentLocator).click();
+		explicitWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(getByXpath(getDynammicLocator(childItemsLocator, values))));
+		elements = getElements(driver, getDynammicLocator(childItemsLocator, values));
+		for (WebElement x : elements) {
+			if (x.getText().equals(expectedItem)) {
+				js = (JavascriptExecutor) driver;
+				js.executeScript("arguments[0].scrollIntoView(true);", x);
+				sleepSecond(1);
+				x.click();
+				sleepSecond(1);
+				break;
+			}
+		}
+	}
 
 	public void sleepSecond(long time) {
 		try {
@@ -239,8 +252,15 @@ public class AbstractPage {
 	}
 
 	public void checkToCheckbox(WebDriver driver, String locator) {
-
+		
 		WebElement element = getElement(driver, locator);
+		if (!element.isSelected()) {
+			element.click();
+		}
+	}
+	public void checkToCheckbox(WebDriver driver, String locator,String...values) {
+
+		WebElement element = getElement(driver, getDynammicLocator(locator, values));
 		if (!element.isSelected()) {
 			element.click();
 		}
@@ -566,9 +586,37 @@ public class AbstractPage {
 	public void overideImplicitWait(WebDriver driver,long timeSecond) {
 		driver.manage().timeouts().implicitlyWait(timeSecond, TimeUnit.SECONDS);
 	}
-	
-
-	private WebDriverWait explicitWait;
+	public void inputTexboxById(WebDriver driver,String value,String texboxId) {
+		waitToElementVisible(driver, AbstracPageUI.TEXBOX_BY_ID,texboxId);
+		senkeyToElement(driver, AbstracPageUI.TEXBOX_BY_ID, value, texboxId);
+	}
+	public void clickRadioById(WebDriver driver,String radiobuttonID) {
+		waitToElementclickable(driver, AbstracPageUI.RADIO_BY_ID,radiobuttonID);
+		clickToElement(driver, AbstracPageUI.RADIO_BY_ID, radiobuttonID);
+	}
+	public void clickCheckBoxById(WebDriver driver,String checkboxID) {
+		waitToElementclickable(driver, AbstracPageUI.CHECKBOX_BY_ID,checkboxID);
+		checkToCheckbox(driver, AbstracPageUI.CHECKBOX_BY_ID, checkboxID);
+	}
+    public String getElementById(WebDriver driver,String texboxId) {
+    	waitToElementVisible(driver, AbstracPageUI.TEXBOX_BY_ID,texboxId);
+		return getAttributeElement(driver, AbstracPageUI.TEXBOX_BY_ID,"value",texboxId);
+	}
+    public void waitoAjaxLoaded(WebDriver driver) {
+    	waitToElementInvisible(driver, AbstracPageUI.ICON_LOADING);
+    }
+    public void clickToHideButtonByIdPage(WebDriver driver,String id) {
+		String attributeValue=getAttributeElement(driver, AbstracPageUI.ID_PANEL, "class",id);
+		if(attributeValue.contains("collapsed-card")) {
+			waitToElementclickable(driver, AbstracPageUI.ICON_HIDE_OR_SHOW,id);
+			clickToElement(driver, AbstracPageUI.ICON_HIDE_OR_SHOW,id);
+			waitToElementInvisible(driver, AbstracPageUI.ICON_LOADING);
+		}else {}
+		
+	}
+    
+    
+    private WebDriverWait explicitWait;
 	private JavascriptExecutor js;
 	private WebElement element;
 	private Actions action;

@@ -32,5 +32,8 @@
 	<classpathentry kind="lib" path="libWebManager/jarchivelib-1.0.0.jar"/>
 	<classpathentry kind="lib" path="libWebManager/webdrivermanager-4.2.0.jar"/>
 	<classpathentry kind="lib" path="libWebManager/slf4j-api-1.7.30.jar"/>
+	<classpathentry kind="lib" path="FakeDatalib/generex-1.0.2.jar"/>
+	<classpathentry kind="lib" path="FakeDatalib/javafaker-1.0.1.jar"/>
+	<classpathentry kind="lib" path="FakeDatalib/snakeyaml-1.23.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

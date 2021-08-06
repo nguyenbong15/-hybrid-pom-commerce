@@ -2,6 +2,7 @@ package pageObjectsUsers;
 
 import org.openqa.selenium.WebDriver;
 
+import pageObjectAdmin.AdminCustomerPagePO;
 import pageObjectAdmin.AdminDashboardPagePO;
 import pageObjectAdmin.AdminLoginPagePO;
 import pageObjectAdmin.AdminProductsPagePO;
@@ -46,6 +47,9 @@ public class PageGenerator {
 
 	public static AdminProductsPagePO getAdminProductsPage(WebDriver driver) {
 		return new AdminProductsPagePO(driver);
+	}
+	public static AdminCustomerPagePO getAdminCustomerPage(WebDriver driver) {
+		return new AdminCustomerPagePO(driver);
 	}
 
 	public static UserChangePasswordPO getChangePasswordPage(WebDriver driver) {

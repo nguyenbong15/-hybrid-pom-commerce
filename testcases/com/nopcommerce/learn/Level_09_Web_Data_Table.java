@@ -1,4 +1,4 @@
-package com.nopcommerce.admin;
+package com.nopcommerce.learn;
 
 import org.testng.annotations.Test;
 
@@ -80,7 +80,7 @@ public class Level_09_Web_Data_Table extends AbstractTest {
 		productsPage.clickToEditByProductName("Apple MacBook Pro 13-inch");
 		productsPage.scrollToPicturePanel();
 		
-		productsPage.clickToHideButton();
+		productsPage.clickToHideButtonByIdPage(driver,"product-info");
 		productsPage.upLoadFilePicture(driver,"product-pictures", "image_01"); 
 		productsPage.inputToAlt("altPicture");
 		productsPage.inputToTitle("image");

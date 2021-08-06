@@ -23,4 +23,14 @@ public class AdminDashboardPagePO extends AbstractPage{
 		//waitToElementPresent(driver, AdminProductPageUI.ALL_PRODUCTS,Integer.parseInt(getFirstSelectedTextInDropdown(driver, AdminProductPageUI.NUMBER_PRODUCT_DROPDOWN)));
 		return PageGenerator.getAdminProductsPage(driver);
 	}
+	public AdminCustomerPagePO openCustomerPage() {
+		waitToElementclickable(driver, AdminDashboardPageUI.CUSTOMERS_LINK);
+		clickToElement(driver, AdminDashboardPageUI.CUSTOMERS_LINK);
+		waitToElementVisible(driver, AdminDashboardPageUI.CUSTOMERS_IN_CUSTOMERS_LINK);
+		waitToElementclickable(driver, AdminDashboardPageUI.CUSTOMERS_IN_CUSTOMERS_LINK);
+		clickToElement(driver, AdminDashboardPageUI.CUSTOMERS_IN_CUSTOMERS_LINK);
+		waitToElementInvisible(driver, AdminProductPageUI.ICON_LOADING);
+		//waitToElementPresent(driver, AdminProductPageUI.ALL_PRODUCTS,Integer.parseInt(getFirstSelectedTextInDropdown(driver, AdminProductPageUI.NUMBER_PRODUCT_DROPDOWN)));
+		return PageGenerator.getAdminCustomerPage(driver);
+	}
 }

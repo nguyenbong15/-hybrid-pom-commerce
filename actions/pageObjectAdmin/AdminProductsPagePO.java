@@ -7,9 +7,8 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
 import commons.AbstractPage;
-import commons.GlobalConsarts;
-import pageUIAdmin.AdminDashboardPageUI;
 import pageUIAdmin.AdminProductPageUI;
+import pageUIsUser.AbstracPageUI;
 
 public class AdminProductsPagePO extends AbstractPage {
 	WebDriver driver;
@@ -22,14 +21,14 @@ public class AdminProductsPagePO extends AbstractPage {
 	public void clickSelectAll() {
 		waitToElementclickable(driver, AdminProductPageUI.ALL_CHECKBOX);
 		checkToCheckbox(driver, AdminProductPageUI.ALL_CHECKBOX);
-		;
+		
 
 	}
 
 	public void clickToUnSelectAll() {
 		waitToElementclickable(driver, AdminProductPageUI.ALL_CHECKBOX);
 		uncheckToCheckbox(driver, AdminProductPageUI.ALL_CHECKBOX);
-		;
+		
 	}
 
 	public void clickToPageIndex(String... pageIndex) {
@@ -87,11 +86,6 @@ public class AdminProductsPagePO extends AbstractPage {
 		waitToElementInvisible(driver, AdminProductPageUI.ICON_LOADING);
 	}
 
-	public boolean isSearchProductInfoDisplayed() {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
 	public void clickToEditByProductName(String producName) {
 		waitToElementclickable(driver, AdminProductPageUI.EDIT_BUTTON,producName);
 		clickToElement(driver,  AdminProductPageUI.EDIT_BUTTON,producName);
@@ -99,22 +93,10 @@ public class AdminProductsPagePO extends AbstractPage {
 	}
 
 	public void scrollToPicturePanel() {
-		scrollToElement(driver, AdminProductPageUI.PICTURE_PANEL);
+		scrollToElement(driver, AbstracPageUI.ID_PANEL);
 		sleepSecond(1);
 		
 	}
-
-	public void clickToHideButton() {
-		String attributeValue=getAttributeElement(driver, AdminProductPageUI.PICTURE_PANEL, "class");
-		if(attributeValue.contains("collapsed-card")) {
-			waitToElementclickable(driver, AdminProductPageUI.ICON_HIDE_OR_SHOW);
-			clickToElement(driver, AdminProductPageUI.ICON_HIDE_OR_SHOW);
-			waitToElementInvisible(driver, AdminProductPageUI.ICON_LOADING);
-		}else {}
-		
-	}
-
-	
 
 	public void inputToAlt(String altName) {
 		waitToElementVisible(driver, AdminProductPageUI.ALT_TEXTBOX);
@@ -140,6 +122,77 @@ public class AdminProductsPagePO extends AbstractPage {
 
 	public void clictToSaveButton() {
 		
+		
+	}
+
+	public void chooseItemInCategoryDropdown(String itemValue) {
+		waitToElementVisible(driver, AdminProductPageUI.CATEGORY_DROPDOWN);
+		selectItemInDropdown(driver, AdminProductPageUI.CATEGORY_DROPDOWN, itemValue);
+	}
+
+	public void uncheckToSearchSubcategoriesCheckbox() {
+		waitToElementclickable(driver, AdminProductPageUI.SEARCH_CATEGORY_CHECKBOX);
+		uncheckToCheckbox(driver, AdminProductPageUI.SEARCH_CATEGORY_CHECKBOX);
+	}
+
+	public boolean isMessageNoItemDisplayed() {
+		waitToElementVisible(driver, AdminProductPageUI.MESSAGE_NO_DATA);
+		return isElementDisplayed(driver, AdminProductPageUI.MESSAGE_NO_DATA);
+	}
+
+	public void checkToSearchSubcategoriesCheckbox() {
+		waitToElementclickable(driver, AdminProductPageUI.SEARCH_CATEGORY_CHECKBOX);
+		checkToCheckbox(driver, AdminProductPageUI.SEARCH_CATEGORY_CHECKBOX);
+		
+	}
+
+	public void chooseItemInManufacturerDropdown(String itemValue) {
+		waitToElementVisible(driver, AdminProductPageUI.MANUFACTURE_DROPDOWN);
+		selectItemInDropdown(driver, AdminProductPageUI.MANUFACTURE_DROPDOWN, itemValue);
+		
+	}
+
+	public void inputSkuTextBox(String itemValue) {
+		waitToElementVisible(driver, AdminProductPageUI.SKU_TEXTBOX);
+		senkeyToElement(driver, AdminProductPageUI.SKU_TEXTBOX, itemValue);
+		
+	}
+
+	public void clickToGoButton() {
+		waitToElementclickable(driver, AdminProductPageUI.GO_BUTTON);
+		clickToElement(driver,  AdminProductPageUI.GO_BUTTON);
+		waitToElementInvisible(driver, AdminProductPageUI.ICON_LOADING);
+		
+	}
+
+	public boolean isProducInfoPageDisplayed() {
+		
+		waitToElementVisible(driver, AdminProductPageUI.PRODUCT_INFO_TITLE);
+		return isElementDisplayed(driver,  AdminProductPageUI.PRODUCT_INFO_TITLE);
+	}
+
+	public String getNameProducts() {
+		waitToElementVisible(driver, AdminProductPageUI.PRODUCT_NAME_VERIFY);
+		return getAttributeElement(driver, AdminProductPageUI.PRODUCT_NAME_VERIFY, "value");
+	}
+
+	public String getSkuProducts() {
+		waitToElementVisible(driver, AdminProductPageUI.SKU_VERIFY);
+		return getAttributeElement(driver, AdminProductPageUI.SKU_VERIFY, "value");
+	}
+
+	public boolean statusPulisherProductIsTrue() {
+		waitToElementVisible(driver, AdminProductPageUI.PUBLISHED_VERIFY);
+		return isElementSelected(driver, AdminProductPageUI.PUBLISHED_VERIFY);
+	}
+
+	public void clickToShowSearchPage() {
+		String attributeValue=getAttributeElement(driver, AdminProductPageUI.ICON_TO_OPEN_SEARCH, "class");
+		if(attributeValue.contains("far fa-angle-down")) {
+			waitToElementclickable(driver, AdminProductPageUI.ICON_TO_OPEN_SEARCH);
+			clickToElement(driver, AdminProductPageUI.ICON_TO_OPEN_SEARCH);
+			waitToElementInvisible(driver, AdminProductPageUI.ICON_LOADING);
+		}else {}
 		
 	}
 
