@@ -93,7 +93,7 @@ public class Admin_02_Add_Edit_Delete_Customer extends AbstractTest {
 
 	}
 
-	@Test
+	//@Test
 	public void TC_02_Search_Customer_With_Email() {
 		customerPage.inputTexboxById(driver, emailCustomer, "SearchEmail");
 		customerPage.clickToSearchButton();
@@ -101,7 +101,7 @@ public class Admin_02_Add_Edit_Delete_Customer extends AbstractTest {
 
 	}
 
-	@Test
+//	@Test
 	public void TC_03_Search_Customer_With_Fisrtname_lastname() {
 		customerPage.inputTexboxById(driver, "", "SearchEmail");
 		customerPage.inputTexboxById(driver, firstName, "SearchFirstName");
@@ -111,7 +111,7 @@ public class Admin_02_Add_Edit_Delete_Customer extends AbstractTest {
 
 	}
 
-	@Test
+//	@Test
 	public void TC_04_Search_Customer_With_Company() {
 		customerPage.inputTexboxById(driver, "", "SearchEmail");
 		customerPage.inputTexboxById(driver, "", "SearchFirstName");
@@ -122,7 +122,7 @@ public class Admin_02_Add_Edit_Delete_Customer extends AbstractTest {
 
 	}
 
-	@Test
+//	@Test
 	public void TC_05_Search_Customer_With_Full_Data() {
 		customerPage.inputTexboxById(driver, emailCustomer, "SearchEmail");
 		customerPage.inputTexboxById(driver, firstName, "SearchFirstName");
@@ -135,7 +135,7 @@ public class Admin_02_Add_Edit_Delete_Customer extends AbstractTest {
 
 	}
 
-	@Test(dependsOnMethods = "TC_05_Search_Customer_With_Full_Data")
+//	@Test(dependsOnMethods = "TC_05_Search_Customer_With_Full_Data")
 	public void TC_06_Edit_Customer() {
 		customerPage.clickToEditLinkByName_Company(firstName + " " + lastName, companyName);
 		customerPage.clickToHideButtonByIdPage(driver, "customer-info");
@@ -162,7 +162,7 @@ public class Admin_02_Add_Edit_Delete_Customer extends AbstractTest {
 				"Edit " + companyName, "true"));
 
 	}
-	@Test(dependsOnMethods = "TC_06_Edit_Customer")
+//	@Test(dependsOnMethods = "TC_06_Edit_Customer")
 	public void TC_07_Add_New_Address_() {
 		customerPage.clickToEditLinkByName_Company("Edit " + firstName + " " + "Edit " + lastName,"Edit " + companyName);
 		customerPage.clickToHideButtonByIdPage(driver, "customer-address");
@@ -193,7 +193,7 @@ public class Admin_02_Add_Edit_Delete_Customer extends AbstractTest {
 		verifyEquals(customerPage.getAddress(), companyName +"\n"+address+"\n"+cityname+","+zipcode);
 	}
 	
-	@Test(dependsOnMethods = "TC_06_Edit_Customer")
+	//@Test(dependsOnMethods = "TC_06_Edit_Customer")
 	public void TC_08_Edit_And_Delete_New_Address() {
 	    customerPage.clickToEditAddressByEmail(emailCustomer);  
 	    customerPage.inputTexboxById(driver,"Edit "+firstName, "Address_FirstName");

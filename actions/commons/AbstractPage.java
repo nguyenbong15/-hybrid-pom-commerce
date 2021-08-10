@@ -134,6 +134,7 @@ public class AbstractPage {
 	}
 
 	public void clickToElement(WebDriver driver, String locator) {
+		highlightElement(driver, locator);
 		if (driver.toString().toLowerCase().contains("edge")) {
 			sleepMiliSecond(500);
 		}
@@ -142,7 +143,7 @@ public class AbstractPage {
 	}
 
 	public void senkeyToElement(WebDriver driver, String locator, String value) {
-
+		highlightElement(driver, locator);
 		element = getElement(driver, locator);
 		element.clear();
 		if (driver.toString().toLowerCase().contains("edge") || driver.toString().toLowerCase().contains("chrome")) {
@@ -152,6 +153,7 @@ public class AbstractPage {
 	}
 
 	public String getTextElement(WebDriver driver, String locator) {
+		highlightElement(driver, locator);
 		element = getElement(driver, locator);
 		return element.getText();
 		
@@ -163,6 +165,7 @@ public class AbstractPage {
 	}
 
 	public void selectItemInDropdown(WebDriver driver, String locator, String itemValue) {
+		highlightElement(driver, locator);
 		element = getElement(driver, locator);
 		select = new Select(element);
 		select.selectByVisibleText(itemValue);
@@ -342,10 +345,10 @@ public class AbstractPage {
 		element = getElement(driver, locator);
 		String originalStyle = element.getAttribute("style");
 
-		js.executeScript("arguments[0].setAttribute(arguments[1],arguments[2]", element, "style",
-				"border: 2px solid red; border-style: dashed;");
-		sleepSecond(1);
-		js.executeScript("arguments[0].setAttribute(arguments[1],arguments[2]", element, "style", originalStyle);
+		js.executeScript("arguments[0].setAttribute(arguments[1],arguments[2])", element, "style",
+				"border: 4px solid red; border-style: dashed;");
+		sleepMiliSecond(500);
+		js.executeScript("arguments[0].setAttribute(arguments[1],arguments[2])", element, "style", originalStyle);
 
 	}
 

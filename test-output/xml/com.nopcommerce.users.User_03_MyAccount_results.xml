@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="RUN ON FIREFOX_UI"
-           tests="1"
+           tests="4"
            failures="0"
            errors="0"
            skipped="0"
-           time="17.611">
+           time="45.060">
   <properties />
   
   
-            <testcase name="TC_04_My_Products_Reviews" time="17.611" classname="com.nopcommerce.users.User_03_MyAccount" />
+            <testcase name="TC_02_Add_Address" time="9.928" classname="com.nopcommerce.users.User_03_MyAccount" />
+                <testcase name="TC_04_My_Products_Reviews" time="10.547" classname="com.nopcommerce.users.User_03_MyAccount" />
+                <testcase name="TC_03_Chage_Password" time="20.212" classname="com.nopcommerce.users.User_03_MyAccount" />
+                <testcase name="TC_01_Update_Customer_Info" time="4.373" classname="com.nopcommerce.users.User_03_MyAccount" />
       
 </testsuite>

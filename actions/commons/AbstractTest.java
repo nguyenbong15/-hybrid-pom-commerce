@@ -201,4 +201,8 @@ public class AbstractTest {
 			log.info(e.getMessage());
 		}
 	}
+	public WebDriver getDriver() {
+		
+		return driver;
+	}
 }
