@@ -5,19 +5,19 @@
     <listener class-name="commons.MethodListener"/>
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
-    <listener class-name="reportConfig.ExtentReportListener"/>
+    <listener class-name="reportConfig.ReportNGListener"/>
   </listeners>
   <test thread-count="5" name="RUN ON FIREFOX_UI(failed)">
     <parameter name="browser" value="chrome_ui"/>
-    <parameter name="url" value="https://demo.nopcommerce.com"/>
+    <parameter name="url" value="https://admin-demo.nopcommerce.com"/>
     <classes>
-      <class name="com.nopcommerce.users.User_07_Order_Edit_Remove_Update_Payment_Shopping_Cart">
+      <class name="com.nopcommerce.admin.Admin_02_Add_Edit_Delete_Customer">
         <methods>
           <include name="beforeClass"/>
-          <include name="TC_05_Order_Products"/>
           <include name="afterClass"/>
+          <include name="TC_01_Add_New_Customer"/>
         </methods>
-      </class> <!-- com.nopcommerce.users.User_07_Order_Edit_Remove_Update_Payment_Shopping_Cart -->
+      </class> <!-- com.nopcommerce.admin.Admin_02_Add_Edit_Delete_Customer -->
     </classes>
   </test> <!-- RUN ON FIREFOX_UI(failed) -->
 </suite> <!-- Failed suite [Suite] -->
